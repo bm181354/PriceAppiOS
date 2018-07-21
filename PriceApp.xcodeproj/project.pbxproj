@@ -23,6 +23,7 @@
 		B6BF637E209F1315000FDF39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6BF637C209F1315000FDF39 /* Main.storyboard */; };
 		B6BF6380209F1318000FDF39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6BF637F209F1318000FDF39 /* Assets.xcassets */; };
 		B6BF6383209F1318000FDF39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6BF6381209F1318000FDF39 /* LaunchScreen.storyboard */; };
+		EAE1D9472103E94200812CEA /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE1D9462103E94200812CEA /* NetworkConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		B6BF6382209F1318000FDF39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6BF6384209F1318000FDF39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C11E8A20F8EBAF3685461653 /* Pods-PriceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriceApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PriceApp/Pods-PriceApp.release.xcconfig"; sourceTree = "<group>"; };
+		EAE1D9462103E94200812CEA /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		B6BF6377209F1315000FDF39 /* Snapchat */ = {
 			isa = PBXGroup;
 			children = (
+				EAE1D9452103E92600812CEA /* Util */,
 				0C2D842C210394E1005DB26D /* API */,
 				B617FF9520A075020031656A /* Navigation */,
 				B64C913B209F36EC00BB1DEC /* Selection Control */,
@@ -148,6 +151,14 @@
 				216360E3E021C640F2BDED60 /* Pods_PriceApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAE1D9452103E92600812CEA /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				EAE1D9462103E94200812CEA /* NetworkConfig.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +276,7 @@
 			files = (
 				B64C9137209F332200BB1DEC /* DiscoverViewController.swift in Sources */,
 				B64C9138209F332200BB1DEC /* LensViewController.swift in Sources */,
+				EAE1D9472103E94200812CEA /* NetworkConfig.swift in Sources */,
 				B64C912F209F32D100BB1DEC /* NavigationView.swift in Sources */,
 				B64C912B209F32D100BB1DEC /* ScrollViewController.swift in Sources */,
 				B6BF6379209F1315000FDF39 /* AppDelegate.swift in Sources */,
