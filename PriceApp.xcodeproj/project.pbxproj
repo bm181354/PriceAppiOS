@@ -40,7 +40,7 @@
 		B64C9134209F332200BB1DEC /* LensViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LensViewController.swift; sourceTree = "<group>"; };
 		B64C9135209F332200BB1DEC /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		B64C9136209F332200BB1DEC /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
-		B6BF6375209F1315000FDF39 /* Snapchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6BF6375209F1315000FDF39 /* PriceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PriceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6BF6378209F1315000FDF39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6BF637D209F1315000FDF39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6BF637F209F1318000FDF39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 		B6BF6376209F1315000FDF39 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B6BF6375209F1315000FDF39 /* Snapchat.app */,
+				B6BF6375209F1315000FDF39 /* PriceApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,9 +153,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B6BF6374209F1315000FDF39 /* Snapchat */ = {
+		B6BF6374209F1315000FDF39 /* PriceApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B6BF639D209F1318000FDF39 /* Build configuration list for PBXNativeTarget "Snapchat" */;
+			buildConfigurationList = B6BF639D209F1318000FDF39 /* Build configuration list for PBXNativeTarget "PriceApp" */;
 			buildPhases = (
 				BC2228DAE7860BDB9A004333 /* [CP] Check Pods Manifest.lock */,
 				B6BF6371209F1315000FDF39 /* Sources */,
@@ -167,9 +167,9 @@
 			);
 			dependencies = (
 			);
-			name = Snapchat;
+			name = PriceApp;
 			productName = Snapchat;
-			productReference = B6BF6375209F1315000FDF39 /* Snapchat.app */;
+			productReference = B6BF6375209F1315000FDF39 /* PriceApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -188,7 +188,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B6BF6370209F1315000FDF39 /* Build configuration list for PBXProject "Snapchat" */;
+			buildConfigurationList = B6BF6370209F1315000FDF39 /* Build configuration list for PBXProject "PriceApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -201,7 +201,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B6BF6374209F1315000FDF39 /* Snapchat */,
+				B6BF6374209F1315000FDF39 /* PriceApp */,
 			);
 		};
 /* End PBXProject section */
@@ -455,7 +455,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B6BF6370209F1315000FDF39 /* Build configuration list for PBXProject "Snapchat" */ = {
+		B6BF6370209F1315000FDF39 /* Build configuration list for PBXProject "PriceApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B6BF639B209F1318000FDF39 /* Debug */,
@@ -464,7 +464,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B6BF639D209F1318000FDF39 /* Build configuration list for PBXNativeTarget "Snapchat" */ = {
+		B6BF639D209F1318000FDF39 /* Build configuration list for PBXNativeTarget "PriceApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B6BF639E209F1318000FDF39 /* Debug */,
