@@ -1,0 +1,16 @@
+PODS:
+  - BarcodeScanner (4.1.3)
+
+DEPENDENCIES:
+  - BarcodeScanner
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BarcodeScanner
+
+SPEC CHECKSUMS:
+  BarcodeScanner: fce1ad2b3f28286b1ab5091fe0979789618bee27
+
+PODFILE CHECKSUM: 299e657c1a5d1c24aee1fc97f7bcb590d39957a9
+
+COCOAPODS: 1.5.3
