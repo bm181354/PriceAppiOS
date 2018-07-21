@@ -88,7 +88,7 @@ class NavigationView: UIView {
     func animate(to percent:CGFloat){
         let offset = abs(percent)
         
-        cameraButtonWhiteView.alpha = 1 - offset
+        cameraButtonWhiteView.alpha = offset
         cameraButtonGrayView.alpha = offset
         
         
