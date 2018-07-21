@@ -25,6 +25,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Pods-PriceApp.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>Pods-Snapchat.xcscheme</key>
 		<dict>
 			<key>isShown</key>
