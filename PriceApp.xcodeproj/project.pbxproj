@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0C2D842E210394F1005DB26D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D842D210394F1005DB26D /* APIService.swift */; };
-		B41E02A7A5FD7915A836E274 /* Pods_Snapchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8750E68E2DFC9A4DE989D4C4 /* Pods_Snapchat.framework */; };
+		9EA0E46535360A41BF8D90AC /* Pods_PriceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216360E3E021C640F2BDED60 /* Pods_PriceApp.framework */; };
 		B617FF93209FB3630031656A /* LensCircleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B617FF91209FB3620031656A /* LensCircleCell.swift */; };
 		B617FF94209FB3630031656A /* LensFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B617FF92209FB3620031656A /* LensFlowLayout.swift */; };
 		B64C912B209F32D100BB1DEC /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C9126209F32D000BB1DEC /* ScrollViewController.swift */; };
@@ -27,9 +27,8 @@
 
 /* Begin PBXFileReference section */
 		0C2D842D210394F1005DB26D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		1484F1D855295789286B8A0B /* Pods-Snapchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapchat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Snapchat/Pods-Snapchat.debug.xcconfig"; sourceTree = "<group>"; };
-		2BA0B682B63D7F522DCAAB23 /* Pods-Snapchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapchat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Snapchat/Pods-Snapchat.release.xcconfig"; sourceTree = "<group>"; };
-		8750E68E2DFC9A4DE989D4C4 /* Pods_Snapchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snapchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		216360E3E021C640F2BDED60 /* Pods_PriceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PriceApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35C017BC81B780708718EA25 /* Pods-PriceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriceApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PriceApp/Pods-PriceApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B617FF91209FB3620031656A /* LensCircleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LensCircleCell.swift; sourceTree = "<group>"; };
 		B617FF92209FB3620031656A /* LensFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LensFlowLayout.swift; sourceTree = "<group>"; };
 		B64C9126209F32D000BB1DEC /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +45,7 @@
 		B6BF637F209F1318000FDF39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6BF6382209F1318000FDF39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6BF6384209F1318000FDF39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C11E8A20F8EBAF3685461653 /* Pods-PriceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriceApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PriceApp/Pods-PriceApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B41E02A7A5FD7915A836E274 /* Pods_Snapchat.framework in Frameworks */,
+				9EA0E46535360A41BF8D90AC /* Pods_PriceApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,8 +71,8 @@
 		9B9DEDFE66D2463EB1C9C4F9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1484F1D855295789286B8A0B /* Pods-Snapchat.debug.xcconfig */,
-				2BA0B682B63D7F522DCAAB23 /* Pods-Snapchat.release.xcconfig */,
+				35C017BC81B780708718EA25 /* Pods-PriceApp.debug.xcconfig */,
+				C11E8A20F8EBAF3685461653 /* Pods-PriceApp.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -145,7 +145,7 @@
 		C1B936308EEE93E42B67DE5C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8750E68E2DFC9A4DE989D4C4 /* Pods_Snapchat.framework */,
+				216360E3E021C640F2BDED60 /* Pods_PriceApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -231,7 +231,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Snapchat-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-PriceApp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -244,7 +244,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Snapchat/Pods-Snapchat-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-PriceApp/Pods-PriceApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BarcodeScanner/BarcodeScanner.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -253,7 +253,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Snapchat/Pods-Snapchat-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PriceApp/Pods-PriceApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -416,17 +416,17 @@
 		};
 		B6BF639E209F1318000FDF39 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1484F1D855295789286B8A0B /* Pods-Snapchat.debug.xcconfig */;
+			baseConfigurationReference = 35C017BC81B780708718EA25 /* Pods-PriceApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PTV3YS2VRE;
+				DEVELOPMENT_TEAM = G2YN9BT637;
 				INFOPLIST_FILE = Snapchat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = us.bikenm.priceapp;
+				PRODUCT_BUNDLE_IDENTIFIER = co.Nibble.PriceApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -435,17 +435,17 @@
 		};
 		B6BF639F209F1318000FDF39 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BA0B682B63D7F522DCAAB23 /* Pods-Snapchat.release.xcconfig */;
+			baseConfigurationReference = C11E8A20F8EBAF3685461653 /* Pods-PriceApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PTV3YS2VRE;
+				DEVELOPMENT_TEAM = G2YN9BT637;
 				INFOPLIST_FILE = Snapchat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = us.bikenm.priceapp;
+				PRODUCT_BUNDLE_IDENTIFIER = co.Nibble.PriceApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
