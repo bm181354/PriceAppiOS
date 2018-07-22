@@ -23,6 +23,9 @@
 		B6BF637E209F1315000FDF39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6BF637C209F1315000FDF39 /* Main.storyboard */; };
 		B6BF6380209F1318000FDF39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6BF637F209F1318000FDF39 /* Assets.xcassets */; };
 		B6BF6383209F1318000FDF39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6BF6381209F1318000FDF39 /* LaunchScreen.storyboard */; };
+		EA3EF25A210402BF008044BB /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3EF259210402BF008044BB /* APIError.swift */; };
+		EA3EF25C210402ED008044BB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3EF25B210402ED008044BB /* NetworkManager.swift */; };
+		EA3EF25E21042A06008044BB /* ROOT.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3EF25D21042A06008044BB /* ROOT.swift */; };
 		EAE1D9472103E94200812CEA /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE1D9462103E94200812CEA /* NetworkConfig.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +50,9 @@
 		B6BF6382209F1318000FDF39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6BF6384209F1318000FDF39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C11E8A20F8EBAF3685461653 /* Pods-PriceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriceApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PriceApp/Pods-PriceApp.release.xcconfig"; sourceTree = "<group>"; };
+		EA3EF259210402BF008044BB /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		EA3EF25B210402ED008044BB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EA3EF25D21042A06008044BB /* ROOT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROOT.swift; sourceTree = "<group>"; };
 		EAE1D9462103E94200812CEA /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +72,8 @@
 			isa = PBXGroup;
 			children = (
 				0C2D842D210394F1005DB26D /* APIService.swift */,
+				EA3EF259210402BF008044BB /* APIError.swift */,
+				EA3EF25B210402ED008044BB /* NetworkManager.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -114,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				B6BF6377209F1315000FDF39 /* Snapchat */,
-				B6BF6376209F1315000FDF39 /* Products */,
 				9B9DEDFE66D2463EB1C9C4F9 /* Pods */,
 				C1B936308EEE93E42B67DE5C /* Frameworks */,
 			);
@@ -126,6 +133,7 @@
 				B6BF6375209F1315000FDF39 /* PriceApp.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		B6BF6377209F1315000FDF39 /* Snapchat */ = {
@@ -141,6 +149,7 @@
 				B6BF637F209F1318000FDF39 /* Assets.xcassets */,
 				B6BF6381209F1318000FDF39 /* LaunchScreen.storyboard */,
 				B6BF6384209F1318000FDF39 /* Info.plist */,
+				B6BF6376209F1315000FDF39 /* Products */,
 			);
 			path = Snapchat;
 			sourceTree = "<group>";
@@ -157,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				EAE1D9462103E94200812CEA /* NetworkConfig.swift */,
+				EA3EF25D21042A06008044BB /* ROOT.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -283,10 +293,13 @@
 				B64C9139209F332200BB1DEC /* CameraViewController.swift in Sources */,
 				B64C912D209F32D100BB1DEC /* MainViewController.swift in Sources */,
 				B64C913A209F332200BB1DEC /* ChatViewController.swift in Sources */,
+				EA3EF25E21042A06008044BB /* ROOT.swift in Sources */,
 				B64C912E209F32D100BB1DEC /* NavigationViewAnimation.swift in Sources */,
 				B617FF94209FB3630031656A /* LensFlowLayout.swift in Sources */,
 				0C2D842E210394F1005DB26D /* APIService.swift in Sources */,
+				EA3EF25C210402ED008044BB /* NetworkManager.swift in Sources */,
 				B617FF93209FB3630031656A /* LensCircleCell.swift in Sources */,
+				EA3EF25A210402BF008044BB /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

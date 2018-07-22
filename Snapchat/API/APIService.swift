@@ -9,14 +9,27 @@
 import Foundation
 
 
-protocol APIService {
+protocol APIServiceProtocol {
     func fetchProduct(code:String)
+    func fetchSuggestion()
+    
+}
+
+
+
+class APIService: APIServiceProtocol{
+
+
 }
 
 extension APIService{
-   
-    static func fetchProduct(code:String){
-        
-    }
     
+    
+    func fetchProduct(code: String) {
+        print(2)
+    }
+    func fetchSuggestion() {
+        print(2)
+    }
 }
+

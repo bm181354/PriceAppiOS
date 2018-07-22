@@ -47,7 +47,12 @@ extension LensViewController: BarcodeScannerCodeDelegate {
             
         }
         
-        // Code
+        // fetch data Code
+        
+        
+        // notify to all or
+        
+        // save to coredata
         
     }
     
