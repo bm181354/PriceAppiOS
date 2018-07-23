@@ -55,7 +55,7 @@ class MainViewController: UIViewController {
   @IBOutlet var navigationView: NavigationView!
   
   override var prefersStatusBarHidden: Bool {
-    return true
+    return false
   }
   
   // run at beginning even before viewDidLoad

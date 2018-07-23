@@ -22,6 +22,7 @@ class DiscoverViewController: UIViewController {
     collectionView.delegate = self
     collectionView.dataSource = self
     
+    
     backgroundView.backgroundColor = Color.getAccentColor()
     collectionView.backgroundColor = UIColor(red: 243/255, green: 245/255, blue: 247/255, alpha: 1)
     //backgroundView.layer.cornerRadius = 20
@@ -36,7 +37,7 @@ extension DiscoverViewController: ColoredView {}
 extension DiscoverViewController: UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
         
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: pageSize - 8 , height:  view.bounds.height/3)
+        return CGSize(width: pageSize - 8 , height:  (view.bounds.height/3) - 8)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -51,7 +52,12 @@ extension DiscoverViewController: UICollectionViewDelegate, UICollectionViewData
   
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 8, left: -16, bottom: 0, right: -16)
+        return UIEdgeInsets(top: 8, left: -16, bottom: 8, right: -16)
     }
-    
+ 
+}
+extension DiscoverViewController{
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath.row)
+    }
 }

@@ -12,15 +12,20 @@ class LensViewController:BarcodeScannerViewController {
         self.errorDelegate = self
         self.dismissalDelegate = self
 
-        self.headerViewController.view = nil
+      
         self.headerViewController.closeButton.tintColor = .white
-        self.headerViewController.titleLabel.text = "Check Product"
+        //self.headerViewController.titleLabel.text = "Check Product"
+        self.headerViewController.titleLabel.textColor = .white
         self.cameraViewController.barCodeFocusViewType = .animated
         self.cameraViewController.showsCameraButton = true
+        self.headerViewController.titleLabel.text = nil
 
 
     }
 
+      override var prefersStatusBarHidden: Bool {
+        return false
+      }
     
     private func makeBarcodeScannerViewController() -> BarcodeScannerViewController {
         let viewController = BarcodeScannerViewController()
@@ -91,6 +96,7 @@ extension LensViewController: BarcodeScannerDismissalDelegate {
     }
 }
 //
+
 
 
 

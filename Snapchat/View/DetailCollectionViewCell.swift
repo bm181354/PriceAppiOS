@@ -78,6 +78,14 @@ class DetailViewCell:UICollectionViewCell{
         return view
     }()
     
+    let subLabel:UILabel = {
+        let lb = UILabel()
+        lb.translatesAutoresizingMaskIntoConstraints = false
+        lb.textColor = .gray
+        lb.text = "Subtitle Wine"
+        return lb
+    }()
+    
     
     override func awakeFromNib() {
 
@@ -91,6 +99,7 @@ class DetailViewCell:UICollectionViewCell{
         addSubview(verticalMargin)
         addSubview(buyBtn)
         addSubview(ratingView)
+        addSubview(subLabel)
         
         setup()
         
@@ -103,7 +112,7 @@ class DetailViewCell:UICollectionViewCell{
        imageContent.leadingAnchor.constraint(equalTo: self.leadingAnchor , constant: 16).isActive = true
         imageContent.topAnchor.constraint(equalTo: self.topAnchor , constant: 16).isActive = true
         imageContent.widthAnchor.constraint(equalToConstant: self.frame.width/3 ).isActive = true
-        imageContent.heightAnchor.constraint(equalToConstant: self.frame.width/2 ).isActive = true
+        imageContent.heightAnchor.constraint(equalToConstant: self.frame.width/2 - 20 ).isActive = true
         
         // category view
         categoryView.leadingAnchor.constraint(equalTo:imageContent.trailingAnchor , constant: 24).isActive = true
@@ -133,6 +142,7 @@ class DetailViewCell:UICollectionViewCell{
         //buyBtn.heightAnchor.constraint(equalToConstant: 40).isActive = true
         buyBtn.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0).isActive = true
         buyBtn.topAnchor.constraint(equalTo: horizontalMargin.bottomAnchor, constant: 0).isActive = true
+        buyBtn.heightAnchor.constraint(equalToConstant: 50).isActive = true 
         
         // rating
         ratingView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 0).isActive = true
@@ -141,8 +151,11 @@ class DetailViewCell:UICollectionViewCell{
         ratingView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0).isActive = true
         ratingView.topAnchor.constraint(equalTo: horizontalMargin.bottomAnchor, constant:0).isActive = true
         
+        //subLabel
         
- 
+        subLabel.bottomAnchor.constraint(equalTo: imageContent.bottomAnchor, constant: 0).isActive = true
+        subLabel.leadingAnchor.constraint(equalTo: imageContent.trailingAnchor, constant: 24).isActive = true
+
         
     }
     
