@@ -23,4 +23,8 @@ struct Color{
         return UIColor(red: 209/255, green: 181/255, blue: 134/255, alpha: 1)
     }
     
+    static func negativeColor() -> UIColor {
+        return UIColor(red: 255/255, green: 109/255, blue: 109/255, alpha: 1)
+    }
+    
 }

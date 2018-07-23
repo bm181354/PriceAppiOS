@@ -54,6 +54,13 @@ class DetailViewCell:UICollectionViewCell{
         return view
     }()
     
+    let refreshView:UIImageView = {
+       let view = UIImageView()
+       view.image = UIImage(named: "refresh")
+        view.translatesAutoresizingMaskIntoConstraints = false
+       return view
+    }()
+    
     let  verticalMargin:UIView = {
         let view = UIView()
         view.backgroundColor =  UIColor(red: 244/255, green: 246/255, blue: 246/255, alpha: 1)
@@ -100,6 +107,7 @@ class DetailViewCell:UICollectionViewCell{
         addSubview(buyBtn)
         addSubview(ratingView)
         addSubview(subLabel)
+//        addSubview(refreshView)
         
         setup()
         
@@ -112,7 +120,7 @@ class DetailViewCell:UICollectionViewCell{
        imageContent.leadingAnchor.constraint(equalTo: self.leadingAnchor , constant: 16).isActive = true
         imageContent.topAnchor.constraint(equalTo: self.topAnchor , constant: 16).isActive = true
         imageContent.widthAnchor.constraint(equalToConstant: self.frame.width/3 ).isActive = true
-        imageContent.heightAnchor.constraint(equalToConstant: self.frame.width/2 - 20 ).isActive = true
+        imageContent.heightAnchor.constraint(equalToConstant: self.frame.width/2 ).isActive = true
         
         // category view
         categoryView.leadingAnchor.constraint(equalTo:imageContent.trailingAnchor , constant: 24).isActive = true
@@ -156,6 +164,12 @@ class DetailViewCell:UICollectionViewCell{
         subLabel.bottomAnchor.constraint(equalTo: imageContent.bottomAnchor, constant: 0).isActive = true
         subLabel.leadingAnchor.constraint(equalTo: imageContent.trailingAnchor, constant: 24).isActive = true
 
+// refresh
+//        refreshView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16).isActive = true
+//        refreshView.topAnchor.constraint(equalTo: self.topAnchor, constant: 16).isActive = true
+//        refreshView.widthAnchor.constraint(equalToConstant: 40).isActive = true
+//        refreshView.heightAnchor.constraint(equalToConstant: 40).isActive = true
+//        
         
     }
     

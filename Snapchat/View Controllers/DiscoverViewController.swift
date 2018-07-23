@@ -28,6 +28,8 @@ class DiscoverViewController: UIViewController {
     //backgroundView.layer.cornerRadius = 20
     //backgroundView.layer.masksToBounds = true
   }
+    
+   
 }
 
 // MARK: - ColoredView
@@ -37,7 +39,7 @@ extension DiscoverViewController: ColoredView {}
 extension DiscoverViewController: UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
         
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: pageSize - 8 , height:  (view.bounds.height/3) - 8)
+        return CGSize(width: pageSize - 24 , height:  (view.bounds.height/3) - 16)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -52,12 +54,17 @@ extension DiscoverViewController: UICollectionViewDelegate, UICollectionViewData
   
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 8, left: -16, bottom: 8, right: -16)
+        return UIEdgeInsets(top: 12, left: -16, bottom: 8, right: -16)
     }
  
 }
 extension DiscoverViewController{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
         print(indexPath.row)
+        let vc = SubDetailVC()
+        vc.modalPresentationStyle = .custom
+        present(vc, animated: true, completion: nil)
+        
     }
 }

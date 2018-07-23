@@ -10,6 +10,7 @@
 		0C2D842E210394F1005DB26D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D842D210394F1005DB26D /* APIService.swift */; };
 		0CBD9C0B2105403D003C6CD2 /* DetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBD9C0A2105403D003C6CD2 /* DetailCollectionViewCell.swift */; };
 		0CBD9C0F2106000F003C6CD2 /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBD9C0E2106000F003C6CD2 /* colors.swift */; };
+		0CBD9C1121063BAB003C6CD2 /* SubDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBD9C1021063BAB003C6CD2 /* SubDetailVC.swift */; };
 		9EA0E46535360A41BF8D90AC /* Pods_PriceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216360E3E021C640F2BDED60 /* Pods_PriceApp.framework */; };
 		B617FF93209FB3630031656A /* LensCircleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B617FF91209FB3620031656A /* LensCircleCell.swift */; };
 		B617FF94209FB3630031656A /* LensFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B617FF92209FB3620031656A /* LensFlowLayout.swift */; };
@@ -35,6 +36,7 @@
 		0C2D842D210394F1005DB26D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		0CBD9C0A2105403D003C6CD2 /* DetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		0CBD9C0E2106000F003C6CD2 /* colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = "<group>"; };
+		0CBD9C1021063BAB003C6CD2 /* SubDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubDetailVC.swift; sourceTree = "<group>"; };
 		216360E3E021C640F2BDED60 /* Pods_PriceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PriceApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35C017BC81B780708718EA25 /* Pods-PriceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriceApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PriceApp/Pods-PriceApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B617FF91209FB3620031656A /* LensCircleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LensCircleCell.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				B64C9133209F332200BB1DEC /* DiscoverViewController.swift */,
 				B64C9126209F32D000BB1DEC /* ScrollViewController.swift */,
 				B64C9128209F32D100BB1DEC /* MainViewController.swift */,
+				0CBD9C1021063BAB003C6CD2 /* SubDetailVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				B64C912E209F32D100BB1DEC /* NavigationViewAnimation.swift in Sources */,
 				B617FF94209FB3630031656A /* LensFlowLayout.swift in Sources */,
 				0C2D842E210394F1005DB26D /* APIService.swift in Sources */,
+				0CBD9C1121063BAB003C6CD2 /* SubDetailVC.swift in Sources */,
 				EA3EF25C210402ED008044BB /* NetworkManager.swift in Sources */,
 				B617FF93209FB3630031656A /* LensCircleCell.swift in Sources */,
 				EA3EF25A210402BF008044BB /* APIError.swift in Sources */,

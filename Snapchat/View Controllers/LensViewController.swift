@@ -49,7 +49,7 @@ extension LensViewController: BarcodeScannerCodeDelegate {
         DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
             //controller.resetWithError()
              controller.reset()
-            
+             controller.dismiss(animated: true, completion: nil)
         }
         
         // fetch data Code
