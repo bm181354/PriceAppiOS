@@ -110,10 +110,10 @@ extension MainViewController:ScrollViewControllerDelegate{
         
     }
     
+    // get
     var viewControllers: [UIViewController] {
         return [chatViewController,lensViewController,discoverViewController]
     }
-    
     var initialViewController: UIViewController {
         return lensViewController
     }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0C2D842E210394F1005DB26D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D842D210394F1005DB26D /* APIService.swift */; };
+		0CBD9C0B2105403D003C6CD2 /* DetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBD9C0A2105403D003C6CD2 /* DetailCollectionViewCell.swift */; };
+		0CBD9C0F2106000F003C6CD2 /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBD9C0E2106000F003C6CD2 /* colors.swift */; };
 		9EA0E46535360A41BF8D90AC /* Pods_PriceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216360E3E021C640F2BDED60 /* Pods_PriceApp.framework */; };
 		B617FF93209FB3630031656A /* LensCircleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B617FF91209FB3620031656A /* LensCircleCell.swift */; };
 		B617FF94209FB3630031656A /* LensFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B617FF92209FB3620031656A /* LensFlowLayout.swift */; };
@@ -31,6 +33,8 @@
 
 /* Begin PBXFileReference section */
 		0C2D842D210394F1005DB26D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		0CBD9C0A2105403D003C6CD2 /* DetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		0CBD9C0E2106000F003C6CD2 /* colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = "<group>"; };
 		216360E3E021C640F2BDED60 /* Pods_PriceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PriceApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35C017BC81B780708718EA25 /* Pods-PriceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriceApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PriceApp/Pods-PriceApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B617FF91209FB3620031656A /* LensCircleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LensCircleCell.swift; sourceTree = "<group>"; };
@@ -76,6 +80,22 @@
 				EA3EF25B210402ED008044BB /* NetworkManager.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		0CBD9C0921053FEC003C6CD2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0CBD9C0A2105403D003C6CD2 /* DetailCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0CBD9C0C2105FFED003C6CD2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0CBD9C0E2106000F003C6CD2 /* colors.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		9B9DEDFE66D2463EB1C9C4F9 /* Pods */ = {
@@ -139,6 +159,9 @@
 		B6BF6377209F1315000FDF39 /* Snapchat */ = {
 			isa = PBXGroup;
 			children = (
+				0CBD9C0C2105FFED003C6CD2 /* Resources */,
+				B6BF637F209F1318000FDF39 /* Assets.xcassets */,
+				0CBD9C0921053FEC003C6CD2 /* View */,
 				EAE1D9452103E92600812CEA /* Util */,
 				0C2D842C210394E1005DB26D /* API */,
 				B617FF9520A075020031656A /* Navigation */,
@@ -146,7 +169,6 @@
 				B64C9132209F331100BB1DEC /* View Controllers */,
 				B6BF6378209F1315000FDF39 /* AppDelegate.swift */,
 				B6BF637C209F1315000FDF39 /* Main.storyboard */,
-				B6BF637F209F1318000FDF39 /* Assets.xcassets */,
 				B6BF6381209F1318000FDF39 /* LaunchScreen.storyboard */,
 				B6BF6384209F1318000FDF39 /* Info.plist */,
 				B6BF6376209F1315000FDF39 /* Products */,
@@ -285,11 +307,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B64C9137209F332200BB1DEC /* DiscoverViewController.swift in Sources */,
+				0CBD9C0B2105403D003C6CD2 /* DetailCollectionViewCell.swift in Sources */,
 				B64C9138209F332200BB1DEC /* LensViewController.swift in Sources */,
 				EAE1D9472103E94200812CEA /* NetworkConfig.swift in Sources */,
 				B64C912F209F32D100BB1DEC /* NavigationView.swift in Sources */,
 				B64C912B209F32D100BB1DEC /* ScrollViewController.swift in Sources */,
 				B6BF6379209F1315000FDF39 /* AppDelegate.swift in Sources */,
+				0CBD9C0F2106000F003C6CD2 /* colors.swift in Sources */,
 				B64C9139209F332200BB1DEC /* CameraViewController.swift in Sources */,
 				B64C912D209F32D100BB1DEC /* MainViewController.swift in Sources */,
 				B64C913A209F332200BB1DEC /* ChatViewController.swift in Sources */,
