@@ -4,6 +4,7 @@ import UIKit
 
 class DiscoverViewController: UIViewController {
   
+    private let refreshControl = UIRefreshControl()
   // MARK: - IBOutlets
   @IBOutlet var backgroundView: UIView!
     @IBOutlet weak var settingView: UIImageView!
@@ -36,6 +37,16 @@ class DiscoverViewController: UIViewController {
     let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tap(_:)))
     settingView.addGestureRecognizer(tapGesture)
     
+    //
+    // Add Refresh Control to Table View
+    if #available(iOS 10.0, *) {
+        collectionView.refreshControl = refreshControl
+    } else {
+        collectionView.addSubview(refreshControl)
+    }
+    refreshControl.tintColor = Color.getAccentColor()
+    // Configure Refresh Control
+    refreshControl.addTarget(self, action: #selector(refreshCoreData(_:)), for: .valueChanged)
   }
     
     @objc
@@ -43,11 +54,26 @@ class DiscoverViewController: UIViewController {
         print("hello ")
     }
     
+
    
 }
 
 // MARK: - ColoredView
 extension DiscoverViewController: ColoredView {}
+
+//MARK: - Refresh
+extension DiscoverViewController{
+    
+    @objc private func refreshCoreData(_ sender: Any) {
+        // Fetch Weather Data
+        fetchCoreData()
+    }
+    
+    private func fetchCoreData() {
+        self.refreshControl.endRefreshing()
+    }
+    
+}
 
 // MARK: - delegate and datasource
 extension DiscoverViewController: UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
