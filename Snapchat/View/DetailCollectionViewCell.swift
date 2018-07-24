@@ -61,6 +61,16 @@ class DetailViewCell:UICollectionViewCell{
        return view
     }()
     
+    let settingView:UIImageView = {
+        let view = UIImageView()
+        view.image = UIImage(named: "setting")
+        view.image!.withRenderingMode(.alwaysTemplate)
+        
+        view.tintColor = .white
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
     let  verticalMargin:UIView = {
         let view = UIView()
         view.backgroundColor =  UIColor(red: 244/255, green: 246/255, blue: 246/255, alpha: 1)
