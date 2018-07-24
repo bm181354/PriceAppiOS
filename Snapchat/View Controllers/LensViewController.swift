@@ -19,6 +19,73 @@ class LensViewController:BarcodeScannerViewController {
         self.cameraViewController.barCodeFocusViewType = .animated
         self.cameraViewController.showsCameraButton = true
         self.headerViewController.titleLabel.text = nil
+        
+        
+        APIService.shared.fetchProduct(code: "035000521019") { (data) in
+            switch data{
+            case .Success(let data):
+                do {
+                    if let json = try JSONSerialization.jsonObject(with: data!) as? [String: [AnyObject]]
+                    {
+                                                if let item = json["items"]{
+ //                                                    ["name"] , let price = item[0]["msrp"], let rating = item[0]["customerRating"], let id = item[0]["upc"], let imageUrl = item[0]["largeImage"]
+                                                    
+                                                    let item = item[0]
+
+                                                    guard let title =  item["name"] , let price = item["msrp"], let rating = item["customerRating"], let id = item["upc"], let imageUrl = item["largeImage"]
+                                                        else{
+                                                          return
+                                                    }
+                                                    
+                                                    guard let title1 = title, let price1 = price, let rating1 = rating, let id1 = id, let imageUrl1 = imageUrl else{
+                                                        return
+                                                    }
+                                                    
+                                                    
+                                                    let dictionary = ["title": title1,
+                                                                      "price": price1,
+                                                                      "rating": rating1,
+                                                                      "id": id1,
+                                                                      "mediaURL": imageUrl1
+                                                                      ]
+//                                                    print(dictionary)
+//
+//                                                    _ = self.createItemEntityFrom(dictionary: dictionary)
+                                                    
+                                                    guard let n = price as? NSNumber else{
+                                                        return
+                                                    }
+                                                    let f = n.floatValue
+                                                    
+                                                    self.updateEntity(id: id1 as! String, with:f , with: rating1 as! String, dictionary: dictionary)
+
+                                                    do {
+                                                        try CoreDataStack.sharedInstance.persistentContainer.viewContext.save()
+                                                    } catch let error {
+                                                        print(error)
+                                                    }
+                                                    
+                                                    
+                                                }else{
+                                                    // json is empty
+                                                    
+                                                    
+                                                    }
+                        
+//                        print(json["items"]![0]["itemId"])
+                        
+                    }
+                } catch let error {
+                    print(error)
+                }
+            case .Error(let message):
+                print(message)
+            }
+            
+        }
+        
+        
+        
 
 
     }
@@ -53,6 +120,7 @@ extension LensViewController: BarcodeScannerCodeDelegate {
         }
         
         // fetch data Code
+       
         
         
         // notify to all or

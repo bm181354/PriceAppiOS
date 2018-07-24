@@ -173,6 +173,21 @@ class DetailViewCell:UICollectionViewCell{
         
     }
     
+    
+    
+    func setItemCellWith(item: Item) {
+        DispatchQueue.main.async {
+            self.titleView.text = item.title
+            self.costLabel.text = "\(item.price)"
+            
+            
+            self.imageContent.loadImageUsingCacheWithURLString(item.mediaURL, placeHolder: UIImage(named: "placeholder"))
+            
+        }
+    }
+    
+    
+    
 }
 
 

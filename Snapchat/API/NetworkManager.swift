@@ -18,7 +18,7 @@ class NetworkManager {
     
     private init(){}
     
-    func Interface(callback:@escaping (Data?)->Void, url:URL){
+    func Interface(callback:@escaping (APIResult<Data?>)->Void, url:URL){
         
         getData(url: url){
             
@@ -39,8 +39,11 @@ class NetworkManager {
                 
             }else {
                // get the data
+               // iterate
                 
-                callback(data)
+                
+                
+                callback(.Success(data))
                 
             }
             
@@ -51,7 +54,7 @@ class NetworkManager {
     
     }
     
-    func getData(url: URL, callback:@escaping (Bool, Data?)->Void){
+    func getData(url: URL, callback:@escaping (Bool,Data?)->Void){
         
  
     
@@ -68,7 +71,14 @@ class NetworkManager {
                             callback(true,nil)
                             
                         }else if httpResponse.statusCode == 200 || httpResponse.statusCode == 201{
-                            callback(false, data)
+                            
+                            
+
+                            DispatchQueue.main.async {
+                                 callback(false, data)
+                            }
+                            
+                           
                             
                         }
                 
