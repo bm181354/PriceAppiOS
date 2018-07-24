@@ -43,7 +43,7 @@ class DiscoverViewController: UIViewController {
     let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tap(_:)))
     settingView.addGestureRecognizer(tapGesture)
     
-
+<<<<<<< HEAD
     //
     // Add Refresh Control to Table View
     if #available(iOS 10.0, *) {
@@ -54,9 +54,11 @@ class DiscoverViewController: UIViewController {
     refreshControl.tintColor = Color.getAccentColor()
     // Configure Refresh Control
     refreshControl.addTarget(self, action: #selector(refreshCoreData(_:)), for: .valueChanged)
+=======
     item = fetchEverything()
     
-
+    
+>>>>>>> 4bd9d50a8e2be96b1aa70c963e6ace7a784a4e82
   }
     
     @objc
@@ -99,13 +101,14 @@ extension DiscoverViewController: UICollectionViewDelegate, UICollectionViewData
         cell.layer.shadowOpacity = 1
         cell.layer.shadowOffset = CGSize(width: 2, height: 4)
         cell.layer.shadowRadius = 10
-        
-        //cell.layer.shouldRasterize = true
+        cell.layer.shouldRasterize = true
         
 //        cell.setItemCellWith(item[indexPath.row])
         
         cell.setItemCellWith(item: item[indexPath.row])
-      
+        
+        
+        
         return cell
     }
     

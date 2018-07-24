@@ -66,7 +66,7 @@ class SubDetailVC:UIViewController {
     }()
     
     var menuView = UIView()
-    let menuHeight = (UIScreen.main.bounds.height / 2) + 30
+    let menuHeight = (UIScreen.main.bounds.height / 2) + 60
     var isPresenting = false
     
     init() {
@@ -125,10 +125,10 @@ class SubDetailVC:UIViewController {
         _infoView.leadingAnchor.constraint(equalTo: menuView.leadingAnchor, constant: 16).isActive = true
         
         //segmentedControl
-        segmentedControl.topAnchor.constraint(equalTo: _infoView.bottomAnchor, constant: 16).isActive = true
+        segmentedControl.topAnchor.constraint(equalTo: _infoView.bottomAnchor, constant: 8).isActive = true
         segmentedControl.trailingAnchor.constraint(equalTo: menuView.trailingAnchor, constant: -16).isActive = true
-        
         segmentedControl.leadingAnchor.constraint(equalTo: menuView.leadingAnchor, constant: 16).isActive = true
+        segmentedControl.bottomAnchor.constraint(equalTo: removeBtn.topAnchor, constant: -16).isActive = true
         
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SubDetailVC.handleTap(_:)))

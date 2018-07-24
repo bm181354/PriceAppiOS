@@ -7,6 +7,7 @@ import UIKit
 
 class DetailViewCell:UICollectionViewCell{
     
+
     // change
     let imageContent:UIImageView = {
        let iv = UIImageView()
@@ -20,7 +21,8 @@ class DetailViewCell:UICollectionViewCell{
     let titleView:UILabel = {
         let lb = UILabel()
         lb.text = "Fine Wine"
-        lb.font = UIFont(name: "Helvetica", size: 20)
+        lb.numberOfLines = 0
+        lb.font = UIFont(name: "Helvetica", size: 18)
         lb.translatesAutoresizingMaskIntoConstraints = false
         return lb
     }()
@@ -142,6 +144,7 @@ class DetailViewCell:UICollectionViewCell{
         titleView.topAnchor.constraint(equalTo: categoryView.bottomAnchor, constant: 16).isActive = true
         
         titleView.leadingAnchor.constraint(equalTo: imageContent.trailingAnchor, constant: 24).isActive = true
+        titleView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16).isActive = true
         
         
          //margin
@@ -183,6 +186,19 @@ class DetailViewCell:UICollectionViewCell{
 //        
         
     }
+    
+    
+    
+    func setItemCellWith(item: Item) {
+        DispatchQueue.main.async {
+            self.titleView.text = item.title
+            self.buyBtn.setTitle("Price: $\(item.price)", for: .normal)
+            self.imageContent.loadImageUsingCacheWithURLString(item.mediaURL, placeHolder: UIImage(named: "placeholder"))
+            
+        }
+    }
+    
+    
     
 }
 
