@@ -134,8 +134,8 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
-                                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="DZW-0f-WGU">
-                                                <rect key="frame" x="9" y="11" width="60" height="60"/>
+                                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="DZW-0f-WGU">
+                                                <rect key="frame" x="9" y="11" width="65" height="65"/>
                                                 <color key="tintColor" red="0.2627450980392157" green="0.27450980392156865" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
                                         </subviews>
@@ -458,7 +458,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Suggestion" width="805" height="1388"/>
+        <image name="Suggestion" width="1688" height="1688"/>
         <image name="camera" width="1346" height="1346"/>
         <image name="cameraicon" width="80" height="80"/>
         <image name="chaticon" width="32" height="36"/>

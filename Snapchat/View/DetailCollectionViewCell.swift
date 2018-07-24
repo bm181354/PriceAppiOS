@@ -107,6 +107,7 @@ class DetailViewCell:UICollectionViewCell{
     override func awakeFromNib() {
 
         backgroundColor = .white
+        
         addSubview(imageContent)
         addSubview(titleView)
         addSubview(categoryView)

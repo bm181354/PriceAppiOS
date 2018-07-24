@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class SubDetailVC:UIViewController {
     
@@ -14,6 +15,44 @@ class SubDetailVC:UIViewController {
         let bdView = UIView(frame: self.view.bounds)
         bdView.backgroundColor = UIColor.black.withAlphaComponent(0.5)
         return bdView
+    }()
+   lazy var segmentedControl:UISegmentedControl = {
+        let items = ["Purple", "Green", "Blue"]
+        let seg = UISegmentedControl(items:items)
+        //seg.widthForSegment(at: 2)
+        seg.setWidth((self.view.bounds.width/3) - 10, forSegmentAt: 0)
+        seg.setWidth((self.view.bounds.width/3) - 10, forSegmentAt: 1)
+        seg.setWidth((self.view.bounds.width/3) - 10, forSegmentAt: 2)
+        seg.translatesAutoresizingMaskIntoConstraints = false
+        return seg
+    }()
+    
+    let productView:UIImageView = {
+       let pv = UIImageView()
+        pv.backgroundColor = .white
+        pv.image = UIImage(named: "rwdevcon-logo")
+        pv.contentMode =  UIViewContentMode.scaleAspectFit
+        pv.layer.cornerRadius = 4
+        pv.translatesAutoresizingMaskIntoConstraints = false
+        return pv
+    }()
+    
+    let _infoView:UILabel = {
+        let lb = UILabel()
+        lb.text = "Info"
+        lb.textColor = Color.getAccentColor()
+        lb.font = UIFont(name: "HelveticaNeue-Bold", size: 16)
+        lb.translatesAutoresizingMaskIntoConstraints = false
+        return lb
+    }()
+    
+    let titleView:UILabel = {
+       let lb = UILabel()
+        lb.text = "Product name"
+        lb.textColor = Color.getAccentColor()
+        lb.font = UIFont(name: "HelveticaNeue-Bold", size: 20)
+        lb.translatesAutoresizingMaskIntoConstraints = false
+       return lb
     }()
     
     lazy var removeBtn:UIButton = {
@@ -43,12 +82,17 @@ class SubDetailVC:UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         menuView.layer.cornerRadius = 15
         menuView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         view.backgroundColor = .clear
         view.addSubview(backdropView)
         view.addSubview(menuView)
         menuView.addSubview(removeBtn)
+        menuView.addSubview(titleView)
+        menuView.addSubview(productView)
+        menuView.addSubview(_infoView)
+        menuView.addSubview(segmentedControl)
         
         menuView.backgroundColor = UIColor(red: 243/255, green: 245/255, blue: 247/255, alpha: 1)
         menuView.translatesAutoresizingMaskIntoConstraints = false
@@ -62,6 +106,29 @@ class SubDetailVC:UIViewController {
         removeBtn.leadingAnchor.constraint(equalTo: view.leadingAnchor , constant: 16).isActive = true
         removeBtn.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -16).isActive = true
         removeBtn.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        
+        
+        // titleView
+        titleView.topAnchor.constraint(equalTo: menuView.topAnchor, constant: 16).isActive = true
+        titleView.leadingAnchor.constraint(equalTo: menuView.leadingAnchor, constant: 16).isActive = true
+        
+        // productView
+        productView.topAnchor.constraint(equalTo: titleView.bottomAnchor, constant: 16).isActive = true
+        productView.leadingAnchor.constraint(equalTo: menuView.leadingAnchor, constant: 14).isActive = true
+        productView.trailingAnchor.constraint(equalTo: menuView.trailingAnchor, constant: -14).isActive = true
+        
+        productView.heightAnchor.constraint(equalToConstant: self.view.bounds.width/2).isActive = true
+
+        //_infoView
+        _infoView.topAnchor.constraint(equalTo: productView.bottomAnchor, constant: 16).isActive = true
+        _infoView.trailingAnchor.constraint(equalTo: menuView.trailingAnchor, constant: 8).isActive = true
+        _infoView.leadingAnchor.constraint(equalTo: menuView.leadingAnchor, constant: 16).isActive = true
+        
+        //segmentedControl
+        segmentedControl.topAnchor.constraint(equalTo: _infoView.bottomAnchor, constant: 16).isActive = true
+        segmentedControl.trailingAnchor.constraint(equalTo: menuView.trailingAnchor, constant: -16).isActive = true
+        
+        segmentedControl.leadingAnchor.constraint(equalTo: menuView.leadingAnchor, constant: 16).isActive = true
         
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SubDetailVC.handleTap(_:)))
