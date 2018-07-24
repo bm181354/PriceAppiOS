@@ -66,11 +66,35 @@ class NavigationView: UIView {
   // MARK: - View Life Cycle
   override func layoutSubviews() {
     super.layoutSubviews()
+    
+    //chatIconWhiteView.layer.shadowOffset =
+    chatIconWhiteView.layer.shadowColor = UIColor.gray.cgColor
+    chatIconWhiteView.layer.shadowOpacity = 1
+    chatIconWhiteView.layer.shadowOffset = CGSize.zero
+    chatIconWhiteView.layer.shadowRadius = 10
+    chatIconWhiteView.layer.shouldRasterize = true
+    
+    
+    discoverIconWhiteView.layer.shadowColor = UIColor.gray.cgColor
+    discoverIconWhiteView.layer.shadowOpacity = 0.7
+    discoverIconWhiteView.layer.shadowOffset = CGSize.zero
+    discoverIconWhiteView.layer.shadowRadius = 6
+    discoverIconWhiteView.layer.shouldRasterize = true
+    
+    
+    cameraButtonWhiteView.layer.shadowColor = UIColor.gray.cgColor
+    cameraButtonWhiteView.layer.shadowOpacity = 1
+    cameraButtonWhiteView.layer.shadowOffset = CGSize.zero
+    cameraButtonWhiteView.layer.shadowRadius = 10
+    cameraButtonWhiteView.layer.shouldRasterize = true
+    
     indicator.layer.cornerRadius = indicator.bounds.height / 2
   }
   
   override func awakeFromNib() {
     super.awakeFromNib()
+    cameraButtonWhiteView.image = cameraButtonWhiteView.image!.withRenderingMode(.alwaysTemplate)
+//    cameraButtonWhiteView.tintColor = UIColor.red
     setup()
   }
   

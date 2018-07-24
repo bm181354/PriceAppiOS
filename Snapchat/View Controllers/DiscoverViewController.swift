@@ -6,6 +6,7 @@ class DiscoverViewController: UIViewController {
   
   // MARK: - IBOutlets
   @IBOutlet var backgroundView: UIView!
+    @IBOutlet weak var settingView: UIImageView!
     
     @IBOutlet weak var collectionView: UICollectionView!
     // MARK: - Properties
@@ -19,6 +20,9 @@ class DiscoverViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    settingView.image!.withRenderingMode(.alwaysTemplate)
+    settingView.tintColor = .white
+    
     collectionView.delegate = self
     collectionView.dataSource = self
     
@@ -27,7 +31,17 @@ class DiscoverViewController: UIViewController {
     collectionView.backgroundColor = UIColor(red: 243/255, green: 245/255, blue: 247/255, alpha: 1)
     //backgroundView.layer.cornerRadius = 20
     //backgroundView.layer.masksToBounds = true
+    
+    //add Touch
+    let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tap(_:)))
+    settingView.addGestureRecognizer(tapGesture)
+    
   }
+    
+    @objc
+    func tap(_ sender : UITapGestureRecognizer){
+        print("hello ")
+    }
     
    
 }
@@ -44,6 +58,12 @@ extension DiscoverViewController: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! DetailViewCell
+        
+        cell.layer.shadowColor = UIColor.black.cgColor
+        cell.layer.shadowOpacity = 1
+        cell.layer.shadowOffset = CGSize(width: 2, height: 4)
+        cell.layer.shadowRadius = 10
+        cell.layer.shouldRasterize = true
         
         return cell
     }
