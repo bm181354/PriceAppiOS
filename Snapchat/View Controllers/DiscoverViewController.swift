@@ -3,6 +3,9 @@
 import UIKit
 
 class DiscoverViewController: UIViewController {
+    
+    
+    var item = [Item]()
   
   // MARK: - IBOutlets
   @IBOutlet var backgroundView: UIView!
@@ -15,6 +18,9 @@ class DiscoverViewController: UIViewController {
     var pageSize:CGFloat{
         return view.bounds.width
     }
+    
+   
+    
 
   // MARK: - View Life Cycle
   override func viewDidLoad() {
@@ -35,6 +41,9 @@ class DiscoverViewController: UIViewController {
     //add Touch
     let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tap(_:)))
     settingView.addGestureRecognizer(tapGesture)
+    
+    item = fetchEverything()
+    
     
   }
     
@@ -65,11 +74,17 @@ extension DiscoverViewController: UICollectionViewDelegate, UICollectionViewData
         cell.layer.shadowRadius = 10
         cell.layer.shouldRasterize = true
         
+//        cell.setItemCellWith(item[indexPath.row])
+        
+        cell.setItemCellWith(item: item[indexPath.row])
+        
+        
+        
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return item.count
     }
   
     

@@ -30,6 +30,7 @@
 		EA3EF25C210402ED008044BB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3EF25B210402ED008044BB /* NetworkManager.swift */; };
 		EA3EF25E21042A06008044BB /* ROOT.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3EF25D21042A06008044BB /* ROOT.swift */; };
 		EA72D3DE2107C4BB00AC9764 /* CacheImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA72D3DD2107C4BB00AC9764 /* CacheImage.swift */; };
+		EA72D3E02107DC3700AC9764 /* DiscoverViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA72D3DF2107DC3700AC9764 /* DiscoverViewControllerExtension.swift */; };
 		EA79DCC021067140003BAEA5 /* Item.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA79DCBE21067140003BAEA5 /* Item.xcdatamodeld */; };
 		EA79DCC321067199003BAEA5 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79DCC121067199003BAEA5 /* Item+CoreDataClass.swift */; };
 		EA79DCC421067199003BAEA5 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79DCC221067199003BAEA5 /* Item+CoreDataProperties.swift */; };
@@ -67,6 +68,7 @@
 		EA3EF25B210402ED008044BB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		EA3EF25D21042A06008044BB /* ROOT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROOT.swift; sourceTree = "<group>"; };
 		EA72D3DD2107C4BB00AC9764 /* CacheImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheImage.swift; sourceTree = "<group>"; };
+		EA72D3DF2107DC3700AC9764 /* DiscoverViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewControllerExtension.swift; sourceTree = "<group>"; };
 		EA79DCBF21067140003BAEA5 /* Item.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Item.xcdatamodel; sourceTree = "<group>"; };
 		EA79DCC121067199003BAEA5 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
 		EA79DCC221067199003BAEA5 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 			children = (
 				EA79DCCA2106AF86003BAEA5 /* LensViewControllerExtension.swift */,
 				EA72D3DD2107C4BB00AC9764 /* CacheImage.swift */,
+				EA72D3DF2107DC3700AC9764 /* DiscoverViewControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				B64C9137209F332200BB1DEC /* DiscoverViewController.swift in Sources */,
 				0CBD9C0B2105403D003C6CD2 /* DetailCollectionViewCell.swift in Sources */,
 				B64C9138209F332200BB1DEC /* LensViewController.swift in Sources */,
+				EA72D3E02107DC3700AC9764 /* DiscoverViewControllerExtension.swift in Sources */,
 				EAE1D9472103E94200812CEA /* NetworkConfig.swift in Sources */,
 				B64C912F209F32D100BB1DEC /* NavigationView.swift in Sources */,
 				B64C912B209F32D100BB1DEC /* ScrollViewController.swift in Sources */,
