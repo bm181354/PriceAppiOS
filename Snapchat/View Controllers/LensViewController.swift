@@ -56,6 +56,7 @@ extension LensViewController: BarcodeScannerCodeDelegate {
         
         // fetch data Code
         APIService.shared.fetchProduct(code: code) { (data) in
+            print(code)
             switch data{
             case .Success(let data):
                 do {
@@ -86,6 +87,7 @@ extension LensViewController: BarcodeScannerCodeDelegate {
                             //
                             //                                                    _ = self.createItemEntityFrom(dictionary: dictionary)
                             
+                            print(dictionary)
                             guard let n = price as? NSNumber else{
                                 return
                             }

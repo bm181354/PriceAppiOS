@@ -37,7 +37,7 @@ extension APIService: APIServiceProtocol{
     
     
     func fetchProduct(code: String, callback:@escaping (APIResult<Data?>)->Void) {
-      let queryURL =  URL(string: PRODUCT_QUERY_URL+"035000521019") //replace with the code
+      let queryURL =  URL(string: PRODUCT_QUERY_URL+code) //replace with the code
         
      
      
