@@ -24,9 +24,9 @@ extension NavigationView {
   
   func animateIconScale(offset: CGFloat) {
     // Scale the controls using width constraints
-    let finalWidthScale: CGFloat = cameraButtonWidthConstraintConstant * 0.2
+    let finalWidthScale: CGFloat = cameraButtonWidthConstraintConstant * 0.02
     cameraButtonWidthConstraint.constant = cameraButtonWidthConstraintConstant - (finalWidthScale * offset)
-    let scale = chatIconWidthConstraintConstant * 0.2
+    let scale = chatIconWidthConstraintConstant * 0.06
     chatIconWidthConstraint.constant = chatIconWidthConstraintConstant - (scale * offset)
   }
   

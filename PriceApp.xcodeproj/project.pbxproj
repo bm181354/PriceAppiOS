@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C1F1F3821089F4900EB0915 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1F1F3721089F4900EB0915 /* Font.swift */; };
+		0C1F1F432108C53900EB0915 /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C1F1F422108C53900EB0915 /* RobotoCondensed-LightItalic.ttf */; };
+		0C1F1F452108C64D00EB0915 /* Sabatica-regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0C1F1F442108C64D00EB0915 /* Sabatica-regular.otf */; };
+		0C1F1F472108C65F00EB0915 /* MACCOS_LIGHT_Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0C1F1F462108C65E00EB0915 /* MACCOS_LIGHT_Demo.otf */; };
+		0C1F1F492108C66300EB0915 /* MACCOS_DOUBLE_Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0C1F1F482108C66300EB0915 /* MACCOS_DOUBLE_Demo.otf */; };
+		0C1F1F4B2108CA7900EB0915 /* LabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1F1F4A2108CA7900EB0915 /* LabelExtension.swift */; };
 		0C2D842E210394F1005DB26D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D842D210394F1005DB26D /* APIService.swift */; };
 		0CBD9C0B2105403D003C6CD2 /* DetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBD9C0A2105403D003C6CD2 /* DetailCollectionViewCell.swift */; };
-		0CBD9C0F2106000F003C6CD2 /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBD9C0E2106000F003C6CD2 /* colors.swift */; };
+		0CBD9C0F2106000F003C6CD2 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBD9C0E2106000F003C6CD2 /* Color.swift */; };
 		0CBD9C1121063BAB003C6CD2 /* SubDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBD9C1021063BAB003C6CD2 /* SubDetailVC.swift */; };
 		9EA0E46535360A41BF8D90AC /* Pods_PriceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216360E3E021C640F2BDED60 /* Pods_PriceApp.framework */; };
 		B617FF93209FB3630031656A /* LensCircleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B617FF91209FB3620031656A /* LensCircleCell.swift */; };
@@ -42,9 +48,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C1F1F3721089F4900EB0915 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		0C1F1F422108C53900EB0915 /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoCondensed-LightItalic.ttf"; path = "../../../../../Downloads/roboto-condensed/RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
+		0C1F1F442108C64D00EB0915 /* Sabatica-regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Sabatica-regular.otf"; path = "../../../../../Downloads/sabatica/Sabatica-regular.otf"; sourceTree = "<group>"; };
+		0C1F1F462108C65E00EB0915 /* MACCOS_LIGHT_Demo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MACCOS_LIGHT_Demo.otf; path = ../../../../../Downloads/maccos/MACCOS_LIGHT_Demo.otf; sourceTree = "<group>"; };
+		0C1F1F482108C66300EB0915 /* MACCOS_DOUBLE_Demo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MACCOS_DOUBLE_Demo.otf; path = ../../../../../Downloads/maccos/MACCOS_DOUBLE_Demo.otf; sourceTree = "<group>"; };
+		0C1F1F4A2108CA7900EB0915 /* LabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelExtension.swift; sourceTree = "<group>"; };
 		0C2D842D210394F1005DB26D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		0CBD9C0A2105403D003C6CD2 /* DetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewCell.swift; sourceTree = "<group>"; };
-		0CBD9C0E2106000F003C6CD2 /* colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = "<group>"; };
+		0CBD9C0E2106000F003C6CD2 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		0CBD9C1021063BAB003C6CD2 /* SubDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubDetailVC.swift; sourceTree = "<group>"; };
 		216360E3E021C640F2BDED60 /* Pods_PriceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PriceApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35C017BC81B780708718EA25 /* Pods-PriceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriceApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PriceApp/Pods-PriceApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +104,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C1F1F392108C1A500EB0915 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0C1F1F422108C53900EB0915 /* RobotoCondensed-LightItalic.ttf */,
+				0C1F1F442108C64D00EB0915 /* Sabatica-regular.otf */,
+				0C1F1F462108C65E00EB0915 /* MACCOS_LIGHT_Demo.otf */,
+				0C1F1F482108C66300EB0915 /* MACCOS_DOUBLE_Demo.otf */,
+				0C1F1F3721089F4900EB0915 /* Font.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		0C2D842C210394E1005DB26D /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,7 +137,9 @@
 		0CBD9C0C2105FFED003C6CD2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0CBD9C0E2106000F003C6CD2 /* colors.swift */,
+				0C1F1F392108C1A500EB0915 /* Fonts */,
+				0CBD9C0E2106000F003C6CD2 /* Color.swift */,
+				B6BF637F209F1318000FDF39 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -183,7 +209,6 @@
 				EA79DCC92106AEB5003BAEA5 /* Extensions */,
 				EA79DCB821067026003BAEA5 /* Model */,
 				0CBD9C0C2105FFED003C6CD2 /* Resources */,
-				B6BF637F209F1318000FDF39 /* Assets.xcassets */,
 				0CBD9C0921053FEC003C6CD2 /* View */,
 				EAE1D9452103E92600812CEA /* Util */,
 				0C2D842C210394E1005DB26D /* API */,
@@ -225,6 +250,7 @@
 				EA79DCCA2106AF86003BAEA5 /* LensViewControllerExtension.swift */,
 				EA72D3DD2107C4BB00AC9764 /* CacheImage.swift */,
 				EA72D3DF2107DC3700AC9764 /* DiscoverViewControllerExtension.swift */,
+				0C1F1F4A2108CA7900EB0915 /* LabelExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -300,8 +326,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C1F1F472108C65F00EB0915 /* MACCOS_LIGHT_Demo.otf in Resources */,
 				B6BF6383209F1318000FDF39 /* LaunchScreen.storyboard in Resources */,
+				0C1F1F492108C66300EB0915 /* MACCOS_DOUBLE_Demo.otf in Resources */,
+				0C1F1F452108C64D00EB0915 /* Sabatica-regular.otf in Resources */,
 				B6BF6380209F1318000FDF39 /* Assets.xcassets in Resources */,
+				0C1F1F432108C53900EB0915 /* RobotoCondensed-LightItalic.ttf in Resources */,
 				B6BF637E209F1315000FDF39 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,17 +382,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C1F1F3821089F4900EB0915 /* Font.swift in Sources */,
 				B64C9137209F332200BB1DEC /* DiscoverViewController.swift in Sources */,
 				0CBD9C0B2105403D003C6CD2 /* DetailCollectionViewCell.swift in Sources */,
 				B64C9138209F332200BB1DEC /* LensViewController.swift in Sources */,
 				EA72D3E02107DC3700AC9764 /* DiscoverViewControllerExtension.swift in Sources */,
 				EAE1D9472103E94200812CEA /* NetworkConfig.swift in Sources */,
+				0C1F1F4B2108CA7900EB0915 /* LabelExtension.swift in Sources */,
 				B64C912F209F32D100BB1DEC /* NavigationView.swift in Sources */,
 				B64C912B209F32D100BB1DEC /* ScrollViewController.swift in Sources */,
 				EA79DCC321067199003BAEA5 /* Item+CoreDataClass.swift in Sources */,
 				B6BF6379209F1315000FDF39 /* AppDelegate.swift in Sources */,
 				EA79DCCB2106AF86003BAEA5 /* LensViewControllerExtension.swift in Sources */,
-				0CBD9C0F2106000F003C6CD2 /* colors.swift in Sources */,
+				0CBD9C0F2106000F003C6CD2 /* Color.swift in Sources */,
 				B64C9139209F332200BB1DEC /* CameraViewController.swift in Sources */,
 				EA964B6C21092D300029363D /* Error.swift in Sources */,
 				EA79DCC621067442003BAEA5 /* Constant.swift in Sources */,

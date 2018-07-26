@@ -6,12 +6,12 @@ class DiscoverViewController: UIViewController {
     
     
     var item = [Item]()
-  
+    fileprivate let context = CoreDataStack.sharedInstance.persistentContainer.viewContext
+    
     private let refreshControl = UIRefreshControl()
   // MARK: - IBOutlets
-  @IBOutlet var backgroundView: UIView!
+    @IBOutlet var backgroundView: UIView!
     @IBOutlet weak var settingView: UIImageView!
-    
     @IBOutlet weak var collectionView: UICollectionView!
     // MARK: - Properties
   var controllerColor: UIColor = UIColor(red: 0.59, green: 0.23, blue: 0.96, alpha: 1.0)
@@ -27,7 +27,7 @@ class DiscoverViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    settingView.image!.withRenderingMode(.alwaysTemplate)
+    settingView.image = settingView.image!.withRenderingMode(.alwaysTemplate)
     settingView.tintColor = .white
     
     collectionView.delegate = self
@@ -35,7 +35,7 @@ class DiscoverViewController: UIViewController {
     
     
     backgroundView.backgroundColor = Color.getAccentColor()
-    collectionView.backgroundColor = UIColor(red: 243/255, green: 245/255, blue: 247/255, alpha: 1)
+    collectionView.backgroundColor = Color.backgroundColor()//UIColor(red: 243/255, green: 245/255, blue: 247/255, alpha: 1)
     //backgroundView.layer.cornerRadius = 20
     //backgroundView.layer.masksToBounds = true
     
@@ -55,6 +55,9 @@ class DiscoverViewController: UIViewController {
     // Configure Refresh Control
     refreshControl.addTarget(self, action: #selector(refreshCoreData(_:)), for: .valueChanged)
     item = fetchEverything()
+    
+    //listener
+    changeListener()
     
 
   }
@@ -93,6 +96,7 @@ extension DiscoverViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! DetailViewCell
         
         cell.layer.shadowColor = UIColor.black.cgColor
@@ -128,4 +132,23 @@ extension DiscoverViewController{
         present(vc, animated: true, completion: nil)
         
     }
+}
+// MARK:- listen for change [Notification]
+extension DiscoverViewController{
+    
+    func changeListener(){
+        
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(self.contextSave(_ :)),
+                                               name: NSNotification.Name.NSManagedObjectContextDidSave,
+                                               object: context)
+    }
+    
+    @objc func contextSave(_ notification: Notification) {
+        item = fetchEverything()
+        print("Change")
+        collectionView.reloadData()
+    }
+    
 }
