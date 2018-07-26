@@ -109,14 +109,13 @@ class SubDetailVC:UIViewController {
         
         
         // titleView
-        titleView.topAnchor.constraint(equalTo: menuView.topAnchor, constant: 16).isActive = true
+        titleView.topAnchor.constraint(equalTo: menuView.topAnchor, constant: 0).isActive = true
         titleView.leadingAnchor.constraint(equalTo: menuView.leadingAnchor, constant: 16).isActive = true
         
         // productView
-        productView.topAnchor.constraint(equalTo: titleView.bottomAnchor, constant: 16).isActive = true
+        productView.topAnchor.constraint(equalTo: titleView.bottomAnchor, constant: 8).isActive = true
         productView.leadingAnchor.constraint(equalTo: menuView.leadingAnchor, constant: 14).isActive = true
         productView.trailingAnchor.constraint(equalTo: menuView.trailingAnchor, constant: -14).isActive = true
-        
         productView.heightAnchor.constraint(equalToConstant: self.view.bounds.width/2).isActive = true
 
         //_infoView

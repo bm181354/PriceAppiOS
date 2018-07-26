@@ -1,4 +1,3 @@
-
 import UIKit
 
 class NavigationView: UIView {
@@ -70,21 +69,21 @@ class NavigationView: UIView {
     //chatIconWhiteView.layer.shadowOffset =
     chatIconWhiteView.layer.shadowColor = UIColor.gray.cgColor
     chatIconWhiteView.layer.shadowOpacity = 1
-    chatIconWhiteView.layer.shadowOffset = CGSize.zero
+    chatIconWhiteView.layer.shadowOffset = CGSize(width: 4, height: 4)
     chatIconWhiteView.layer.shadowRadius = 10
     chatIconWhiteView.layer.shouldRasterize = true
     
     
     discoverIconWhiteView.layer.shadowColor = UIColor.gray.cgColor
-    discoverIconWhiteView.layer.shadowOpacity = 0.7
-    discoverIconWhiteView.layer.shadowOffset = CGSize.zero
-    discoverIconWhiteView.layer.shadowRadius = 6
+    discoverIconWhiteView.layer.shadowOpacity = 1
+    discoverIconWhiteView.layer.shadowOffset = CGSize(width: 4, height: 4)
+    discoverIconWhiteView.layer.shadowRadius = 10
     discoverIconWhiteView.layer.shouldRasterize = true
     
     
     cameraButtonWhiteView.layer.shadowColor = UIColor.gray.cgColor
     cameraButtonWhiteView.layer.shadowOpacity = 1
-    cameraButtonWhiteView.layer.shadowOffset = CGSize.zero
+    cameraButtonWhiteView.layer.shadowOffset = CGSize(width: 4, height: 4)
     cameraButtonWhiteView.layer.shadowRadius = 10
     cameraButtonWhiteView.layer.shouldRasterize = true
     
@@ -94,7 +93,9 @@ class NavigationView: UIView {
   override func awakeFromNib() {
     super.awakeFromNib()
     cameraButtonWhiteView.image = cameraButtonWhiteView.image!.withRenderingMode(.alwaysTemplate)
-//    cameraButtonWhiteView.tintColor = UIColor.red
+    cameraButtonWhiteView.tintColor = Color.getAccentColor()
+    chatIconWhiteView.image = chatIconWhiteView.image!.withRenderingMode(.alwaysTemplate)
+    chatIconWhiteView.tintColor = Color.getAccentColor()
     setup()
   }
   

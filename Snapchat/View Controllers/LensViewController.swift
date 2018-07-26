@@ -19,14 +19,8 @@ class LensViewController:BarcodeScannerViewController {
         self.cameraViewController.barCodeFocusViewType = .animated
         self.cameraViewController.showsCameraButton = true
         self.headerViewController.titleLabel.text = nil
-        
-        
-        
-        
-        
-        
 
-
+        
     }
 
       override var prefersStatusBarHidden: Bool {
@@ -69,15 +63,28 @@ extension LensViewController: BarcodeScannerCodeDelegate {
                             
                             guard let title =  item["name"] , let price = item["msrp"], let rating = item["customerRating"], let id = item["upc"], let imageUrl = item["largeImage"]
                                 else{
+                                    
+                                    // alert
+                                    DispatchQueue.main.async{
+                                        controller.reset()
+                                        controller.dismiss(animated: true, completion: nil)
+                                        self.showAlert(title: "No Product ", message: "No such barcode is found")
+                                    }
                                     return
                             }
                             
                             guard let title1 = title, let price1 = price, let rating1 = rating, let id1 = id, let imageUrl1 = imageUrl else{
+                                //alert
+                                DispatchQueue.main.async{
+                                    controller.reset()
+                                    controller.dismiss(animated: true, completion: nil)
+                                     self.showAlert(title: "No Product ", message: "No such barcode is found")
+                                }
                                 return
                             }
                             
                             
-                            let dictionary = ["title": title1,
+                            var dictionary = ["title": title1,
                                               "price": price1,
                                               "rating": rating1,
                                               "id": id1,
@@ -89,13 +96,25 @@ extension LensViewController: BarcodeScannerCodeDelegate {
                             
                             print(dictionary)
                             guard let n = price as? NSNumber else{
+                                // alert
+                                DispatchQueue.main.async{
+                                    controller.reset()
+                                    controller.dismiss(animated: true, completion: nil)
+                                     self.showAlert(title: "No Product ", message: "No such barcode is found")
+                                }
                                 return
                             }
                             let f = n.floatValue
+                            print("Check: ",f,n,price)
                             
+                            dictionary["price"] = f
                             self.updateEntity(id: id1 as! String, with:f , with: rating1 as! String, dictionary: dictionary)
                             
+                            // update here
+                            //TODO:- invoke the delegate method
+                            
                             DispatchQueue.main.async{
+                                // done
                                 controller.reset()
                                 controller.dismiss(animated: true, completion: nil)
                             }
@@ -166,7 +185,21 @@ extension LensViewController: BarcodeScannerDismissalDelegate {
         controller.dismiss(animated: true, completion: nil)
     }
 }
-//
+// UIAlert
+extension LensViewController{
+    
+    
+    func showAlert(title: String, message: String){
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        //We add buttons to the alert controller by creating UIAlertActions:
+        let actionOk = UIAlertAction(title: "OK",
+                                     style: .default,
+                                     handler: nil) //You can use a block here to handle a press on this button
+        
+        alertController.addAction(actionOk)
+        self.present(alertController, animated: true, completion: nil)
+    }
+}
 
 
 

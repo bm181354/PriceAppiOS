@@ -14,9 +14,11 @@ class ChatViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    backgroundView.backgroundColor = .blue
-    //backgroundView.layer.cornerRadius = 20
-    //backgroundView.layer.masksToBounds = true
+     //backgroundView.backgroundColor = .blue
+     //backgroundView.layer.cornerRadius = 20
+     //backgroundView.layer.masksToBounds = true
+    
+    
   }
 }
 

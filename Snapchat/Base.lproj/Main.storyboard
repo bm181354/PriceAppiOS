@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="R0U-jM-XWU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="R0U-jM-XWU">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,6 +11,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="MACCOS_LIGHT_Demo.otf">
+            <string>MACCOSLIGHTDemo</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Main View Controller-->
         <scene sceneID="IPw-Ow-BR6">
@@ -55,7 +60,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Suggestion" translatesAutoresizingMaskIntoConstraints="NO" id="bhB-yX-caM">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suggestion" translatesAutoresizingMaskIntoConstraints="NO" id="bhB-yX-caM">
                                                 <rect key="frame" x="0.0" y="-5" width="47" height="47"/>
                                                 <color key="tintColor" red="0.2627450980392157" green="0.27450980392156865" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
@@ -360,7 +365,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wM9-9d-WZ0">
-                                <rect key="frame" x="0.0" y="117.5" width="375" height="549.5"/>
+                                <rect key="frame" x="0.0" y="113" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="biA-LA-lm7">
                                     <size key="itemSize" width="375" height="196"/>
@@ -384,13 +389,13 @@
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Search History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9R-qz-0bU">
-                                <rect key="frame" x="16" y="64" width="246.5" height="33.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <rect key="frame" x="16" y="64" width="282.5" height="35"/>
+                                <fontDescription key="fontDescription" name="MACCOSLIGHTDemo" family="MACCOS LIGHT Demo" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="setting" highlightedImage="settinghighlight" translatesAutoresizingMaskIntoConstraints="NO" id="ACf-gL-KaD">
-                                <rect key="frame" x="318" y="63.5" width="29" height="37"/>
+                                <rect key="frame" x="318" y="59" width="29" height="37"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="eX6-yW-JbA"/>
@@ -402,7 +407,7 @@
                         <accessibility key="accessibilityConfiguration" label="Discover View"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="MWc-hW-Xsd" secondAttribute="trailing" id="5hZ-3A-TLE"/>
-                            <constraint firstItem="wM9-9d-WZ0" firstAttribute="top" secondItem="k9R-qz-0bU" secondAttribute="bottom" constant="20" id="8hU-SR-vcc"/>
+                            <constraint firstItem="wM9-9d-WZ0" firstAttribute="top" secondItem="k9R-qz-0bU" secondAttribute="bottom" constant="14" id="8hU-SR-vcc"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="k9R-qz-0bU" secondAttribute="trailing" constant="20" symbolic="YES" id="B9g-Nn-LDr"/>
                             <constraint firstItem="k9R-qz-0bU" firstAttribute="top" secondItem="EeT-HU-22p" secondAttribute="bottom" constant="44" id="Ioq-25-aIG"/>
                             <constraint firstItem="MWc-hW-Xsd" firstAttribute="top" secondItem="6Un-KQ-luS" secondAttribute="top" constant="8" id="J4K-mq-Veb"/>
@@ -458,7 +463,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Suggestion" width="1688" height="1688"/>
         <image name="camera" width="1346" height="1346"/>
         <image name="cameraicon" width="80" height="80"/>
         <image name="chaticon" width="32" height="36"/>
@@ -466,5 +470,6 @@
         <image name="history" width="323" height="324"/>
         <image name="setting" width="474" height="476"/>
         <image name="settinghighlight" width="474" height="476"/>
+        <image name="suggestion" width="340" height="340"/>
     </resources>
 </document>

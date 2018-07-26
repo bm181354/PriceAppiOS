@@ -42,5 +42,12 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Sabatica-regular</string>
+		<string>MACCOS_LIGHT_Demo</string>
+		<string>MACCOS_DOUBLE_Demo</string>
+		<string>RobotoCondensed-LightItalic</string>
+	</array>
 </dict>
 </plist>

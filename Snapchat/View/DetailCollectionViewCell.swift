@@ -14,7 +14,7 @@ class DetailViewCell:UICollectionViewCell{
        iv.image = UIImage(named: "rwdevcon-logo")
        iv.contentMode = UIViewContentMode.scaleAspectFit
        iv.translatesAutoresizingMaskIntoConstraints = false
-       iv.backgroundColor = UIColor(red: 243/255, green: 245/255, blue: 247/255, alpha: 1)
+       iv.backgroundColor = .white//UIColor(red: 243/255, green: 245/255, blue: 247/255, alpha: 1)
        return iv
     }()
     
@@ -22,7 +22,8 @@ class DetailViewCell:UICollectionViewCell{
         let lb = UILabel()
         lb.text = "Fine Wine"
         lb.numberOfLines = 0
-        lb.font = UIFont(name: "Helvetica", size: 18)
+        lb.font = UIFont(name: "Sabatica-regular", size: 18)
+        lb.sizeToFit()
         lb.translatesAutoresizingMaskIntoConstraints = false
         return lb
     }()
@@ -30,7 +31,7 @@ class DetailViewCell:UICollectionViewCell{
     let categoryView:UILabel = {
         let lb = UILabel()
         lb.numberOfLines = 0
-        lb.font = UIFont(name: "Helvetica", size: 16)
+        lb.font = UIFont(name: "Sabatica-regular", size: 8)
         lb.text = "Sample text about category here"
         lb.textColor = .gray
         lb.translatesAutoresizingMaskIntoConstraints = false
@@ -67,7 +68,6 @@ class DetailViewCell:UICollectionViewCell{
         let view = UIImageView()
         view.image = UIImage(named: "setting")
         view.image!.withRenderingMode(.alwaysTemplate)
-        
         view.tintColor = .white
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -82,6 +82,7 @@ class DetailViewCell:UICollectionViewCell{
     
     let buyBtn:UIButton = {
         let bt = UIButton()
+        bt.titleLabel?.font = UIFont(name: "Sabatica-regular", size: 12)
         bt.setTitle("Price: $2.99", for: .normal)
         bt.backgroundColor = Color.getAccentColor()
         bt.translatesAutoresizingMaskIntoConstraints = false
@@ -101,7 +102,8 @@ class DetailViewCell:UICollectionViewCell{
         let lb = UILabel()
         lb.translatesAutoresizingMaskIntoConstraints = false
         lb.textColor = .gray
-        lb.text = "Subtitle Wine"
+        lb.text = ""
+        lb.font = UIFont(name: "Sabatica-regular", size: 11)
         return lb
     }()
     
@@ -145,6 +147,7 @@ class DetailViewCell:UICollectionViewCell{
         
         titleView.leadingAnchor.constraint(equalTo: imageContent.trailingAnchor, constant: 24).isActive = true
         titleView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16).isActive = true
+        titleView.bottomAnchor.constraint(equalTo: horizontalMargin.topAnchor, constant: -16)
         
         
          //margin
@@ -192,10 +195,18 @@ class DetailViewCell:UICollectionViewCell{
     func setItemCellWith(item: Item) {
         DispatchQueue.main.async {
             self.titleView.text = item.title
+            print("price: ",item.price)
             self.buyBtn.setTitle("Price: $\(item.price)", for: .normal)
             self.imageContent.loadImageUsingCacheWithURLString(item.mediaURL, placeHolder: UIImage(named: "placeholder"))
             
         }
+    }
+    
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.layer.cornerRadius = 3
+        self.clipsToBounds = true 
     }
     
     

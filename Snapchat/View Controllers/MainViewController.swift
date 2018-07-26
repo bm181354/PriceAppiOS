@@ -44,8 +44,8 @@ class MainViewController: UIViewController {
   lazy var discoverViewController: UIViewController! = {
     return self.storyboard?.instantiateViewController(withIdentifier: "DiscoverViewController")
   }()
-  
-  lazy var lensViewController: UIViewController! = {
+
+ lazy var lensViewController: UIViewController! = {
     return self.storyboard?.instantiateViewController(withIdentifier: "LensViewController")
   }()
   
