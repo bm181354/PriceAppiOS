@@ -83,9 +83,7 @@ extension LensViewController: BarcodeScannerCodeDelegate {
                                               "id": id1,
                                               "mediaURL": imageUrl1
                             ]
-                            //                                                    print(dictionary)
-                            //
-                            //                                                    _ = self.createItemEntityFrom(dictionary: dictionary)
+                           
                             
                             print(dictionary)
                             guard let n = price as? NSNumber else{
