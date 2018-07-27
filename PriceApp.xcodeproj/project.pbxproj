@@ -15,6 +15,10 @@
 		0CBD9C0B2105403D003C6CD2 /* DetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBD9C0A2105403D003C6CD2 /* DetailCollectionViewCell.swift */; };
 		0CBD9C0F2106000F003C6CD2 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBD9C0E2106000F003C6CD2 /* Color.swift */; };
 		0CBD9C1121063BAB003C6CD2 /* SubDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBD9C1021063BAB003C6CD2 /* SubDetailVC.swift */; };
+		0CD6AEB1210BB483000C5913 /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA54F416210A95350028C8EB /* RobotoCondensed-LightItalic.ttf */; };
+		0CD6AEB2210BB487000C5913 /* Sabatica-regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA54F417210A954D0028C8EB /* Sabatica-regular.otf */; };
+		0CD6AEB3210BB48A000C5913 /* MACCOS_DOUBLE_Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA54F418210A955E0028C8EB /* MACCOS_DOUBLE_Demo.otf */; };
+		0CD6AEB4210BB48C000C5913 /* MACCOS_LIGHT_Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA54F419210A95680028C8EB /* MACCOS_LIGHT_Demo.otf */; };
 		9EA0E46535360A41BF8D90AC /* Pods_PriceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216360E3E021C640F2BDED60 /* Pods_PriceApp.framework */; };
 		B617FF93209FB3630031656A /* LensCircleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B617FF91209FB3620031656A /* LensCircleCell.swift */; };
 		B617FF94209FB3630031656A /* LensFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B617FF92209FB3620031656A /* LensFlowLayout.swift */; };
@@ -337,8 +341,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6BF6383209F1318000FDF39 /* LaunchScreen.storyboard in Resources */,
+				0CD6AEB4210BB48C000C5913 /* MACCOS_LIGHT_Demo.otf in Resources */,
+				0CD6AEB2210BB487000C5913 /* Sabatica-regular.otf in Resources */,
 				B6BF6380209F1318000FDF39 /* Assets.xcassets in Resources */,
+				0CD6AEB1210BB483000C5913 /* RobotoCondensed-LightItalic.ttf in Resources */,
 				B6BF637E209F1315000FDF39 /* Main.storyboard in Resources */,
+				0CD6AEB3210BB48A000C5913 /* MACCOS_DOUBLE_Demo.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

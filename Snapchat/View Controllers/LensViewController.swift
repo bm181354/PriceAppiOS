@@ -29,7 +29,7 @@ class LensViewController:BarcodeScannerViewController {
                 print(data)
                 
             case .Error(let error):
-                print ("Error")
+                print (error)
             }
         }
 

@@ -12,8 +12,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="MACCOS_LIGHT_Demo.otf">
-            <string>MACCOSLIGHTDemo</string>
+        <array key="MACCOS_DOUBLE_Demo.otf">
+            <string>MACCOSDOUBLEDemo</string>
         </array>
     </customFonts>
     <scenes>
@@ -278,15 +278,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="99"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suggestion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snL-8z-t2U">
-                                        <rect key="frame" x="163.66666666666666" y="51" width="87" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="133.33333333333337" y="50.666666666666664" width="147.66666666666663" height="29.666666666666664"/>
+                                        <fontDescription key="fontDescription" name="MACCOSDOUBLEDemo" family="MACCOS DOUBLE Demo" pointSize="23"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="snL-8z-t2U" firstAttribute="centerY" secondItem="SVj-kF-Ndk" secondAttribute="centerY" constant="12" id="QNl-xl-P4b"/>
+                                    <constraint firstItem="snL-8z-t2U" firstAttribute="centerY" secondItem="SVj-kF-Ndk" secondAttribute="centerY" constant="16" id="QNl-xl-P4b"/>
                                     <constraint firstItem="snL-8z-t2U" firstAttribute="centerX" secondItem="SVj-kF-Ndk" secondAttribute="centerX" id="cI4-lq-Mgl"/>
                                     <constraint firstAttribute="height" constant="99" id="hu6-TH-kCw"/>
                                 </constraints>
@@ -429,7 +429,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wM9-9d-WZ0">
-                                <rect key="frame" x="0.0" y="112.66666666666669" width="414" height="623.33333333333326"/>
+                                <rect key="frame" x="0.0" y="111.33333333333331" width="414" height="624.66666666666674"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="biA-LA-lm7">
                                     <size key="itemSize" width="375" height="196"/>
@@ -454,13 +454,13 @@
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Search History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9R-qz-0bU">
-                                <rect key="frame" x="16" y="64" width="282.66666666666669" height="34.666666666666657"/>
-                                <fontDescription key="fontDescription" name="MACCOSLIGHTDemo" family="MACCOS LIGHT Demo" pointSize="26"/>
+                                <rect key="frame" x="16" y="64" width="279.66666666666669" height="33.333333333333343"/>
+                                <fontDescription key="fontDescription" name="MACCOSDOUBLEDemo" family="MACCOS DOUBLE Demo" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="setting" highlightedImage="settinghighlight" translatesAutoresizingMaskIntoConstraints="NO" id="ACf-gL-KaD">
-                                <rect key="frame" x="357" y="58.666666666666657" width="29" height="37"/>
+                                <rect key="frame" x="357" y="57.333333333333343" width="29" height="37"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="eX6-yW-JbA"/>
