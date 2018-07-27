@@ -19,6 +19,7 @@
 		0CD6AEB2210BB487000C5913 /* Sabatica-regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA54F417210A954D0028C8EB /* Sabatica-regular.otf */; };
 		0CD6AEB3210BB48A000C5913 /* MACCOS_DOUBLE_Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA54F418210A955E0028C8EB /* MACCOS_DOUBLE_Demo.otf */; };
 		0CD6AEB4210BB48C000C5913 /* MACCOS_LIGHT_Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA54F419210A95680028C8EB /* MACCOS_LIGHT_Demo.otf */; };
+		0CE913C1210BBA0100F448DB /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CE913C0210BBA0000F448DB /* RobotoCondensed-Light.ttf */; };
 		9EA0E46535360A41BF8D90AC /* Pods_PriceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216360E3E021C640F2BDED60 /* Pods_PriceApp.framework */; };
 		B617FF93209FB3630031656A /* LensCircleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B617FF91209FB3620031656A /* LensCircleCell.swift */; };
 		B617FF94209FB3630031656A /* LensFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B617FF92209FB3620031656A /* LensFlowLayout.swift */; };
@@ -58,6 +59,7 @@
 		0CBD9C0A2105403D003C6CD2 /* DetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		0CBD9C0E2106000F003C6CD2 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		0CBD9C1021063BAB003C6CD2 /* SubDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubDetailVC.swift; sourceTree = "<group>"; };
+		0CE913C0210BBA0000F448DB /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
 		216360E3E021C640F2BDED60 /* Pods_PriceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PriceApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35C017BC81B780708718EA25 /* Pods-PriceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriceApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PriceApp/Pods-PriceApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B617FF91209FB3620031656A /* LensCircleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LensCircleCell.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				EA54F416210A95350028C8EB /* RobotoCondensed-LightItalic.ttf */,
 				EA54F417210A954D0028C8EB /* Sabatica-regular.otf */,
 				EA54F418210A955E0028C8EB /* MACCOS_DOUBLE_Demo.otf */,
+				0CE913C0210BBA0000F448DB /* RobotoCondensed-Light.ttf */,
 				EA54F419210A95680028C8EB /* MACCOS_LIGHT_Demo.otf */,
 				0C1F1F3721089F4900EB0915 /* Font.swift */,
 			);
@@ -342,6 +345,7 @@
 			files = (
 				B6BF6383209F1318000FDF39 /* LaunchScreen.storyboard in Resources */,
 				0CD6AEB4210BB48C000C5913 /* MACCOS_LIGHT_Demo.otf in Resources */,
+				0CE913C1210BBA0100F448DB /* RobotoCondensed-Light.ttf in Resources */,
 				0CD6AEB2210BB487000C5913 /* Sabatica-regular.otf in Resources */,
 				B6BF6380209F1318000FDF39 /* Assets.xcassets in Resources */,
 				0CD6AEB1210BB483000C5913 /* RobotoCondensed-LightItalic.ttf in Resources */,
