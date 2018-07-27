@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0C1F1F3821089F4900EB0915 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1F1F3721089F4900EB0915 /* Font.swift */; };
-		0C1F1F432108C53900EB0915 /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C1F1F422108C53900EB0915 /* RobotoCondensed-LightItalic.ttf */; };
-		0C1F1F452108C64D00EB0915 /* Sabatica-regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0C1F1F442108C64D00EB0915 /* Sabatica-regular.otf */; };
-		0C1F1F472108C65F00EB0915 /* MACCOS_LIGHT_Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0C1F1F462108C65E00EB0915 /* MACCOS_LIGHT_Demo.otf */; };
-		0C1F1F492108C66300EB0915 /* MACCOS_DOUBLE_Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0C1F1F482108C66300EB0915 /* MACCOS_DOUBLE_Demo.otf */; };
 		0C1F1F4B2108CA7900EB0915 /* LabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1F1F4A2108CA7900EB0915 /* LabelExtension.swift */; };
 		0C1F1F4E210B680300EB0915 /* SuggestionCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1F1F4D210B680300EB0915 /* SuggestionCollectionCell.swift */; };
 		0C1F1F50210B885200EB0915 /* PopModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1F1F4F210B885200EB0915 /* PopModal.swift */; };
@@ -51,10 +47,6 @@
 
 /* Begin PBXFileReference section */
 		0C1F1F3721089F4900EB0915 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
-		0C1F1F422108C53900EB0915 /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoCondensed-LightItalic.ttf"; path = "../../../../../Downloads/roboto-condensed/RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
-		0C1F1F442108C64D00EB0915 /* Sabatica-regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Sabatica-regular.otf"; path = "../../../../../Downloads/sabatica/Sabatica-regular.otf"; sourceTree = "<group>"; };
-		0C1F1F462108C65E00EB0915 /* MACCOS_LIGHT_Demo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MACCOS_LIGHT_Demo.otf; path = ../../../../../Downloads/maccos/MACCOS_LIGHT_Demo.otf; sourceTree = "<group>"; };
-		0C1F1F482108C66300EB0915 /* MACCOS_DOUBLE_Demo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MACCOS_DOUBLE_Demo.otf; path = ../../../../../Downloads/maccos/MACCOS_DOUBLE_Demo.otf; sourceTree = "<group>"; };
 		0C1F1F4A2108CA7900EB0915 /* LabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelExtension.swift; sourceTree = "<group>"; };
 		0C1F1F4D210B680300EB0915 /* SuggestionCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionCollectionCell.swift; sourceTree = "<group>"; };
 		0C1F1F4F210B885200EB0915 /* PopModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopModal.swift; sourceTree = "<group>"; };
@@ -84,6 +76,10 @@
 		EA3EF259210402BF008044BB /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		EA3EF25B210402ED008044BB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		EA3EF25D21042A06008044BB /* ROOT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROOT.swift; sourceTree = "<group>"; };
+		EA54F416210A95350028C8EB /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
+		EA54F417210A954D0028C8EB /* Sabatica-regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sabatica-regular.otf"; sourceTree = "<group>"; };
+		EA54F418210A955E0028C8EB /* MACCOS_DOUBLE_Demo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MACCOS_DOUBLE_Demo.otf; sourceTree = "<group>"; };
+		EA54F419210A95680028C8EB /* MACCOS_LIGHT_Demo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MACCOS_LIGHT_Demo.otf; sourceTree = "<group>"; };
 		EA72D3DD2107C4BB00AC9764 /* CacheImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheImage.swift; sourceTree = "<group>"; };
 		EA72D3DF2107DC3700AC9764 /* DiscoverViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewControllerExtension.swift; sourceTree = "<group>"; };
 		EA79DCBF21067140003BAEA5 /* Item.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Item.xcdatamodel; sourceTree = "<group>"; };
@@ -111,10 +107,10 @@
 		0C1F1F392108C1A500EB0915 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				0C1F1F422108C53900EB0915 /* RobotoCondensed-LightItalic.ttf */,
-				0C1F1F442108C64D00EB0915 /* Sabatica-regular.otf */,
-				0C1F1F462108C65E00EB0915 /* MACCOS_LIGHT_Demo.otf */,
-				0C1F1F482108C66300EB0915 /* MACCOS_DOUBLE_Demo.otf */,
+				EA54F416210A95350028C8EB /* RobotoCondensed-LightItalic.ttf */,
+				EA54F417210A954D0028C8EB /* Sabatica-regular.otf */,
+				EA54F418210A955E0028C8EB /* MACCOS_DOUBLE_Demo.otf */,
+				EA54F419210A95680028C8EB /* MACCOS_LIGHT_Demo.otf */,
 				0C1F1F3721089F4900EB0915 /* Font.swift */,
 			);
 			path = Fonts;
@@ -340,12 +336,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C1F1F472108C65F00EB0915 /* MACCOS_LIGHT_Demo.otf in Resources */,
 				B6BF6383209F1318000FDF39 /* LaunchScreen.storyboard in Resources */,
-				0C1F1F492108C66300EB0915 /* MACCOS_DOUBLE_Demo.otf in Resources */,
-				0C1F1F452108C64D00EB0915 /* Sabatica-regular.otf in Resources */,
 				B6BF6380209F1318000FDF39 /* Assets.xcassets in Resources */,
-				0C1F1F432108C53900EB0915 /* RobotoCondensed-LightItalic.ttf in Resources */,
 				B6BF637E209F1315000FDF39 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
