@@ -105,7 +105,7 @@ extension LensViewController: BarcodeScannerCodeDelegate {
                                 return
                             }
                             let f = n.floatValue
-                            print("Check: ",f,n,price)
+                            //print("Check: ",f,n,price)
                             
                             dictionary["price"] = f
                             self.updateEntity(id: id1 as! String, with:f , with: rating1 as! String, dictionary: dictionary)

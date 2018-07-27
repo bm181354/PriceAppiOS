@@ -99,11 +99,18 @@ extension DiscoverViewController: UICollectionViewDelegate, UICollectionViewData
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! DetailViewCell
         
-        cell.layer.shadowColor = UIColor.black.cgColor
-        cell.layer.shadowOpacity = 1
-        cell.layer.shadowOffset = CGSize(width: 2, height: 4)
-        cell.layer.shadowRadius = 10
         
+        cell.contentView.layer.cornerRadius = 4.0
+        cell.contentView.layer.borderWidth = 1.0
+        cell.contentView.layer.borderColor = UIColor.clear.cgColor
+        cell.contentView.layer.masksToBounds = false
+        
+        cell.layer.shadowColor = UIColor.purple.cgColor
+        cell.layer.shadowOpacity = 1
+        cell.layer.shadowOffset = CGSize(width: 0, height: 1.0)
+        cell.layer.shadowRadius = 10
+        cell.layer.masksToBounds = false
+        cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
         //cell.layer.shouldRasterize = true
         
 //        cell.setItemCellWith(item[indexPath.row])
@@ -119,7 +126,7 @@ extension DiscoverViewController: UICollectionViewDelegate, UICollectionViewData
   
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 12, left: -16, bottom: 8, right: -16)
+        return UIEdgeInsets(top: 12, left: -13, bottom: 8, right: -13)
     }
  
 }

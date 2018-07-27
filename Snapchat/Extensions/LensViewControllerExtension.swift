@@ -14,7 +14,7 @@ extension LensViewController{
     func createItemEntityFrom(dictionary: [String: Any]) -> NSManagedObject? {
         let context = CoreDataStack.sharedInstance.persistentContainer.viewContext
         
-        var itemEntity = Item(context: context)
+        let itemEntity = Item(context: context)
 
        
             itemEntity.title = dictionary["title"] as? String ?? "N/A"
