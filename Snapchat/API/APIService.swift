@@ -11,7 +11,7 @@ import Foundation
 
 protocol APIServiceProtocol {
     func fetchProduct(code:String, callback: @escaping (APIResult<Data?>)->Void)
-    func fetchSuggestion()
+    func fetchSuggestion(product:String, callback: @escaping (APIResult<Data?>)->Void)
     
 }
 
@@ -47,8 +47,15 @@ extension APIService: APIServiceProtocol{
         
     }
     
-    func fetchSuggestion() {
-        print(2)
+    func fetchSuggestion(product: String, callback: @escaping (APIResult<Data?>)->Void) {
+        
+        
+        let queryURL =  URL(string:PRODUCT_SUGGESTION_URL+product) //replace with the code
+        
+        
+        
+        NetworkManager.shared.Interface(callback: callback, url: queryURL!)
+        
     }
 }
 
