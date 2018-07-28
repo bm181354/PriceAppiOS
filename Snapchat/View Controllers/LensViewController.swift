@@ -31,6 +31,8 @@ class LensViewController:BarcodeScannerViewController {
 
                    let jsonArray = JSON(data)
                     
+                    
+                    self.deleteAllSuggestion()
                     for (index,subJson):(String, JSON) in jsonArray {
                         
                    guard let title = subJson["name"].string ,let mediaURL = subJson["mediumImage"].string ,let price = subJson["msrp"].float ?? subJson["salePrice"].float , let id = subJson["itemId"].int else{
@@ -41,6 +43,7 @@ class LensViewController:BarcodeScannerViewController {
                         }
                         
                         // delete the data
+                        
                         
                          print(title)
 //                        self.deleteAllSuggestion()
