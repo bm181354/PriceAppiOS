@@ -16,9 +16,8 @@ class ChatViewController: UIViewController {
   // MARK: - View Life Cycle
   override func viewDidLoad() {
     super.viewDidLoad()
-    view.backgroundColor = .white
+    collectionView.backgroundColor = UIColor(red: 216/255, green: 216/255, blue: 216/255, alpha: 1)
     suggestionItem = fetchEverything()
-    
     
   }
 }
@@ -35,9 +34,22 @@ extension ChatViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! SuggestionCollectionCell
         
-        print(suggestionItem.count)
-        
-        cell.setItemCellWith(suggestionItem: suggestionItem[indexPath.row])
+//        print(suggestionItem.count)
+//        print(suggestionItem[indexPath.row].id)
+//        print(suggestionItem[indexPath.row].title)
+          cell.setItemCellWith(suggestionItem: suggestionItem[indexPath.row])
+//
+//        cell.contentView.layer.cornerRadius = 4.0
+//        cell.contentView.layer.borderWidth = 1.0
+//        cell.contentView.layer.borderColor = UIColor.clear.cgColor
+//        cell.contentView.layer.masksToBounds = false
+//
+//        cell.layer.shadowColor = UIColor.gray.cgColor
+//        cell.layer.shadowOpacity = 1
+//        cell.layer.shadowOffset = CGSize(width: -4.0, height: 4.0)
+//        cell.layer.shadowRadius = 10
+//        cell.layer.masksToBounds = false
+//        cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
         
         return cell
         
@@ -47,8 +59,12 @@ extension ChatViewController: UICollectionViewDelegate, UICollectionViewDataSour
         return CGSize(width: (self.view.bounds.width - 50)/2, height: self.view.bounds.width/2)
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 16, left: 20, bottom: 0, right: 20)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return CGFloat(10)
+        return CGFloat(5)
     }
     
 

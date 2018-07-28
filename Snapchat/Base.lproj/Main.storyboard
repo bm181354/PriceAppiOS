@@ -292,7 +292,7 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Gvl-cm-P7B">
-                                <rect key="frame" x="16" y="129" width="382" height="607"/>
+                                <rect key="frame" x="0.0" y="99" width="414" height="637"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DTC-Vz-L4J">
                                     <size key="itemSize" width="188" height="245"/>
@@ -302,7 +302,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellId" id="iay-lr-nVc" customClass="SuggestionCollectionCell" customModule="PriceApp" customModuleProvider="target">
-                                        <rect key="frame" x="97" y="0.0" width="188" height="245"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="188" height="245"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="188" height="245"/>
@@ -320,10 +320,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <accessibility key="accessibilityConfiguration" label="Chat View"/>
                         <constraints>
-                            <constraint firstItem="Gvl-cm-P7B" firstAttribute="leading" secondItem="Uz6-F9-rfG" secondAttribute="leading" constant="16" id="6pI-4V-cJX"/>
-                            <constraint firstItem="Gvl-cm-P7B" firstAttribute="top" secondItem="SVj-kF-Ndk" secondAttribute="bottom" constant="30" id="FfJ-H5-C2e"/>
+                            <constraint firstItem="Gvl-cm-P7B" firstAttribute="leading" secondItem="Uz6-F9-rfG" secondAttribute="leading" id="6pI-4V-cJX"/>
+                            <constraint firstItem="Gvl-cm-P7B" firstAttribute="top" secondItem="SVj-kF-Ndk" secondAttribute="bottom" id="FfJ-H5-C2e"/>
                             <constraint firstItem="SVj-kF-Ndk" firstAttribute="leading" secondItem="Uz6-F9-rfG" secondAttribute="leading" id="UiP-aw-83k"/>
-                            <constraint firstItem="Gvl-cm-P7B" firstAttribute="trailing" secondItem="Uz6-F9-rfG" secondAttribute="trailing" constant="-16" id="WkH-RL-6Qx"/>
+                            <constraint firstItem="Gvl-cm-P7B" firstAttribute="trailing" secondItem="Uz6-F9-rfG" secondAttribute="trailing" id="WkH-RL-6Qx"/>
                             <constraint firstItem="SVj-kF-Ndk" firstAttribute="top" secondItem="kzj-WM-U29" secondAttribute="top" id="cVu-s0-kMY"/>
                             <constraint firstItem="SVj-kF-Ndk" firstAttribute="trailing" secondItem="Uz6-F9-rfG" secondAttribute="trailing" id="csb-bQ-lRg"/>
                             <constraint firstItem="HJF-lD-BME" firstAttribute="top" secondItem="Gvl-cm-P7B" secondAttribute="bottom" id="knw-Vz-GbK"/>

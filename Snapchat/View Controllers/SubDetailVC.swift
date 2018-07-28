@@ -111,6 +111,8 @@ class SubDetailVC:UIViewController {
         // titleView
         titleView.topAnchor.constraint(equalTo: menuView.topAnchor, constant: 0).isActive = true
         titleView.leadingAnchor.constraint(equalTo: menuView.leadingAnchor, constant: 16).isActive = true
+        titleView.bottomAnchor.constraint(equalTo: productView.topAnchor, constant: 16).isActive = true
+
         
         // productView
         productView.topAnchor.constraint(equalTo: titleView.bottomAnchor, constant: 8).isActive = true

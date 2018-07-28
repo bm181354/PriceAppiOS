@@ -20,6 +20,8 @@
 		0CD6AEB3210BB48A000C5913 /* MACCOS_DOUBLE_Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA54F418210A955E0028C8EB /* MACCOS_DOUBLE_Demo.otf */; };
 		0CD6AEB4210BB48C000C5913 /* MACCOS_LIGHT_Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA54F419210A95680028C8EB /* MACCOS_LIGHT_Demo.otf */; };
 		0CE913C1210BBA0100F448DB /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CE913C0210BBA0000F448DB /* RobotoCondensed-Light.ttf */; };
+		0CE913C4210CA0F200F448DB /* SuggestionItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE913C2210CA0F200F448DB /* SuggestionItem+CoreDataClass.swift */; };
+		0CE913C5210CA0F200F448DB /* SuggestionItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE913C3210CA0F200F448DB /* SuggestionItem+CoreDataProperties.swift */; };
 		9EA0E46535360A41BF8D90AC /* Pods_PriceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216360E3E021C640F2BDED60 /* Pods_PriceApp.framework */; };
 		B617FF93209FB3630031656A /* LensCircleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B617FF91209FB3620031656A /* LensCircleCell.swift */; };
 		B617FF94209FB3630031656A /* LensFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B617FF92209FB3620031656A /* LensFlowLayout.swift */; };
@@ -39,8 +41,6 @@
 		EA3EF25C210402ED008044BB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3EF25B210402ED008044BB /* NetworkManager.swift */; };
 		EA3EF25E21042A06008044BB /* ROOT.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3EF25D21042A06008044BB /* ROOT.swift */; };
 		EA6FB4BF210BDBE7009B426B /* SuggestionItem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA6FB4BD210BDBE7009B426B /* SuggestionItem.xcdatamodeld */; };
-		EA6FB4C2210BDC9E009B426B /* SuggestionItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6FB4C0210BDC9E009B426B /* SuggestionItem+CoreDataClass.swift */; };
-		EA6FB4C3210BDC9E009B426B /* SuggestionItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6FB4C1210BDC9E009B426B /* SuggestionItem+CoreDataProperties.swift */; };
 		EA6FB4C5210BED06009B426B /* ChatViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6FB4C4210BED06009B426B /* ChatViewControllerExtension.swift */; };
 		EA72D3DE2107C4BB00AC9764 /* CacheImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA72D3DD2107C4BB00AC9764 /* CacheImage.swift */; };
 		EA72D3E02107DC3700AC9764 /* DiscoverViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA72D3DF2107DC3700AC9764 /* DiscoverViewControllerExtension.swift */; };
@@ -64,6 +64,8 @@
 		0CBD9C0E2106000F003C6CD2 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		0CBD9C1021063BAB003C6CD2 /* SubDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubDetailVC.swift; sourceTree = "<group>"; };
 		0CE913C0210BBA0000F448DB /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
+		0CE913C2210CA0F200F448DB /* SuggestionItem+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SuggestionItem+CoreDataClass.swift"; path = "../../../../Downloads/SuggestionItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0CE913C3210CA0F200F448DB /* SuggestionItem+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SuggestionItem+CoreDataProperties.swift"; path = "../../../../Downloads/SuggestionItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		216360E3E021C640F2BDED60 /* Pods_PriceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PriceApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35C017BC81B780708718EA25 /* Pods-PriceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriceApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PriceApp/Pods-PriceApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B617FF91209FB3620031656A /* LensCircleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LensCircleCell.swift; sourceTree = "<group>"; };
@@ -91,8 +93,6 @@
 		EA54F418210A955E0028C8EB /* MACCOS_DOUBLE_Demo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MACCOS_DOUBLE_Demo.otf; sourceTree = "<group>"; };
 		EA54F419210A95680028C8EB /* MACCOS_LIGHT_Demo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MACCOS_LIGHT_Demo.otf; sourceTree = "<group>"; };
 		EA6FB4BE210BDBE7009B426B /* SuggestionItem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SuggestionItem.xcdatamodel; sourceTree = "<group>"; };
-		EA6FB4C0210BDC9E009B426B /* SuggestionItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SuggestionItem+CoreDataClass.swift"; path = "/Users/Riken/Desktop/ios/Standford/PriceAPP/PriceAppiOS/Snapchat/Model/SuggestionItem+CoreDataClass.swift"; sourceTree = "<absolute>"; };
-		EA6FB4C1210BDC9E009B426B /* SuggestionItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SuggestionItem+CoreDataProperties.swift"; path = "/Users/Riken/Desktop/ios/Standford/PriceAPP/PriceAppiOS/Snapchat/Model/SuggestionItem+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
 		EA6FB4C4210BED06009B426B /* ChatViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewControllerExtension.swift; sourceTree = "<group>"; };
 		EA72D3DD2107C4BB00AC9764 /* CacheImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheImage.swift; sourceTree = "<group>"; };
 		EA72D3DF2107DC3700AC9764 /* DiscoverViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -260,8 +260,8 @@
 		EA79DCB821067026003BAEA5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EA6FB4C0210BDC9E009B426B /* SuggestionItem+CoreDataClass.swift */,
-				EA6FB4C1210BDC9E009B426B /* SuggestionItem+CoreDataProperties.swift */,
+				0CE913C2210CA0F200F448DB /* SuggestionItem+CoreDataClass.swift */,
+				0CE913C3210CA0F200F448DB /* SuggestionItem+CoreDataProperties.swift */,
 				EA79DCC121067199003BAEA5 /* Item+CoreDataClass.swift */,
 				EA79DCC221067199003BAEA5 /* Item+CoreDataProperties.swift */,
 				EA79DCBE21067140003BAEA5 /* Item.xcdatamodeld */,
@@ -418,9 +418,9 @@
 				B64C9137209F332200BB1DEC /* DiscoverViewController.swift in Sources */,
 				0CBD9C0B2105403D003C6CD2 /* DetailCollectionViewCell.swift in Sources */,
 				EA6FB4BF210BDBE7009B426B /* SuggestionItem.xcdatamodeld in Sources */,
+				0CE913C5210CA0F200F448DB /* SuggestionItem+CoreDataProperties.swift in Sources */,
 				B64C9138209F332200BB1DEC /* LensViewController.swift in Sources */,
 				EA72D3E02107DC3700AC9764 /* DiscoverViewControllerExtension.swift in Sources */,
-				EA6FB4C2210BDC9E009B426B /* SuggestionItem+CoreDataClass.swift in Sources */,
 				0C1F1F50210B885200EB0915 /* PopModal.swift in Sources */,
 				EAE1D9472103E94200812CEA /* NetworkConfig.swift in Sources */,
 				0C1F1F4B2108CA7900EB0915 /* LabelExtension.swift in Sources */,
@@ -428,6 +428,7 @@
 				B64C912B209F32D100BB1DEC /* ScrollViewController.swift in Sources */,
 				EA79DCC321067199003BAEA5 /* Item+CoreDataClass.swift in Sources */,
 				B6BF6379209F1315000FDF39 /* AppDelegate.swift in Sources */,
+				0CE913C4210CA0F200F448DB /* SuggestionItem+CoreDataClass.swift in Sources */,
 				EA79DCCB2106AF86003BAEA5 /* LensViewControllerExtension.swift in Sources */,
 				0CBD9C0F2106000F003C6CD2 /* Color.swift in Sources */,
 				B64C9139209F332200BB1DEC /* CameraViewController.swift in Sources */,
@@ -444,7 +445,6 @@
 				B617FF94209FB3630031656A /* LensFlowLayout.swift in Sources */,
 				0C2D842E210394F1005DB26D /* APIService.swift in Sources */,
 				0CBD9C1121063BAB003C6CD2 /* SubDetailVC.swift in Sources */,
-				EA6FB4C3210BDC9E009B426B /* SuggestionItem+CoreDataProperties.swift in Sources */,
 				EA3EF25C210402ED008044BB /* NetworkManager.swift in Sources */,
 				EA6FB4C5210BED06009B426B /* ChatViewControllerExtension.swift in Sources */,
 				B617FF93209FB3630031656A /* LensCircleCell.swift in Sources */,
