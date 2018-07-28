@@ -52,6 +52,16 @@ class SuggestionCollectionCell:UICollectionViewCell{
         
     }
     
+    func setItemCellWith(suggestionItem: SuggestionItem) {
+        DispatchQueue.main.async {
+            //imageViewself.titleView.text = suggestionItem.title
+            print("price: ",suggestionItem.price)
+            self.buttonView.setTitle(": $\(suggestionItem.price)", for: .normal)
+            self.imageView.loadImageUsingCacheWithURLString(suggestionItem.mediaURL, placeHolder: UIImage(named: "placeholder"))
+            
+        }
+    }
+    
     
     
 }

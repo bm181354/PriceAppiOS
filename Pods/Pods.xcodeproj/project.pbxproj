@@ -7,43 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		024844BD597432FD68C0D25ED6330B5D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A589AD7A2FDD218BD9F8B6DF476A02CC /* Localizable.strings */; };
-		0BDC53043B1979B24F21C1891F2FDB7F /* Pods-PriceApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 77AC6F3CEDEA8290468B35F0EA3CC7FC /* Pods-PriceApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		126EEF8957E8D6D7DCC79D1ABB116B5E /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629873702BDFB9E21718A27C47B064C5 /* MessageViewController.swift */; };
-		24188445B2B585D3CDDD2F573D270DD5 /* BarcodeScanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B86438A572546FF35F1406D8D75AB33E /* BarcodeScanner-dummy.m */; };
-		33445FAFE5125FB63E5966AC8E91E329 /* TorchMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B5237A9F53B1ADABB5D8A06BA3962F /* TorchMode.swift */; };
+		024844BD597432FD68C0D25ED6330B5D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A71DBA0B921E2ECF9776351E368846F7 /* Localizable.strings */; };
+		0371A84EBE60BDEEFC346A4EC6C5870A /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C2E0E38696484FAD70134B1DF93ED2 /* SwiftyJSON.swift */; };
+		126EEF8957E8D6D7DCC79D1ABB116B5E /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5A6EDE1827754559EF3DAE9C6401B4 /* MessageViewController.swift */; };
+		24188445B2B585D3CDDD2F573D270DD5 /* BarcodeScanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D50EE5ED3787BD9B5DB8F6C45DB624 /* BarcodeScanner-dummy.m */; };
+		33445FAFE5125FB63E5966AC8E91E329 /* TorchMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A9AD269524FDCA111CFBF20128EA3 /* TorchMode.swift */; };
 		42F6ADC11337254B9856AED99EED8D21 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA12E98CA9F3F0E6B3E8B17E0B954C58 /* UIKit.framework */; };
 		434BEE07F5501B9BD5D6DE01DB86C2C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BF5E9D68EAC528D8EBCD934CA1A933 /* Foundation.framework */; };
-		4E49815192BFCED2B8CB67E51CA346BB /* Pods-PriceApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB4BA52D41A69EA7ADEC2F1145A6383 /* Pods-PriceApp-dummy.m */; };
-		601A15B2AA9B39EB14DD7AC0ED6EB354 /* FocusViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDF35D8B92754AF0B405B815DC19329 /* FocusViewType.swift */; };
-		6264CE70056D8D9B08DCDAF03C3607A2 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D60225F36C925B2FFA9405AFE40ED23 /* UIViewController+Extensions.swift */; };
-		64F0E6FFAF2B0DA39A84F3D5833BA336 /* BarcodeScanner.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 98EA64C97B82D00F8BCE410F23229E2E /* BarcodeScanner.bundle */; };
-		7DEBF203AF6520D5C001AB5E40BC58FF /* NSLayoutConstraint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E84E218EC9FF58A197531944DE732AF /* NSLayoutConstraint+Extensions.swift */; };
-		8EF10657044DC151C6831F977B210925 /* BarcodeScanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13FF2C4209C5822C14B5542CB585FEE6 /* BarcodeScanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		909A6AD6F6B5CA03F9967B2A15FDE8EB /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BFAE5FE3B73BB4C3C51A42EB566C3E /* State.swift */; };
-		94B7257D9E9495297065C139BD9DFF50 /* flashOn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E8D406122DE6CBB384F1BBCBCA12D1B0 /* flashOn@3x.png */; };
-		985EB884F14B7B2EFC40B8F78F3F1135 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F359A2CBDA196D52E4301D42F8854C9D /* UIView+Extensions.swift */; };
-		9F8C8EAD57BA98D9D0B89FB8E373CFA5 /* AVMetadataObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54D3A2C1D3B8F95753712924FA98061 /* AVMetadataObject+Extensions.swift */; };
-		A280F8B2F6017283CA95885D9A055951 /* cameraRotate@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5184E7C824E70A5BA8030A310DA3F14 /* cameraRotate@3x.png */; };
-		A89C9D745474BB1B92D173CE73B3FFEF /* BarcodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17ACC577000FF0FC38FCF3EDC0E6A34 /* BarcodeScannerViewController.swift */; };
-		AF2B8864E7F088952AB0A1001A5C147F /* flashOff@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D68DC1B1EA19D4408B476D9075FA753B /* flashOff@3x.png */; };
-		D4F32D9E96FD7AED2E4BD88656AA9A02 /* VideoPermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3C0D9C35BE6335EF94E8E8B00D1B78 /* VideoPermissionService.swift */; };
-		DEC26C4ABDFE5D2D3CFC2B91054546C9 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47F7E6ABE4F33C20BD5D6EFD23144BD /* Functions.swift */; };
-		E36FE49D4BE5C00D588AFEB581CCB187 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BF5E9D68EAC528D8EBCD934CA1A933 /* Foundation.framework */; };
-		EB3CA7BDB731E8B094D67535A4C1806A /* HeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72601A6AEE9FFA1C7E3E87DCE69BD5D3 /* HeaderViewController.swift */; };
-		ECD9A5434C6A165E6A44EF5ACDC2BE1B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CA92F8D1C141B78D4A68543B8EACE8 /* CameraViewController.swift */; };
-		F14615DEB8A6E8C5EA0C969B6B6B59D7 /* info@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2D3CCCEEC9610C52DDD4B21DF0F017A /* info@3x.png */; };
-		F416D1124475754024091EC394221457 /* Localization.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9B1F0EE9EFB1407E30062217DF509C36 /* Localization.bundle */; };
+		50FB9D6FCF9CDB9E4F1C6C274670B412 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D91E120D9B8A9C8E9295444D137C0D1F /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		601A15B2AA9B39EB14DD7AC0ED6EB354 /* FocusViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DA098665640ADA222A87AA0B04B4E4 /* FocusViewType.swift */; };
+		60CF3CFF13F0F1FE39C62843F973E040 /* Pods-PriceApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB4BA52D41A69EA7ADEC2F1145A6383 /* Pods-PriceApp-dummy.m */; };
+		6264CE70056D8D9B08DCDAF03C3607A2 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC91140CE235A0D3038973175463617 /* UIViewController+Extensions.swift */; };
+		64F0E6FFAF2B0DA39A84F3D5833BA336 /* BarcodeScanner.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A0BE8A247B7C789A24CB74E302D76CD3 /* BarcodeScanner.bundle */; };
+		6D50FE01BE5973C77A2F1B621FD7A2F3 /* Pods-PriceApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 77AC6F3CEDEA8290468B35F0EA3CC7FC /* Pods-PriceApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DEBF203AF6520D5C001AB5E40BC58FF /* NSLayoutConstraint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20A244088C5F6DB7895C3731187CB0 /* NSLayoutConstraint+Extensions.swift */; };
+		8429B8670A8E83866DC3DEE62023E782 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BF5E9D68EAC528D8EBCD934CA1A933 /* Foundation.framework */; };
+		86DAC3A293B7D5ED19B1D53D02FD6A78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BF5E9D68EAC528D8EBCD934CA1A933 /* Foundation.framework */; };
+		8EF10657044DC151C6831F977B210925 /* BarcodeScanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDD2293E9A581A542A2BB462CD52731 /* BarcodeScanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		909A6AD6F6B5CA03F9967B2A15FDE8EB /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC07B09B98FB53F71026262932EB1FC /* State.swift */; };
+		94B7257D9E9495297065C139BD9DFF50 /* flashOn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C023238660CEA15FD020890E39F4921 /* flashOn@3x.png */; };
+		985EB884F14B7B2EFC40B8F78F3F1135 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E36DBF6DCCDCDEBF332D24C12342592 /* UIView+Extensions.swift */; };
+		9F8C8EAD57BA98D9D0B89FB8E373CFA5 /* AVMetadataObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96DA2A68AED85FE7A97362E29D71D7F /* AVMetadataObject+Extensions.swift */; };
+		A280F8B2F6017283CA95885D9A055951 /* cameraRotate@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB315948C431BE95B44AC6F24C94097 /* cameraRotate@3x.png */; };
+		A7C17FB37954DDC99E13087259D780F0 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C382B2C9850FE7AC81A236E06C964A /* SwiftyJSON-dummy.m */; };
+		A89C9D745474BB1B92D173CE73B3FFEF /* BarcodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA8464AF2AF2934F52B4C7A3A048317 /* BarcodeScannerViewController.swift */; };
+		AF2B8864E7F088952AB0A1001A5C147F /* flashOff@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6461CD310AC87C875CC4E6D790BEFE0B /* flashOff@3x.png */; };
+		D4F32D9E96FD7AED2E4BD88656AA9A02 /* VideoPermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57EE6575BDB419A9C3944D410003258 /* VideoPermissionService.swift */; };
+		DEC26C4ABDFE5D2D3CFC2B91054546C9 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0178B9735B2F3D34D3D7E07C1E80A216 /* Functions.swift */; };
+		EB3CA7BDB731E8B094D67535A4C1806A /* HeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC583DB868627625A3D7FEA9CDE371C /* HeaderViewController.swift */; };
+		ECD9A5434C6A165E6A44EF5ACDC2BE1B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A38180B9889BB80C2F75925EA72739E /* CameraViewController.swift */; };
+		F14615DEB8A6E8C5EA0C969B6B6B59D7 /* info@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5E2FCA3036E8529AD49E852CBBD0B98 /* info@3x.png */; };
+		F416D1124475754024091EC394221457 /* Localization.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 703B3E0CD2895F0B2ACB8F560A5D2450 /* Localization.bundle */; };
 		FB9BC786AAB1726DAB12DB00AC60537C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FEE77C30CADE29D0363F1A36F5E98E4 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DA75E212D8413BA870C90B0CDE7707A8 /* PBXContainerItemProxy */ = {
+		14D11A8B257E34478AF6F04B5D4FF55B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FCFF857B29A61E3BCDA7C64D9C616D21;
 			remoteInfo = BarcodeScanner;
+		};
+		9A158E7E391BCDBD39F328894774D4E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B90A15891F04BE51B017DAADC2EAA631;
+			remoteInfo = SwiftyJSON;
 		};
 		E0A8C0E2319D0F2B446C4845C22B4BBA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -62,65 +73,65 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C3C0D9C35BE6335EF94E8E8B00D1B78 /* VideoPermissionService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoPermissionService.swift; path = Sources/Helpers/VideoPermissionService.swift; sourceTree = "<group>"; };
-		0E84E218EC9FF58A197531944DE732AF /* NSLayoutConstraint+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutConstraint+Extensions.swift"; path = "Sources/Extensions/NSLayoutConstraint+Extensions.swift"; sourceTree = "<group>"; };
-		13FF2C4209C5822C14B5542CB585FEE6 /* BarcodeScanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BarcodeScanner-umbrella.h"; sourceTree = "<group>"; };
-		1CDF35D8B92754AF0B405B815DC19329 /* FocusViewType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FocusViewType.swift; path = Sources/DataStructures/FocusViewType.swift; sourceTree = "<group>"; };
-		1E4B0B34D54E8608A9440D806C090824 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0178B9735B2F3D34D3D7E07C1E80A216 /* Functions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functions.swift; path = Sources/Helpers/Functions.swift; sourceTree = "<group>"; };
+		0308FF97B04F7362980F22323CC1C84D /* Pods_PriceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PriceApp.framework; path = "Pods-PriceApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08E52CE397B9B249943128F1050A62E9 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		09086486031C2E4E2D021202A7DFF02A /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		0A340B4B4811C81CFC161F40E3662721 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1AE4123550D348C121F01A1262A70F82 /* ResourceBundle-BarcodeScanner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-BarcodeScanner-Info.plist"; sourceTree = "<group>"; };
 		358906A82E5CFEB860A7E2241B36105A /* Pods-PriceApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PriceApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		37CA92F8D1C141B78D4A68543B8EACE8 /* CameraViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = Sources/Controllers/CameraViewController.swift; sourceTree = "<group>"; };
-		45DA57849CA4AE47D7E2665150C0612C /* BarcodeScanner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BarcodeScanner.xcconfig; sourceTree = "<group>"; };
+		3BDD2293E9A581A542A2BB462CD52731 /* BarcodeScanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BarcodeScanner-umbrella.h"; sourceTree = "<group>"; };
+		3FC91140CE235A0D3038973175463617 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extensions.swift"; path = "Sources/Extensions/UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		4258C8173BBEDC5F48B8F4440646DD5D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B55D50953F68A05E8CDEA04CCC45B9F /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		5399319DFEA9F799698E31D9B6E8D816 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5766034DA57B5226D78E0DF3458A86E4 /* BarcodeScanner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BarcodeScanner.xcconfig; sourceTree = "<group>"; };
 		57706B89C6149D2D5D68D9D751C47D7D /* Pods-PriceApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PriceApp-resources.sh"; sourceTree = "<group>"; };
-		629873702BDFB9E21718A27C47B064C5 /* MessageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageViewController.swift; path = Sources/Controllers/MessageViewController.swift; sourceTree = "<group>"; };
-		62BFAE5FE3B73BB4C3C51A42EB566C3E /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = State.swift; path = Sources/DataStructures/State.swift; sourceTree = "<group>"; };
-		66109B0F0285E4B739BD0EB9BB876F47 /* ResourceBundle-Localization-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Localization-Info.plist"; sourceTree = "<group>"; };
+		5C023238660CEA15FD020890E39F4921 /* flashOn@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "flashOn@3x.png"; path = "Images/flashOn@3x.png"; sourceTree = "<group>"; };
+		6461CD310AC87C875CC4E6D790BEFE0B /* flashOff@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "flashOff@3x.png"; path = "Images/flashOff@3x.png"; sourceTree = "<group>"; };
+		6BA8464AF2AF2934F52B4C7A3A048317 /* BarcodeScannerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarcodeScannerViewController.swift; path = Sources/Controllers/BarcodeScannerViewController.swift; sourceTree = "<group>"; };
 		6FEE77C30CADE29D0363F1A36F5E98E4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		72601A6AEE9FFA1C7E3E87DCE69BD5D3 /* HeaderViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeaderViewController.swift; path = Sources/Controllers/HeaderViewController.swift; sourceTree = "<group>"; };
+		703B3E0CD2895F0B2ACB8F560A5D2450 /* Localization.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Localization.bundle; path = "BarcodeScanner-Localization.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77AC6F3CEDEA8290468B35F0EA3CC7FC /* Pods-PriceApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PriceApp-umbrella.h"; sourceTree = "<group>"; };
 		7949029CBC7648E08BB96373B4DAC665 /* Pods-PriceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PriceApp.release.xcconfig"; sourceTree = "<group>"; };
+		7E36DBF6DCCDCDEBF332D24C12342592 /* UIView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extensions.swift"; path = "Sources/Extensions/UIView+Extensions.swift"; sourceTree = "<group>"; };
 		80A673BEF652344A718FBADAEA32F643 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		91B5237A9F53B1ADABB5D8A06BA3962F /* TorchMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TorchMode.swift; path = Sources/DataStructures/TorchMode.swift; sourceTree = "<group>"; };
+		83A82F767F1E475269ADA90D092E006E /* ResourceBundle-Localization-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Localization-Info.plist"; sourceTree = "<group>"; };
+		8814F2627B535562667955428DD1F58E /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8B5A6EDE1827754559EF3DAE9C6401B4 /* MessageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageViewController.swift; path = Sources/Controllers/MessageViewController.swift; sourceTree = "<group>"; };
+		91CD6B7F107D38EFA5CE625A589BF7D7 /* BarcodeScanner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BarcodeScanner-prefix.pch"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		98EA64C97B82D00F8BCE410F23229E2E /* BarcodeScanner.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = BarcodeScanner.bundle; path = "BarcodeScanner-BarcodeScanner.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B1F0EE9EFB1407E30062217DF509C36 /* Localization.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Localization.bundle; path = "BarcodeScanner-Localization.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99DA098665640ADA222A87AA0B04B4E4 /* FocusViewType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FocusViewType.swift; path = Sources/DataStructures/FocusViewType.swift; sourceTree = "<group>"; };
+		9A38180B9889BB80C2F75925EA72739E /* CameraViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = Sources/Controllers/CameraViewController.swift; sourceTree = "<group>"; };
 		9BB4BA52D41A69EA7ADEC2F1145A6383 /* Pods-PriceApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PriceApp-dummy.m"; sourceTree = "<group>"; };
-		9BC3931238FB1C8EF20F88DA184C7963 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
-		9D60225F36C925B2FFA9405AFE40ED23 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extensions.swift"; path = "Sources/Extensions/UIViewController+Extensions.swift"; sourceTree = "<group>"; };
-		A276498A06AF5E4B17639B4D87D1413F /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A0BE8A247B7C789A24CB74E302D76CD3 /* BarcodeScanner.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = BarcodeScanner.bundle; path = "BarcodeScanner-BarcodeScanner.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C2E0E38696484FAD70134B1DF93ED2 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		A57EE6575BDB419A9C3944D410003258 /* VideoPermissionService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoPermissionService.swift; path = Sources/Helpers/VideoPermissionService.swift; sourceTree = "<group>"; };
+		A9C382B2C9850FE7AC81A236E06C964A /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		AC5A9AD269524FDCA111CFBF20128EA3 /* TorchMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TorchMode.swift; path = Sources/DataStructures/TorchMode.swift; sourceTree = "<group>"; };
 		ACDFA88BE21A5606A9EBC8AF73F836D2 /* Pods-PriceApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PriceApp-frameworks.sh"; sourceTree = "<group>"; };
-		AFF736D115AA71421A30CCD008AA13BE /* Pods_PriceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PriceApp.framework; path = "Pods-PriceApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1343E43BC949A466D2F017EE8685BDC /* BarcodeScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BarcodeScanner.framework; path = BarcodeScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2A43EF50469270C8E5C16215A377FD3 /* Pods-PriceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PriceApp.debug.xcconfig"; sourceTree = "<group>"; };
-		B37017CE902318B1C0A0F4030EE844C8 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		B47F7E6ABE4F33C20BD5D6EFD23144BD /* Functions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functions.swift; path = Sources/Helpers/Functions.swift; sourceTree = "<group>"; };
-		B5184E7C824E70A5BA8030A310DA3F14 /* cameraRotate@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cameraRotate@3x.png"; path = "Images/cameraRotate@3x.png"; sourceTree = "<group>"; };
 		B5E513D57ABBBDB884818DCA2D0AA7A7 /* Pods-PriceApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PriceApp.modulemap"; sourceTree = "<group>"; };
-		B86438A572546FF35F1406D8D75AB33E /* BarcodeScanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BarcodeScanner-dummy.m"; sourceTree = "<group>"; };
+		BCB315948C431BE95B44AC6F24C94097 /* cameraRotate@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cameraRotate@3x.png"; path = "Images/cameraRotate@3x.png"; sourceTree = "<group>"; };
 		BEC66A7067C9A229B093B39039153032 /* Pods-PriceApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PriceApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C07039C57F9515B0889C800E01233D19 /* ResourceBundle-BarcodeScanner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-BarcodeScanner-Info.plist"; sourceTree = "<group>"; };
-		C6E89731FF50AA44661B09BC94912BD6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB8517BF8A3C82FD5681609E3DDB23B5 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "pl-PL.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		D2D3CCCEEC9610C52DDD4B21DF0F017A /* info@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "info@3x.png"; path = "Images/info@3x.png"; sourceTree = "<group>"; };
-		D54D3A2C1D3B8F95753712924FA98061 /* AVMetadataObject+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AVMetadataObject+Extensions.swift"; path = "Sources/Extensions/AVMetadataObject+Extensions.swift"; sourceTree = "<group>"; };
-		D672CC20DFBDF4100B5AFB8DE1C072FA /* BarcodeScanner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BarcodeScanner-prefix.pch"; sourceTree = "<group>"; };
-		D68DC1B1EA19D4408B476D9075FA753B /* flashOff@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "flashOff@3x.png"; path = "Images/flashOff@3x.png"; sourceTree = "<group>"; };
-		E8D406122DE6CBB384F1BBCBCA12D1B0 /* flashOn@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "flashOn@3x.png"; path = "Images/flashOn@3x.png"; sourceTree = "<group>"; };
+		C1764E4B36819A2AAE36EEF3676FF3FC /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D4CB7B0E3AF7D50674674C3F844DBB33 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5E2FCA3036E8529AD49E852CBBD0B98 /* info@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "info@3x.png"; path = "Images/info@3x.png"; sourceTree = "<group>"; };
+		D91E120D9B8A9C8E9295444D137C0D1F /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		DAC07B09B98FB53F71026262932EB1FC /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = State.swift; path = Sources/DataStructures/State.swift; sourceTree = "<group>"; };
+		DF20A244088C5F6DB7895C3731187CB0 /* NSLayoutConstraint+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutConstraint+Extensions.swift"; path = "Sources/Extensions/NSLayoutConstraint+Extensions.swift"; sourceTree = "<group>"; };
+		E2C6E2CF5CED1C1ABFE5BA937CDAEB0A /* BarcodeScanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BarcodeScanner.modulemap; sourceTree = "<group>"; };
+		E7FD3A4FE35C0D9277D7699F7E1E4D42 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
 		EA12E98CA9F3F0E6B3E8B17E0B954C58 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		F17ACC577000FF0FC38FCF3EDC0E6A34 /* BarcodeScannerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarcodeScannerViewController.swift; path = Sources/Controllers/BarcodeScannerViewController.swift; sourceTree = "<group>"; };
-		F22F9C18FBCFCE43111C1614F31C1858 /* BarcodeScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BarcodeScanner.framework; path = BarcodeScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFC583DB868627625A3D7FEA9CDE371C /* HeaderViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeaderViewController.swift; path = Sources/Controllers/HeaderViewController.swift; sourceTree = "<group>"; };
 		F2BF5E9D68EAC528D8EBCD934CA1A933 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		F2D5B3448A17A1450088534396EE0240 /* BarcodeScanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BarcodeScanner.modulemap; sourceTree = "<group>"; };
-		F359A2CBDA196D52E4301D42F8854C9D /* UIView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extensions.swift"; path = "Sources/Extensions/UIView+Extensions.swift"; sourceTree = "<group>"; };
+		F4D50EE5ED3787BD9B5DB8F6C45DB624 /* BarcodeScanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BarcodeScanner-dummy.m"; sourceTree = "<group>"; };
+		F5B4068B08114B52AD0143F70AC8FDAE /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "pl-PL.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F96DA2A68AED85FE7A97362E29D71D7F /* AVMetadataObject+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AVMetadataObject+Extensions.swift"; path = "Sources/Extensions/AVMetadataObject+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		387163A24C1FB1293C3D4D175C2672D2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E36FE49D4BE5C00D588AFEB581CCB187 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		52E71F6A372A04730F1CA4BD74AD4C10 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -138,6 +149,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		784DE2AC52E1DF17604EA3E110F083F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8429B8670A8E83866DC3DEE62023E782 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4B88582D5409F5A7560C2D0668988FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86DAC3A293B7D5ED19B1D53D02FD6A78 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3436447769C5EA8632DC9FA1CEC106A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,14 +175,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01213573C24E94EAB2F565BB58AE4C3F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1A58C04CB1E1F049D80B7C0EAC058A59 /* BarcodeScanner */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		0CEF6AE21748EEF05BDF013C1F96152B /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,27 +193,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1A58C04CB1E1F049D80B7C0EAC058A59 /* BarcodeScanner */ = {
+		2B6A180DCA13FEEB61F1FFC1ACF8503C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D54D3A2C1D3B8F95753712924FA98061 /* AVMetadataObject+Extensions.swift */,
-				F17ACC577000FF0FC38FCF3EDC0E6A34 /* BarcodeScannerViewController.swift */,
-				37CA92F8D1C141B78D4A68543B8EACE8 /* CameraViewController.swift */,
-				1CDF35D8B92754AF0B405B815DC19329 /* FocusViewType.swift */,
-				B47F7E6ABE4F33C20BD5D6EFD23144BD /* Functions.swift */,
-				72601A6AEE9FFA1C7E3E87DCE69BD5D3 /* HeaderViewController.swift */,
-				629873702BDFB9E21718A27C47B064C5 /* MessageViewController.swift */,
-				0E84E218EC9FF58A197531944DE732AF /* NSLayoutConstraint+Extensions.swift */,
-				62BFAE5FE3B73BB4C3C51A42EB566C3E /* State.swift */,
-				91B5237A9F53B1ADABB5D8A06BA3962F /* TorchMode.swift */,
-				F359A2CBDA196D52E4301D42F8854C9D /* UIView+Extensions.swift */,
-				9D60225F36C925B2FFA9405AFE40ED23 /* UIViewController+Extensions.swift */,
-				0C3C0D9C35BE6335EF94E8E8B00D1B78 /* VideoPermissionService.swift */,
-				EC79D39B1C7ECF64814FD1D30F974F1D /* Resources */,
-				BE61B6A0873314A82019DE8DAC43E114 /* Support Files */,
+				CA3F007CE77B64D15956EB9F78C79457 /* BarcodeScanner */,
+				DD8784502D4464277235E79014C70420 /* SwiftyJSON */,
 			);
-			name = BarcodeScanner;
-			path = BarcodeScanner;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		55DC7BDC0F33622562124D5E3AF6D3F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0BE8A247B7C789A24CB74E302D76CD3 /* BarcodeScanner.bundle */,
+				B1343E43BC949A466D2F017EE8685BDC /* BarcodeScanner.framework */,
+				703B3E0CD2895F0B2ACB8F560A5D2450 /* Localization.bundle */,
+				0308FF97B04F7362980F22323CC1C84D /* Pods_PriceApp.framework */,
+				5399319DFEA9F799698E31D9B6E8D816 /* SwiftyJSON.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		6553125A852368AC6864119668E55497 /* Targets Support Files */ = {
@@ -210,21 +227,36 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				01213573C24E94EAB2F565BB58AE4C3F /* Pods */,
-				8F345ECF5954EC03B482496906D0D686 /* Products */,
+				2B6A180DCA13FEEB61F1FFC1ACF8503C /* Pods */,
+				55DC7BDC0F33622562124D5E3AF6D3F4 /* Products */,
 				6553125A852368AC6864119668E55497 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8F345ECF5954EC03B482496906D0D686 /* Products */ = {
+		A9B1EAE6413E4DA9E8982E0E1DF5A1B2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				98EA64C97B82D00F8BCE410F23229E2E /* BarcodeScanner.bundle */,
-				F22F9C18FBCFCE43111C1614F31C1858 /* BarcodeScanner.framework */,
-				9B1F0EE9EFB1407E30062217DF509C36 /* Localization.bundle */,
-				AFF736D115AA71421A30CCD008AA13BE /* Pods_PriceApp.framework */,
+				BCB315948C431BE95B44AC6F24C94097 /* cameraRotate@3x.png */,
+				6461CD310AC87C875CC4E6D790BEFE0B /* flashOff@3x.png */,
+				5C023238660CEA15FD020890E39F4921 /* flashOn@3x.png */,
+				D5E2FCA3036E8529AD49E852CBBD0B98 /* info@3x.png */,
+				A71DBA0B921E2ECF9776351E368846F7 /* Localizable.strings */,
 			);
-			name = Products;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		ADC6ED316F4AE4CFB586A7212B387A9D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4CB7B0E3AF7D50674674C3F844DBB33 /* Info.plist */,
+				09086486031C2E4E2D021202A7DFF02A /* SwiftyJSON.modulemap */,
+				E7FD3A4FE35C0D9277D7699F7E1E4D42 /* SwiftyJSON.xcconfig */,
+				A9C382B2C9850FE7AC81A236E06C964A /* SwiftyJSON-dummy.m */,
+				4B55D50953F68A05E8CDEA04CCC45B9F /* SwiftyJSON-prefix.pch */,
+				D91E120D9B8A9C8E9295444D137C0D1F /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
 			sourceTree = "<group>";
 		};
 		B2428487E5A32F4B2008963BE64D0FFF /* Pods-PriceApp */ = {
@@ -245,42 +277,71 @@
 			path = "Target Support Files/Pods-PriceApp";
 			sourceTree = "<group>";
 		};
-		BE61B6A0873314A82019DE8DAC43E114 /* Support Files */ = {
+		C637B1F92BD1576F51F844FC7CC2D6B9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F2D5B3448A17A1450088534396EE0240 /* BarcodeScanner.modulemap */,
-				45DA57849CA4AE47D7E2665150C0612C /* BarcodeScanner.xcconfig */,
-				B86438A572546FF35F1406D8D75AB33E /* BarcodeScanner-dummy.m */,
-				D672CC20DFBDF4100B5AFB8DE1C072FA /* BarcodeScanner-prefix.pch */,
-				13FF2C4209C5822C14B5542CB585FEE6 /* BarcodeScanner-umbrella.h */,
-				C6E89731FF50AA44661B09BC94912BD6 /* Info.plist */,
-				C07039C57F9515B0889C800E01233D19 /* ResourceBundle-BarcodeScanner-Info.plist */,
-				66109B0F0285E4B739BD0EB9BB876F47 /* ResourceBundle-Localization-Info.plist */,
+				E2C6E2CF5CED1C1ABFE5BA937CDAEB0A /* BarcodeScanner.modulemap */,
+				5766034DA57B5226D78E0DF3458A86E4 /* BarcodeScanner.xcconfig */,
+				F4D50EE5ED3787BD9B5DB8F6C45DB624 /* BarcodeScanner-dummy.m */,
+				91CD6B7F107D38EFA5CE625A589BF7D7 /* BarcodeScanner-prefix.pch */,
+				3BDD2293E9A581A542A2BB462CD52731 /* BarcodeScanner-umbrella.h */,
+				4258C8173BBEDC5F48B8F4440646DD5D /* Info.plist */,
+				1AE4123550D348C121F01A1262A70F82 /* ResourceBundle-BarcodeScanner-Info.plist */,
+				83A82F767F1E475269ADA90D092E006E /* ResourceBundle-Localization-Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/BarcodeScanner";
 			sourceTree = "<group>";
 		};
-		EC79D39B1C7ECF64814FD1D30F974F1D /* Resources */ = {
+		CA3F007CE77B64D15956EB9F78C79457 /* BarcodeScanner */ = {
 			isa = PBXGroup;
 			children = (
-				B5184E7C824E70A5BA8030A310DA3F14 /* cameraRotate@3x.png */,
-				D68DC1B1EA19D4408B476D9075FA753B /* flashOff@3x.png */,
-				E8D406122DE6CBB384F1BBCBCA12D1B0 /* flashOn@3x.png */,
-				D2D3CCCEEC9610C52DDD4B21DF0F017A /* info@3x.png */,
-				A589AD7A2FDD218BD9F8B6DF476A02CC /* Localizable.strings */,
+				F96DA2A68AED85FE7A97362E29D71D7F /* AVMetadataObject+Extensions.swift */,
+				6BA8464AF2AF2934F52B4C7A3A048317 /* BarcodeScannerViewController.swift */,
+				9A38180B9889BB80C2F75925EA72739E /* CameraViewController.swift */,
+				99DA098665640ADA222A87AA0B04B4E4 /* FocusViewType.swift */,
+				0178B9735B2F3D34D3D7E07C1E80A216 /* Functions.swift */,
+				EFC583DB868627625A3D7FEA9CDE371C /* HeaderViewController.swift */,
+				8B5A6EDE1827754559EF3DAE9C6401B4 /* MessageViewController.swift */,
+				DF20A244088C5F6DB7895C3731187CB0 /* NSLayoutConstraint+Extensions.swift */,
+				DAC07B09B98FB53F71026262932EB1FC /* State.swift */,
+				AC5A9AD269524FDCA111CFBF20128EA3 /* TorchMode.swift */,
+				7E36DBF6DCCDCDEBF332D24C12342592 /* UIView+Extensions.swift */,
+				3FC91140CE235A0D3038973175463617 /* UIViewController+Extensions.swift */,
+				A57EE6575BDB419A9C3944D410003258 /* VideoPermissionService.swift */,
+				A9B1EAE6413E4DA9E8982E0E1DF5A1B2 /* Resources */,
+				C637B1F92BD1576F51F844FC7CC2D6B9 /* Support Files */,
 			);
-			name = Resources;
+			name = BarcodeScanner;
+			path = BarcodeScanner;
+			sourceTree = "<group>";
+		};
+		DD8784502D4464277235E79014C70420 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				A1C2E0E38696484FAD70134B1DF93ED2 /* SwiftyJSON.swift */,
+				ADC6ED316F4AE4CFB586A7212B387A9D /* Support Files */,
+			);
+			name = SwiftyJSON;
+			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		73F7776EBE324F2958D21747EF8D5228 /* Headers */ = {
+		0CB55C6D3FA21ACCE18D763B1CCF2D88 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BDC53043B1979B24F21C1891F2FDB7F /* Pods-PriceApp-umbrella.h in Headers */,
+				6D50FE01BE5973C77A2F1B621FD7A2F3 /* Pods-PriceApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC2339A85BF076BA59500B6960B2AC1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50FB9D6FCF9CDB9E4F1C6C274670B412 /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +370,7 @@
 			);
 			name = "BarcodeScanner-Localization";
 			productName = "BarcodeScanner-Localization";
-			productReference = 9B1F0EE9EFB1407E30062217DF509C36 /* Localization.bundle */;
+			productReference = 703B3E0CD2895F0B2ACB8F560A5D2450 /* Localization.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		8C194D5E546C32BB634B5BBEF26DEFC3 /* BarcodeScanner-BarcodeScanner */ = {
@@ -326,25 +387,43 @@
 			);
 			name = "BarcodeScanner-BarcodeScanner";
 			productName = "BarcodeScanner-BarcodeScanner";
-			productReference = 98EA64C97B82D00F8BCE410F23229E2E /* BarcodeScanner.bundle */;
+			productReference = A0BE8A247B7C789A24CB74E302D76CD3 /* BarcodeScanner.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		D6416E8663E43B6728B809F9698012A4 /* Pods-PriceApp */ = {
+		B90A15891F04BE51B017DAADC2EAA631 /* SwiftyJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EF2E066B099DAA98B8F5B0A0ADB1D83F /* Build configuration list for PBXNativeTarget "Pods-PriceApp" */;
+			buildConfigurationList = 61B38A9CEC41F1D66E93E51DFA431346 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
 			buildPhases = (
-				A4D34C35E81B897848F4EFD29692EE2A /* Sources */,
-				387163A24C1FB1293C3D4D175C2672D2 /* Frameworks */,
-				73F7776EBE324F2958D21747EF8D5228 /* Headers */,
+				B5DE8FD38A9C6196A53E78C57903412A /* Sources */,
+				784DE2AC52E1DF17604EA3E110F083F8 /* Frameworks */,
+				3FC2339A85BF076BA59500B6960B2AC1 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1F36C4818E3EA1F88C8147E5A980E5EC /* PBXTargetDependency */,
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = 5399319DFEA9F799698E31D9B6E8D816 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F43BA31E61333BB8103F08A1272806CE /* Pods-PriceApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFE93AFB4A4410539DBD4602EFA9CEA6 /* Build configuration list for PBXNativeTarget "Pods-PriceApp" */;
+			buildPhases = (
+				9DB2DAC59EC3934EEAEB481E2E335708 /* Sources */,
+				A4B88582D5409F5A7560C2D0668988FD /* Frameworks */,
+				0CB55C6D3FA21ACCE18D763B1CCF2D88 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F30246A36C42F7F2F13F422AC52E172B /* PBXTargetDependency */,
+				3AD937B551ABDF6435BEFC3F476113A7 /* PBXTargetDependency */,
 			);
 			name = "Pods-PriceApp";
 			productName = "Pods-PriceApp";
-			productReference = AFF736D115AA71421A30CCD008AA13BE /* Pods_PriceApp.framework */;
+			productReference = 0308FF97B04F7362980F22323CC1C84D /* Pods_PriceApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FCFF857B29A61E3BCDA7C64D9C616D21 /* BarcodeScanner */ = {
@@ -364,7 +443,7 @@
 			);
 			name = BarcodeScanner;
 			productName = BarcodeScanner;
-			productReference = F22F9C18FBCFCE43111C1614F31C1858 /* BarcodeScanner.framework */;
+			productReference = B1343E43BC949A466D2F017EE8685BDC /* BarcodeScanner.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -384,14 +463,15 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 8F345ECF5954EC03B482496906D0D686 /* Products */;
+			productRefGroup = 55DC7BDC0F33622562124D5E3AF6D3F4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				FCFF857B29A61E3BCDA7C64D9C616D21 /* BarcodeScanner */,
 				8C194D5E546C32BB634B5BBEF26DEFC3 /* BarcodeScanner-BarcodeScanner */,
 				8BA09793296C66FCE318826E8C2E9FA2 /* BarcodeScanner-Localization */,
-				D6416E8663E43B6728B809F9698012A4 /* Pods-PriceApp */,
+				F43BA31E61333BB8103F08A1272806CE /* Pods-PriceApp */,
+				B90A15891F04BE51B017DAADC2EAA631 /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
@@ -428,11 +508,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A4D34C35E81B897848F4EFD29692EE2A /* Sources */ = {
+		9DB2DAC59EC3934EEAEB481E2E335708 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E49815192BFCED2B8CB67E51CA346BB /* Pods-PriceApp-dummy.m in Sources */,
+				60CF3CFF13F0F1FE39C62843F973E040 /* Pods-PriceApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5DE8FD38A9C6196A53E78C57903412A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7C17FB37954DDC99E13087259D780F0 /* SwiftyJSON-dummy.m in Sources */,
+				0371A84EBE60BDEEFC346A4EC6C5870A /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,12 +563,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1F36C4818E3EA1F88C8147E5A980E5EC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = BarcodeScanner;
-			target = FCFF857B29A61E3BCDA7C64D9C616D21 /* BarcodeScanner */;
-			targetProxy = DA75E212D8413BA870C90B0CDE7707A8 /* PBXContainerItemProxy */;
-		};
 		2160DF83069FE7302183E2EA38BCDA32 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "BarcodeScanner-Localization";
@@ -492,17 +575,29 @@
 			target = 8C194D5E546C32BB634B5BBEF26DEFC3 /* BarcodeScanner-BarcodeScanner */;
 			targetProxy = E0A8C0E2319D0F2B446C4845C22B4BBA /* PBXContainerItemProxy */;
 		};
+		3AD937B551ABDF6435BEFC3F476113A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = B90A15891F04BE51B017DAADC2EAA631 /* SwiftyJSON */;
+			targetProxy = 9A158E7E391BCDBD39F328894774D4E7 /* PBXContainerItemProxy */;
+		};
+		F30246A36C42F7F2F13F422AC52E172B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BarcodeScanner;
+			target = FCFF857B29A61E3BCDA7C64D9C616D21 /* BarcodeScanner */;
+			targetProxy = 14D11A8B257E34478AF6F04B5D4FF55B /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A589AD7A2FDD218BD9F8B6DF476A02CC /* Localizable.strings */ = {
+		A71DBA0B921E2ECF9776351E368846F7 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9BC3931238FB1C8EF20F88DA184C7963 /* Localizable.strings */,
-				A276498A06AF5E4B17639B4D87D1413F /* Localizable.strings */,
-				B37017CE902318B1C0A0F4030EE844C8 /* Localizable.strings */,
-				CB8517BF8A3C82FD5681609E3DDB23B5 /* Localizable.strings */,
-				1E4B0B34D54E8608A9440D806C090824 /* Localizable.strings */,
+				C1764E4B36819A2AAE36EEF3676FF3FC /* Localizable.strings */,
+				08E52CE397B9B249943128F1050A62E9 /* Localizable.strings */,
+				0A340B4B4811C81CFC161F40E3662721 /* Localizable.strings */,
+				F5B4068B08114B52AD0143F70AC8FDAE /* Localizable.strings */,
+				8814F2627B535562667955428DD1F58E /* Localizable.strings */,
 			);
 			name = Localizable.strings;
 			path = Localization;
@@ -513,7 +608,7 @@
 /* Begin XCBuildConfiguration section */
 		07C11BFA814239BFAE0245D8181C1440 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45DA57849CA4AE47D7E2665150C0612C /* BarcodeScanner.xcconfig */;
+			baseConfigurationReference = 5766034DA57B5226D78E0DF3458A86E4 /* BarcodeScanner.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BarcodeScanner";
@@ -527,9 +622,9 @@
 			};
 			name = Debug;
 		};
-		110B30F87CC0A68B9245BF9F46ACF257 /* Release */ = {
+		1205EAECAEC196F7F4CF4B639A910B4E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7949029CBC7648E08BB96373B4DAC665 /* Pods-PriceApp.release.xcconfig */;
+			baseConfigurationReference = B2A43EF50469270C8E5C16215A377FD3 /* Pods-PriceApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -559,17 +654,17 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		26EADC180B4958837FEA68324AA4A8A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45DA57849CA4AE47D7E2665150C0612C /* BarcodeScanner.xcconfig */;
+			baseConfigurationReference = 5766034DA57B5226D78E0DF3458A86E4 /* BarcodeScanner.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BarcodeScanner";
@@ -585,7 +680,7 @@
 		};
 		40BBCA4EA8D5181DF5510BA680D12056 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45DA57849CA4AE47D7E2665150C0612C /* BarcodeScanner.xcconfig */;
+			baseConfigurationReference = 5766034DA57B5226D78E0DF3458A86E4 /* BarcodeScanner.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -685,7 +780,7 @@
 		};
 		6C02D1725139F2B621729D009F611D6C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45DA57849CA4AE47D7E2665150C0612C /* BarcodeScanner.xcconfig */;
+			baseConfigurationReference = 5766034DA57B5226D78E0DF3458A86E4 /* BarcodeScanner.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BarcodeScanner";
@@ -757,9 +852,9 @@
 			};
 			name = Release;
 		};
-		72B105F744CB48E10955FFCCDCE31D3F /* Debug */ = {
+		9EBBFD2317AD1FFC03915A27688BBD71 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2A43EF50469270C8E5C16215A377FD3 /* Pods-PriceApp.debug.xcconfig */;
+			baseConfigurationReference = 7949029CBC7648E08BB96373B4DAC665 /* Pods-PriceApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -789,8 +884,44 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BAF449392030D117D30C518D05541A6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7FD3A4FE35C0D9277D7699F7E1E4D42 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -799,7 +930,7 @@
 		};
 		C3381F14557C87E290419CF7B80B308C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45DA57849CA4AE47D7E2665150C0612C /* BarcodeScanner.xcconfig */;
+			baseConfigurationReference = 5766034DA57B5226D78E0DF3458A86E4 /* BarcodeScanner.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -833,9 +964,46 @@
 			};
 			name = Debug;
 		};
+		CAFEEC7D76C06FB2EF16FFEDE0BFEEAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7FD3A4FE35C0D9277D7699F7E1E4D42 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		F7891FAB3DCCC7720C8B004853422D14 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45DA57849CA4AE47D7E2665150C0612C /* BarcodeScanner.xcconfig */;
+			baseConfigurationReference = 5766034DA57B5226D78E0DF3458A86E4 /* BarcodeScanner.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BarcodeScanner";
@@ -879,6 +1047,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		61B38A9CEC41F1D66E93E51DFA431346 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF449392030D117D30C518D05541A6C /* Debug */,
+				CAFEEC7D76C06FB2EF16FFEDE0BFEEAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		81F75EBFA084010B9C493D90F373002E /* Build configuration list for PBXNativeTarget "BarcodeScanner-Localization" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -888,11 +1065,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EF2E066B099DAA98B8F5B0A0ADB1D83F /* Build configuration list for PBXNativeTarget "Pods-PriceApp" */ = {
+		FFE93AFB4A4410539DBD4602EFA9CEA6 /* Build configuration list for PBXNativeTarget "Pods-PriceApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				72B105F744CB48E10955FFCCDCE31D3F /* Debug */,
-				110B30F87CC0A68B9245BF9F46ACF257 /* Release */,
+				1205EAECAEC196F7F4CF4B639A910B4E /* Debug */,
+				9EBBFD2317AD1FFC03915A27688BBD71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

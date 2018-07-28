@@ -68,6 +68,59 @@ extension LensViewController{
         
     }
     
+    // for suggestionItem
+    
+    func createSuggestionItemEntityFrom(title: String,id:String, price: Float, url: String) -> NSManagedObject? {
+        let context = CoreDataStack.sharedInstance.persistentContainer2.viewContext
+        
+        let suggestonItemEntity = SuggestionItem(context: context)
+        
+        print(title,id)
+        
+        
+        suggestonItemEntity.title = title
+   
+        suggestonItemEntity.mediaURL = url
+        
+        suggestonItemEntity.id = id
+        
+        
+        
+        suggestonItemEntity.price =  price
+       
+        
+        return suggestonItemEntity
+        
+    }
+    
+    
+    func deleteAllSuggestion(){
+        
+        // Initialize Fetch Request
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "SuggestionItem")
+        let context = CoreDataStack.sharedInstance.persistentContainer2.viewContext
+        
+        // Configure Fetch Request
+        fetchRequest.includesPropertyValues = false
+        
+        do {
+            let result = try context.fetch(fetchRequest) as! [SuggestionItem]
+            
+            for item in result {
+                context.delete(item)
+            }
+            
+            // Save Changes
+            try context.save()
+            
+        } catch {
+            // Error Handling
+            // ...
+        }
+    }
+    
+
+    
     
     
     
