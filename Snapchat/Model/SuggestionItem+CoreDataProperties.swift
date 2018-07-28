@@ -19,6 +19,6 @@ extension SuggestionItem {
     @NSManaged public var mediaURL: String
     @NSManaged public var title: String
     @NSManaged public var price: Float
-    @NSManaged public var id: String
+    @NSManaged public var id: Int
 
 }

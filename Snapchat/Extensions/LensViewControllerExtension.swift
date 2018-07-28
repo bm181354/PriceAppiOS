@@ -70,7 +70,7 @@ extension LensViewController{
     
     // for suggestionItem
     
-    func createSuggestionItemEntityFrom(title: String,id:String, price: Float, url: String) -> NSManagedObject? {
+    func createSuggestionItemEntityFrom(title: String,id:Int, price: Float, url: String) -> NSManagedObject? {
         let context = CoreDataStack.sharedInstance.persistentContainer2.viewContext
         
         let suggestonItemEntity = SuggestionItem(context: context)

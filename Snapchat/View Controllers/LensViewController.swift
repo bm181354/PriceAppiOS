@@ -33,8 +33,9 @@ class LensViewController:BarcodeScannerViewController {
                     
                     for (index,subJson):(String, JSON) in jsonArray {
                         
-                   guard let title = subJson["name"].string ,let mediaURL = subJson["mediumImage"].string ,let price = subJson["msrp"].float, let id = subJson["itemId"].string else{
+                   guard let title = subJson["name"].string ,let mediaURL = subJson["mediumImage"].string ,let price = subJson["msrp"].float ?? subJson["salePrice"].float , let id = subJson["itemId"].int else{
                         // do some error handling here
+                    
                         print("hello")
                         return
                         }
