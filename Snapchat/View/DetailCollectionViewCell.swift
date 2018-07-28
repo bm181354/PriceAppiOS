@@ -108,6 +108,7 @@ class DetailViewCell:UICollectionViewCell{
     }()
     
     
+    
     override func awakeFromNib() {
 
         backgroundColor = .white
@@ -167,7 +168,13 @@ class DetailViewCell:UICollectionViewCell{
         //buyBtn.heightAnchor.constraint(equalToConstant: 40).isActive = true
         buyBtn.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0).isActive = true
         buyBtn.topAnchor.constraint(equalTo: horizontalMargin.bottomAnchor, constant: 0).isActive = true
-        buyBtn.heightAnchor.constraint(equalToConstant: 50).isActive = true 
+        buyBtn.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        buyBtn.layer.shadowColor = UIColor.gray.cgColor
+        buyBtn.layer.shadowOpacity = 1
+        buyBtn.layer.shadowOffset = CGSize(width: 1, height: 4.0)
+        buyBtn.layer.shadowRadius = 2
+        buyBtn.layer.masksToBounds = false
+        
         
         // rating
         ratingView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 0).isActive = true
@@ -175,6 +182,12 @@ class DetailViewCell:UICollectionViewCell{
         ratingView.topAnchor.constraint(equalTo: horizontalMargin.bottomAnchor, constant: 0).isActive = true
         ratingView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0).isActive = true
         ratingView.topAnchor.constraint(equalTo: horizontalMargin.bottomAnchor, constant:0).isActive = true
+        ratingView.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        ratingView.layer.shadowColor = UIColor.gray.cgColor
+        ratingView.layer.shadowOpacity = 1
+        ratingView.layer.shadowOffset = CGSize(width: 1, height: 4.0)
+        ratingView.layer.shadowRadius = 2
+        ratingView.layer.masksToBounds = false
         
         //subLabel
         

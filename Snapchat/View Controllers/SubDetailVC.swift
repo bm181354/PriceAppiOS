@@ -132,9 +132,19 @@ class SubDetailVC:UIViewController {
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SubDetailVC.handleTap(_:)))
         backdropView.addGestureRecognizer(tapGesture)
+        
+        let tapRemoveGesture = UITapGestureRecognizer(target: self, action: #selector(SubDetailVC.removeItemTap(_:)))
+        removeBtn.addGestureRecognizer(tapRemoveGesture)
+        
+        
     }
     
     @objc func handleTap(_ sender: UITapGestureRecognizer) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @objc func removeItemTap(_ sender: UITapGestureRecognizer) {
+        print("Remove")
         dismiss(animated: true, completion: nil)
     }
 }
