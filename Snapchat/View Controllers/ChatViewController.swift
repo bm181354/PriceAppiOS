@@ -3,6 +3,8 @@
 import UIKit
 
 class ChatViewController: UIViewController {
+    
+    var suggestionItem = [SuggestionItem]()
   
   // MARK: - IBOutlets
 //  @IBOutlet var backgroundView: UIView!
@@ -15,6 +17,9 @@ class ChatViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     view.backgroundColor = .white
+    suggestionItem = fetchEverything()
+    
+    
   }
 }
 
@@ -24,12 +29,19 @@ extension ChatViewController: ColoredView {}
 // MARK: - collectionViewDelegation
 extension ChatViewController: UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return suggestionItem.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! SuggestionCollectionCell
+        
+        print(suggestionItem.count)
+        
+        cell.setItemCellWith(suggestionItem: suggestionItem[indexPath.row])
+        
         return cell
+        
+        
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: (self.view.bounds.width - 50)/2, height: self.view.bounds.width/2)

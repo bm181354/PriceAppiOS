@@ -50,6 +50,8 @@ extension APIService: APIServiceProtocol{
     func fetchSuggestion(product: String, callback: @escaping (APIResult<Data?>)->Void) {
         
         
+        
+        
         let queryURL =  URL(string:PRODUCT_SUGGESTION_URL+product) //replace with the code
         
         
