@@ -22,7 +22,7 @@ class DetailViewCell:UICollectionViewCell{
         let lb = UILabel()
         lb.text = "Fine Wine"
         lb.numberOfLines = 0
-        lb.font = UIFont(name: "Sabatica-regular", size: 18)
+        lb.font = UIFont(name: "Roboto Condensed Light", size: 18)
         lb.sizeToFit()
         lb.translatesAutoresizingMaskIntoConstraints = false
         return lb
@@ -31,7 +31,7 @@ class DetailViewCell:UICollectionViewCell{
     let categoryView:UILabel = {
         let lb = UILabel()
         lb.numberOfLines = 0
-        lb.font = UIFont(name: "Sabatica-regular", size: 8)
+        lb.font = UIFont(name: "Roboto Condensed Light", size: 8)
         lb.text = "Sample text about category here"
         lb.textColor = .gray
         lb.translatesAutoresizingMaskIntoConstraints = false
@@ -82,7 +82,7 @@ class DetailViewCell:UICollectionViewCell{
     
     let buyBtn:UIButton = {
         let bt = UIButton()
-        bt.titleLabel?.font = UIFont(name: "Sabatica-regular", size: 12)
+        bt.titleLabel?.font = UIFont(name: "Sabatica", size: 12)
         bt.setTitle("Price: $2.99", for: .normal)
         bt.backgroundColor = Color.getAccentColor()
         bt.translatesAutoresizingMaskIntoConstraints = false
