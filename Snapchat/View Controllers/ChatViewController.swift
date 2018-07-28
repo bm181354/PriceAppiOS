@@ -75,6 +75,8 @@ extension ChatViewController: UICollectionViewDelegate, UICollectionViewDataSour
 //        sb?.present(, animated: true, completion: nil)
         
         let modalVC =  self.storyboard?.instantiateViewController(withIdentifier: "modalVCId") as! ModalVC
+        
+        modalVC.suggestionItem = suggestionItem[indexPath.row]
         // assign values here 
         self.present(modalVC, animated: true, completion: nil)
         

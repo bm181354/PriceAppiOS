@@ -10,6 +10,7 @@ import UIKit
 
 class SuggestionCollectionCell:UICollectionViewCell{
     
+
     let imageView:UIImageView={
        let iv = UIImageView()
         iv.backgroundColor = .white
@@ -20,7 +21,7 @@ class SuggestionCollectionCell:UICollectionViewCell{
     
     let buttonView:UIButton={
        let bv = UIButton()
-       bv.backgroundColor = UIColor(red: 89/255, green: 84/255, blue: 142/255, alpha: 0.8)
+       bv.backgroundColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 0.8)
        bv.translatesAutoresizingMaskIntoConstraints = false
        bv.setTitle("Name", for: .normal)
 //       bv.backgroundColor = .clear

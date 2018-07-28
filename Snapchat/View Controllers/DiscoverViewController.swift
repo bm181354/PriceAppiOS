@@ -110,10 +110,9 @@ extension DiscoverViewController: UICollectionViewDelegate, UICollectionViewData
         cell.layer.shadowOffset = CGSize(width: 0, height: 1.0)
         cell.layer.shadowRadius = 10
         cell.layer.masksToBounds = false
-        cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
-        //cell.layer.shouldRasterize = true
-        
-//        cell.setItemCellWith(item[indexPath.row])
+        cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius:
+            cell.contentView.layer.cornerRadius).cgPath
+
         
         cell.setItemCellWith(item: item[indexPath.row])
       
@@ -136,6 +135,7 @@ extension DiscoverViewController{
         print(indexPath.row)
         let vc = SubDetailVC()
         vc.modalPresentationStyle = .custom
+        vc.item = item[indexPath.row]
         present(vc, animated: true, completion: nil)
         
     }
