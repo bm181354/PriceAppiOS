@@ -23,7 +23,6 @@ class SuggestionCollectionCell:UICollectionViewCell{
        bv.backgroundColor = UIColor(white: 1, alpha: 0.5)
        bv.translatesAutoresizingMaskIntoConstraints = false
        bv.setTitle("Name", for: .normal)
-      
 //       bv.backgroundColor = .clear
        return bv
     }()

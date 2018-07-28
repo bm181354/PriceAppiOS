@@ -10,9 +10,16 @@ import UIKit
 
 class ModalVC:UIViewController{
     
+    @IBOutlet weak var labelTitle: UILabel!
+    @IBOutlet weak var image: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
+    }
+    
+    @IBAction func dismissView(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
 }
