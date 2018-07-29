@@ -18,7 +18,7 @@ extension LensViewController{
 
        
             itemEntity.title = dictionary["title"] as? String ?? "N/A"
-            itemEntity.id = dictionary["id"] as? String ?? "N/A"
+            itemEntity.id = dictionary["itemId"] as? Int64 ?? 0
             itemEntity.rating = (dictionary["rating"] as? String) ?? "N/A"
             itemEntity.mediaURL = (dictionary["mediaURL"] as? String) ?? "N/A"
         

@@ -21,7 +21,7 @@ extension Item {
     @NSManaged public var shopURL: String?
     @NSManaged public var mediaURL: String
     @NSManaged public var price: Float
-    @NSManaged public var id: String
+    @NSManaged public var id: Int64
     @NSManaged public var rating: String
 
 }
