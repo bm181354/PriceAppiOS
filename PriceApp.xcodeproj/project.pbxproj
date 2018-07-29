@@ -20,8 +20,6 @@
 		0CD6AEB3210BB48A000C5913 /* MACCOS_DOUBLE_Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA54F418210A955E0028C8EB /* MACCOS_DOUBLE_Demo.otf */; };
 		0CD6AEB4210BB48C000C5913 /* MACCOS_LIGHT_Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA54F419210A95680028C8EB /* MACCOS_LIGHT_Demo.otf */; };
 		0CE913C1210BBA0100F448DB /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CE913C0210BBA0000F448DB /* RobotoCondensed-Light.ttf */; };
-		0CE913C4210CA0F200F448DB /* SuggestionItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE913C2210CA0F200F448DB /* SuggestionItem+CoreDataClass.swift */; };
-		0CE913C5210CA0F200F448DB /* SuggestionItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE913C3210CA0F200F448DB /* SuggestionItem+CoreDataProperties.swift */; };
 		9EA0E46535360A41BF8D90AC /* Pods_PriceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216360E3E021C640F2BDED60 /* Pods_PriceApp.framework */; };
 		B617FF93209FB3630031656A /* LensCircleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B617FF91209FB3620031656A /* LensCircleCell.swift */; };
 		B617FF94209FB3630031656A /* LensFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B617FF92209FB3620031656A /* LensFlowLayout.swift */; };
@@ -50,6 +48,8 @@
 		EA79DCC621067442003BAEA5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79DCC521067442003BAEA5 /* Constant.swift */; };
 		EA79DCC82106ADA4003BAEA5 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79DCC72106ADA4003BAEA5 /* CoreDataStack.swift */; };
 		EA79DCCB2106AF86003BAEA5 /* LensViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79DCCA2106AF86003BAEA5 /* LensViewControllerExtension.swift */; };
+		EA93ADBE210E1CF2004690E2 /* SuggestionItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA93ADBC210E1CF2004690E2 /* SuggestionItem+CoreDataProperties.swift */; };
+		EA93ADBF210E1CF2004690E2 /* SuggestionItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA93ADBD210E1CF2004690E2 /* SuggestionItem+CoreDataClass.swift */; };
 		EA964B6C21092D300029363D /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA964B6B21092D300029363D /* Error.swift */; };
 		EAE1D9472103E94200812CEA /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE1D9462103E94200812CEA /* NetworkConfig.swift */; };
 /* End PBXBuildFile section */
@@ -64,8 +64,6 @@
 		0CBD9C0E2106000F003C6CD2 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		0CBD9C1021063BAB003C6CD2 /* SubDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubDetailVC.swift; sourceTree = "<group>"; };
 		0CE913C0210BBA0000F448DB /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
-		0CE913C2210CA0F200F448DB /* SuggestionItem+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SuggestionItem+CoreDataClass.swift"; path = "../../../../Downloads/SuggestionItem+CoreDataClass.swift"; sourceTree = "<group>"; };
-		0CE913C3210CA0F200F448DB /* SuggestionItem+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SuggestionItem+CoreDataProperties.swift"; path = "../../../../Downloads/SuggestionItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		216360E3E021C640F2BDED60 /* Pods_PriceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PriceApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35C017BC81B780708718EA25 /* Pods-PriceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriceApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PriceApp/Pods-PriceApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B617FF91209FB3620031656A /* LensCircleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LensCircleCell.swift; sourceTree = "<group>"; };
@@ -102,6 +100,8 @@
 		EA79DCC521067442003BAEA5 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		EA79DCC72106ADA4003BAEA5 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		EA79DCCA2106AF86003BAEA5 /* LensViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensViewControllerExtension.swift; sourceTree = "<group>"; };
+		EA93ADBC210E1CF2004690E2 /* SuggestionItem+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SuggestionItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EA93ADBD210E1CF2004690E2 /* SuggestionItem+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SuggestionItem+CoreDataClass.swift"; sourceTree = "<group>"; };
 		EA964B6B21092D300029363D /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		EAE1D9462103E94200812CEA /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -260,8 +260,8 @@
 		EA79DCB821067026003BAEA5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0CE913C2210CA0F200F448DB /* SuggestionItem+CoreDataClass.swift */,
-				0CE913C3210CA0F200F448DB /* SuggestionItem+CoreDataProperties.swift */,
+				EA93ADBD210E1CF2004690E2 /* SuggestionItem+CoreDataClass.swift */,
+				EA93ADBC210E1CF2004690E2 /* SuggestionItem+CoreDataProperties.swift */,
 				EA79DCC121067199003BAEA5 /* Item+CoreDataClass.swift */,
 				EA79DCC221067199003BAEA5 /* Item+CoreDataProperties.swift */,
 				EA79DCBE21067140003BAEA5 /* Item.xcdatamodeld */,
@@ -418,7 +418,6 @@
 				B64C9137209F332200BB1DEC /* DiscoverViewController.swift in Sources */,
 				0CBD9C0B2105403D003C6CD2 /* DetailCollectionViewCell.swift in Sources */,
 				EA6FB4BF210BDBE7009B426B /* SuggestionItem.xcdatamodeld in Sources */,
-				0CE913C5210CA0F200F448DB /* SuggestionItem+CoreDataProperties.swift in Sources */,
 				B64C9138209F332200BB1DEC /* LensViewController.swift in Sources */,
 				EA72D3E02107DC3700AC9764 /* DiscoverViewControllerExtension.swift in Sources */,
 				0C1F1F50210B885200EB0915 /* PopModal.swift in Sources */,
@@ -428,7 +427,6 @@
 				B64C912B209F32D100BB1DEC /* ScrollViewController.swift in Sources */,
 				EA79DCC321067199003BAEA5 /* Item+CoreDataClass.swift in Sources */,
 				B6BF6379209F1315000FDF39 /* AppDelegate.swift in Sources */,
-				0CE913C4210CA0F200F448DB /* SuggestionItem+CoreDataClass.swift in Sources */,
 				EA79DCCB2106AF86003BAEA5 /* LensViewControllerExtension.swift in Sources */,
 				0CBD9C0F2106000F003C6CD2 /* Color.swift in Sources */,
 				B64C9139209F332200BB1DEC /* CameraViewController.swift in Sources */,
@@ -436,11 +434,13 @@
 				EA964B6C21092D300029363D /* Error.swift in Sources */,
 				EA79DCC621067442003BAEA5 /* Constant.swift in Sources */,
 				B64C912D209F32D100BB1DEC /* MainViewController.swift in Sources */,
+				EA93ADBF210E1CF2004690E2 /* SuggestionItem+CoreDataClass.swift in Sources */,
 				B64C913A209F332200BB1DEC /* ChatViewController.swift in Sources */,
 				EA3EF25E21042A06008044BB /* ROOT.swift in Sources */,
 				EA79DCC021067140003BAEA5 /* Item.xcdatamodeld in Sources */,
 				EA72D3DE2107C4BB00AC9764 /* CacheImage.swift in Sources */,
 				EA79DCC82106ADA4003BAEA5 /* CoreDataStack.swift in Sources */,
+				EA93ADBE210E1CF2004690E2 /* SuggestionItem+CoreDataProperties.swift in Sources */,
 				B64C912E209F32D100BB1DEC /* NavigationViewAnimation.swift in Sources */,
 				B617FF94209FB3630031656A /* LensFlowLayout.swift in Sources */,
 				0C2D842E210394F1005DB26D /* APIService.swift in Sources */,

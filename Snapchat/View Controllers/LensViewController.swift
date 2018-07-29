@@ -58,17 +58,6 @@ extension LensViewController: BarcodeScannerCodeDelegate {
         
         
         
-       
-        
-        
-        // notify to all or
-        
-        // save to coredata
-        
-        
-        // second method
-       
-        
         
     }
     
@@ -137,7 +126,7 @@ extension LensViewController{
                             print("Success")
                             let item = item[0]
                             
-                            guard let title =  item["name"] , let price = item["msrp"], let rating = item["customerRating"], let id = item["upc"], let imageUrl = item["largeImage"]
+                            guard let title =  item["name"] , let price = item["msrp"], let rating = item["customerRating"], let id = item["itemId"], let imageUrl = item["largeImage"]
                                 else{
                                     
                                     // alert
@@ -182,7 +171,7 @@ extension LensViewController{
                             //print("Check: ",f,n,price)
                             
                             dictionary["price"] = f
-                            self.updateEntity(id: id1 as! String, with:f , with: rating1 as! String, dictionary: dictionary)
+                            self.updateEntity(id: id1 as! Int64, with:f , with: rating1 as! String, dictionary: dictionary)
                             
                             // update here
                             //TODO:- invoke the delegate method

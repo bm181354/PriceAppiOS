@@ -84,7 +84,7 @@ extension LensViewController{
     }
     
     
-    func updateEntity(id:String, with price: Float, with rating:String, dictionary: [String: Any]){
+    func updateEntity(id:Int64, with price: Float, with rating:String, dictionary: [String: Any]){
         let context = CoreDataStack.sharedInstance.persistentContainer.viewContext
         
          let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Item")
