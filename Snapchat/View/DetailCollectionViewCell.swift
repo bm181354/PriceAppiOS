@@ -190,7 +190,6 @@ class DetailViewCell:UICollectionViewCell{
         ratingView.layer.masksToBounds = false
         
         //subLabel
-        
         subLabel.bottomAnchor.constraint(equalTo: imageContent.bottomAnchor, constant: 0).isActive = true
         subLabel.leadingAnchor.constraint(equalTo: imageContent.trailingAnchor, constant: 24).isActive = true
 

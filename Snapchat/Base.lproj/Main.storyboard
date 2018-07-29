@@ -292,7 +292,7 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Gvl-cm-P7B">
-                                <rect key="frame" x="16" y="129" width="382" height="607"/>
+                                <rect key="frame" x="0.0" y="99" width="414" height="637"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DTC-Vz-L4J">
                                     <size key="itemSize" width="188" height="245"/>
@@ -302,7 +302,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellId" id="iay-lr-nVc" customClass="SuggestionCollectionCell" customModule="PriceApp" customModuleProvider="target">
-                                        <rect key="frame" x="97" y="0.0" width="188" height="245"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="188" height="245"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="188" height="245"/>
@@ -320,10 +320,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <accessibility key="accessibilityConfiguration" label="Chat View"/>
                         <constraints>
-                            <constraint firstItem="Gvl-cm-P7B" firstAttribute="leading" secondItem="Uz6-F9-rfG" secondAttribute="leading" constant="16" id="6pI-4V-cJX"/>
-                            <constraint firstItem="Gvl-cm-P7B" firstAttribute="top" secondItem="SVj-kF-Ndk" secondAttribute="bottom" constant="30" id="FfJ-H5-C2e"/>
+                            <constraint firstItem="Gvl-cm-P7B" firstAttribute="leading" secondItem="Uz6-F9-rfG" secondAttribute="leading" id="6pI-4V-cJX"/>
+                            <constraint firstItem="Gvl-cm-P7B" firstAttribute="top" secondItem="SVj-kF-Ndk" secondAttribute="bottom" id="FfJ-H5-C2e"/>
                             <constraint firstItem="SVj-kF-Ndk" firstAttribute="leading" secondItem="Uz6-F9-rfG" secondAttribute="leading" id="UiP-aw-83k"/>
-                            <constraint firstItem="Gvl-cm-P7B" firstAttribute="trailing" secondItem="Uz6-F9-rfG" secondAttribute="trailing" constant="-16" id="WkH-RL-6Qx"/>
+                            <constraint firstItem="Gvl-cm-P7B" firstAttribute="trailing" secondItem="Uz6-F9-rfG" secondAttribute="trailing" id="WkH-RL-6Qx"/>
                             <constraint firstItem="SVj-kF-Ndk" firstAttribute="top" secondItem="kzj-WM-U29" secondAttribute="top" id="cVu-s0-kMY"/>
                             <constraint firstItem="SVj-kF-Ndk" firstAttribute="trailing" secondItem="Uz6-F9-rfG" secondAttribute="trailing" id="csb-bQ-lRg"/>
                             <constraint firstItem="HJF-lD-BME" firstAttribute="top" secondItem="Gvl-cm-P7B" secondAttribute="bottom" id="knw-Vz-GbK"/>
@@ -349,18 +349,18 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R4v-7k-giD">
                                 <rect key="frame" x="39" y="202" width="336" height="352"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mat-K7-LOn">
-                                        <rect key="frame" x="8" y="1" width="320" height="52"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mat-K7-LOn">
+                                        <rect key="frame" x="8" y="1" width="320" height="75"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="52" id="H5X-Yn-W0y"/>
+                                            <constraint firstAttribute="height" constant="75" id="H5X-Yn-W0y"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RG9-ql-Bot">
                                         <rect key="frame" x="0.0" y="299" width="336" height="53"/>
-                                        <color key="backgroundColor" red="1" green="0.62469335258691272" blue="0.48167466488782318" alpha="0.88482064260563376" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.26274509800000001" green="0.27450980390000002" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Cancel">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -369,15 +369,15 @@
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rwdevcon-logo" translatesAutoresizingMaskIntoConstraints="NO" id="a3x-Yf-FjZ">
-                                        <rect key="frame" x="0.0" y="53" width="336" height="238"/>
+                                        <rect key="frame" x="0.0" y="84" width="336" height="207"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="238" id="yVe-zb-cEp"/>
+                                            <constraint firstAttribute="height" constant="207" id="yVe-zb-cEp"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="a3x-Yf-FjZ" firstAttribute="top" secondItem="mat-K7-LOn" secondAttribute="bottom" id="1SY-hi-MYA"/>
+                                    <constraint firstItem="a3x-Yf-FjZ" firstAttribute="top" secondItem="mat-K7-LOn" secondAttribute="bottom" constant="8" id="1SY-hi-MYA"/>
                                     <constraint firstItem="RG9-ql-Bot" firstAttribute="top" secondItem="a3x-Yf-FjZ" secondAttribute="bottom" constant="8" id="9GQ-YB-hRi"/>
                                     <constraint firstAttribute="trailing" secondItem="a3x-Yf-FjZ" secondAttribute="trailing" id="DYW-Sf-DLj"/>
                                     <constraint firstItem="RG9-ql-Bot" firstAttribute="leading" secondItem="R4v-7k-giD" secondAttribute="leading" id="Khz-Th-vfc"/>

@@ -11,6 +11,17 @@ import MapKit
 
 class SubDetailVC:UIViewController {
     
+    
+    
+    var item:Item? = nil {
+        didSet{
+            if let item = item {
+               titleView.text = item.title
+               productView.loadImageUsingCacheWithURLString(item.mediaURL, placeHolder: UIImage(named: "placeholder"))
+            }
+        }
+    }
+    
     lazy var backdropView: UIView = {
         let bdView = UIView(frame: self.view.bounds)
         bdView.backgroundColor = UIColor.black.withAlphaComponent(0.5)
@@ -50,6 +61,7 @@ class SubDetailVC:UIViewController {
        let lb = UILabel()
         lb.text = "Product name"
         lb.textColor = Color.getAccentColor()
+        lb.numberOfLines = 0
         lb.font = UIFont(name: "HelveticaNeue-Bold", size: 20)
         lb.translatesAutoresizingMaskIntoConstraints = false
        return lb
@@ -91,8 +103,8 @@ class SubDetailVC:UIViewController {
         menuView.addSubview(removeBtn)
         menuView.addSubview(titleView)
         menuView.addSubview(productView)
-        menuView.addSubview(_infoView)
-        menuView.addSubview(segmentedControl)
+//        menuView.addSubview(_infoView)
+//        menuView.addSubview(segmentedControl)
         
         menuView.backgroundColor = UIColor(red: 243/255, green: 245/255, blue: 247/255, alpha: 1)
         menuView.translatesAutoresizingMaskIntoConstraints = false
@@ -104,13 +116,16 @@ class SubDetailVC:UIViewController {
         //Remove Button
         removeBtn.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16).isActive = true
         removeBtn.leadingAnchor.constraint(equalTo: view.leadingAnchor , constant: 16).isActive = true
-        removeBtn.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -16).isActive = true
+        removeBtn.topAnchor.constraint(equalTo: productView.bottomAnchor, constant: 16).isActive = true
         removeBtn.heightAnchor.constraint(equalToConstant: 60).isActive = true
         
         
         // titleView
-        titleView.topAnchor.constraint(equalTo: menuView.topAnchor, constant: 0).isActive = true
+        titleView.topAnchor.constraint(equalTo: menuView.topAnchor, constant: 32).isActive = true
         titleView.leadingAnchor.constraint(equalTo: menuView.leadingAnchor, constant: 16).isActive = true
+        titleView.trailingAnchor.constraint(equalTo: menuView.trailingAnchor, constant: 16).isActive = true
+        titleView.bottomAnchor.constraint(equalTo: productView.topAnchor, constant: -16).isActive = true
+
         
         // productView
         productView.topAnchor.constraint(equalTo: titleView.bottomAnchor, constant: 8).isActive = true
@@ -118,16 +133,16 @@ class SubDetailVC:UIViewController {
         productView.trailingAnchor.constraint(equalTo: menuView.trailingAnchor, constant: -14).isActive = true
         productView.heightAnchor.constraint(equalToConstant: self.view.bounds.width/2).isActive = true
 
-        //_infoView
-        _infoView.topAnchor.constraint(equalTo: productView.bottomAnchor, constant: 16).isActive = true
-        _infoView.trailingAnchor.constraint(equalTo: menuView.trailingAnchor, constant: 8).isActive = true
-        _infoView.leadingAnchor.constraint(equalTo: menuView.leadingAnchor, constant: 16).isActive = true
+//        //_infoView
+//        _infoView.topAnchor.constraint(equalTo: productView.bottomAnchor, constant: 16).isActive = true
+//        _infoView.trailingAnchor.constraint(equalTo: menuView.trailingAnchor, constant: 8).isActive = true
+//        _infoView.leadingAnchor.constraint(equalTo: menuView.leadingAnchor, constant: 16).isActive = true
         
         //segmentedControl
-        segmentedControl.topAnchor.constraint(equalTo: _infoView.bottomAnchor, constant: 8).isActive = true
-        segmentedControl.trailingAnchor.constraint(equalTo: menuView.trailingAnchor, constant: -16).isActive = true
-        segmentedControl.leadingAnchor.constraint(equalTo: menuView.leadingAnchor, constant: 16).isActive = true
-        segmentedControl.bottomAnchor.constraint(equalTo: removeBtn.topAnchor, constant: -16).isActive = true
+//        segmentedControl.topAnchor.constraint(equalTo: _infoView.bottomAnchor, constant: 8).isActive = true
+//        segmentedControl.trailingAnchor.constraint(equalTo: menuView.trailingAnchor, constant: -16).isActive = true
+//        segmentedControl.leadingAnchor.constraint(equalTo: menuView.leadingAnchor, constant: 16).isActive = true
+//        segmentedControl.bottomAnchor.constraint(equalTo: removeBtn.topAnchor, constant: -16).isActive = true
         
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SubDetailVC.handleTap(_:)))

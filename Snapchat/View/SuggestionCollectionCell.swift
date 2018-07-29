@@ -10,17 +10,18 @@ import UIKit
 
 class SuggestionCollectionCell:UICollectionViewCell{
     
+
     let imageView:UIImageView={
        let iv = UIImageView()
-       iv.backgroundColor = .red
+        iv.backgroundColor = .white
+        iv.contentMode = .scaleAspectFit
         iv.translatesAutoresizingMaskIntoConstraints = false
        return iv
-        
     }()
     
     let buttonView:UIButton={
        let bv = UIButton()
-       bv.backgroundColor = UIColor(white: 1, alpha: 0.5)
+       bv.backgroundColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 0.8)
        bv.translatesAutoresizingMaskIntoConstraints = false
        bv.setTitle("Name", for: .normal)
 //       bv.backgroundColor = .clear
@@ -30,16 +31,17 @@ class SuggestionCollectionCell:UICollectionViewCell{
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.backgroundColor = .red
         
         self.addSubview(imageView)
         self.addSubview(buttonView)
         
+        self.backgroundColor = .white
+        
         // constraint
-        imageView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 0).isActive = true
-        imageView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: 0).isActive = true
-        imageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 0).isActive = true
-        imageView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0).isActive = true
+        imageView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 16).isActive = true
+        imageView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -16).isActive = true
+        imageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 8).isActive = true
+        imageView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -8).isActive = true
         
         // constraint
         buttonView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 0).isActive = true
@@ -47,6 +49,7 @@ class SuggestionCollectionCell:UICollectionViewCell{
         buttonView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0).isActive = true
         buttonView.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
+        //shadow
         
         
     }
@@ -55,7 +58,7 @@ class SuggestionCollectionCell:UICollectionViewCell{
         DispatchQueue.main.async {
             //imageViewself.titleView.text = suggestionItem.title
             print("price: ",suggestionItem.price)
-            self.buttonView.setTitle(": $\(suggestionItem.price)", for: .normal)
+            self.buttonView.setTitle(" $\(suggestionItem.price)", for: .normal)
             self.imageView.loadImageUsingCacheWithURLString(suggestionItem.mediaURL, placeHolder: UIImage(named: "placeholder"))
             
         }

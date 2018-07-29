@@ -22,56 +22,9 @@ class LensViewController:BarcodeScannerViewController {
         self.headerViewController.titleLabel.text = nil
         
         
-        let product = "15610479"
         
-        APIService.shared.fetchSuggestion(product: product) { (data) in
-            switch data{
-            case .Success(let data):
-                if let data = data {
-
-                   let jsonArray = JSON(data)
-                    
-                    
-                    self.deleteAllSuggestion()
-                    for (index,subJson):(String, JSON) in jsonArray {
-                        
-                   guard let title = subJson["name"].string ,let mediaURL = subJson["mediumImage"].string ,let price = subJson["msrp"].float ?? subJson["salePrice"].float , let id = subJson["itemId"].int else{
-                        // do some error handling here
-                    
-                        print("hello")
-                        return
-                        }
-                        
-                        // delete the data
-                        
-                        
-                         print(title)
-//                        self.deleteAllSuggestion()
-                        _ = self.createSuggestionItemEntityFrom(title: title, id: id, price: price, url: mediaURL)
-                        
-                        
-                        
-                    }
-                    
-                    do {
-                        try CoreDataStack.sharedInstance.persistentContainer2.viewContext.save()
-                    } catch let error {
-                        print(error)
-                        
-                    }
-                    
-
-
-                }else{
-                    
-                    print("null")
-                }
-                
-                
-            case .Error(let error):
-                print (error)
-            }
-        }
+        
+       
 
         
     }
@@ -233,6 +186,9 @@ extension LensViewController{
                             
                             // update here
                             //TODO:- invoke the delegate method
+                            let product = "15610479"
+                            self.update(product: product)
+                            
                             
                             DispatchQueue.main.async{
                                 // done
