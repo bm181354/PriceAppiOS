@@ -88,7 +88,7 @@ extension LensViewController{
         let context = CoreDataStack.sharedInstance.persistentContainer.viewContext
         
          let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Item")
-         fetchRequest.predicate = NSPredicate(format: "id == %@", id)
+         fetchRequest.predicate = NSPredicate(format: "id == %i", id)
         do{
          let result = try context.fetch(fetchRequest)
             if (result.count)>0{
