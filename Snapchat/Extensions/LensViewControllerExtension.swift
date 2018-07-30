@@ -63,20 +63,20 @@ extension LensViewController{
         }
     }
     
-    func createItemEntityFrom(dictionary: [String: Any]) -> NSManagedObject? {
+    func createItemEntityFrom(id:Int64, with price: Float, with rating:String, with title: String, with mediURL: String) -> NSManagedObject? {
         let context = CoreDataStack.sharedInstance.persistentContainer.viewContext
         
         let itemEntity = Item(context: context)
 
        
-            itemEntity.title = dictionary["title"] as? String ?? "N/A"
-            itemEntity.id = dictionary["itemId"] as? Int64 ?? 0
-            itemEntity.rating = (dictionary["rating"] as? String) ?? "N/A"
-            itemEntity.mediaURL = (dictionary["mediaURL"] as? String) ?? "N/A"
+            itemEntity.title = title
+            itemEntity.id = id
+            itemEntity.rating = rating
+            itemEntity.mediaURL = mediURL
         
         
         
-            itemEntity.price = dictionary["msrp"] as? Float ?? 0.0
+            itemEntity.price = price
             itemEntity.shopURL = "N/A"
             
             return itemEntity
@@ -84,7 +84,7 @@ extension LensViewController{
     }
     
     
-    func updateEntity(id:Int64, with price: Float, with rating:String, dictionary: [String: Any]){
+    func updateEntity(id:Int64, withPrice price: Float, withRating rating:String, withTitle title: String, withMediaURL mediaURL: String){
         let context = CoreDataStack.sharedInstance.persistentContainer.viewContext
         
          let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Item")
@@ -102,7 +102,7 @@ extension LensViewController{
             }
             }else{
               // create new entity
-              _ =   self.createItemEntityFrom(dictionary: dictionary)
+                _ =   self.createItemEntityFrom(id: id,with: price,with: rating,with: title,with: mediaURL)
                 
             }
             

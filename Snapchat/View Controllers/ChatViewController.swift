@@ -18,6 +18,7 @@ class ChatViewController: UIViewController {
     super.viewDidLoad()
     collectionView.backgroundColor = UIColor(red: 216/255, green: 216/255, blue: 216/255, alpha: 1)
     suggestionItem = fetchEverything()
+    collectionView.reloadData()
     
   }
 }

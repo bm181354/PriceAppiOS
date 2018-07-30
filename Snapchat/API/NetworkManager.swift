@@ -38,12 +38,18 @@ class NetworkManager {
                 
                 
             }else {
-               // get the data
-               // iterate
+               // no need of auth
                 
-                
+                if data != nil{
                 
                 callback(.Success(data))
+                
+                }
+                else{
+                    // network error
+                   callback(.Error("Network Error"))
+                    
+                }
                 
             }
             
@@ -80,7 +86,10 @@ class NetworkManager {
                             
                            
                             
-                        }
+                        }else {
+                            
+                            callback(false,nil)
+                    }
                 
                 }
                 

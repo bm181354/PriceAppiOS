@@ -55,6 +55,7 @@ class DiscoverViewController: UIViewController {
     // Configure Refresh Control
     refreshControl.addTarget(self, action: #selector(refreshCoreData(_:)), for: .valueChanged)
     item = fetchEverything()
+    collectionView.reloadData()
     
     //listener
     changeListener()

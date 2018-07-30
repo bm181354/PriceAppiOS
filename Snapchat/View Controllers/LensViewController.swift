@@ -6,6 +6,8 @@ import SwiftyJSON
 
 class LensViewController:BarcodeScannerViewController {
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,6 +22,39 @@ class LensViewController:BarcodeScannerViewController {
         self.cameraViewController.barCodeFocusViewType = .animated
         self.cameraViewController.showsCameraButton = true
         self.headerViewController.titleLabel.text = nil
+        
+        var code = "035000521019"
+        code = "046500018428"
+        
+        APIService.shared.fetchProduct(code: code) { (data) in
+            
+            switch data{
+            case .Success(let data):
+                let json = JSON(data)
+                print(json)
+                
+                if let id = json["items"][0]["itemId"].int, let price = json["items"][0]["msrp"].float ?? json["items"][0]["salePrice"].float, let mediaURL = json["items"][0]["mediumImage"].string, let title = json["items"][0]["name"].string, let rating = json["items"][0]["customerRating"].string  {
+                    
+                  self.updateEntity(id: Int64(id), withPrice: price, withRating: rating, withTitle: title, withMediaURL: mediaURL)
+                   print("hello")
+                    
+                    self.update(product: "15610479")
+                    
+                    //send the message to charviewController
+            
+                }else {
+                  //error
+                   print("json parsing error")
+                    
+                }
+                
+                
+                
+            case .Error(let message):
+                print(message)
+            }
+            
+        }
         
         
         
@@ -51,6 +86,9 @@ extension LensViewController: BarcodeScannerCodeDelegate {
         
         print("Barcode Data: \(code)")
         print("Symbology Type: \(type)")
+        
+        
+        
         
        
         doAPICalls(code: code, controller: controller)
@@ -115,97 +153,29 @@ extension LensViewController{
         
         // fetch data Code
         APIService.shared.fetchProduct(code: code) { (data) in
-            print(code)
+            
             switch data{
             case .Success(let data):
-                do {
-                    if let json = try JSONSerialization.jsonObject(with: data!) as? [String: [AnyObject]]
-                    {
-                        if let item = json["items"]{
-                            //                                                    ["name"] , let price = item[0]["msrp"], let rating = item[0]["customerRating"], let id = item[0]["upc"], let imageUrl = item[0]["largeImage"]
-                            print("Success")
-                            let item = item[0]
-                            
-                            guard let title =  item["name"] , let price = item["msrp"], let rating = item["customerRating"], let id = item["itemId"], let imageUrl = item["largeImage"]
-                                else{
-                                    
-                                    // alert
-                                    DispatchQueue.main.async{
-                                        controller.reset()
-                                        controller.dismiss(animated: true, completion: nil)
-                                        self.showAlert(title: "No Product ", message: "No such barcode is found")
-                                    }
-                                    return
-                            }
-                            
-                            guard let title1 = title, let price1 = price, let rating1 = rating, let id1 = id, let imageUrl1 = imageUrl else{
-                                //alert
-                                DispatchQueue.main.async{
-                                    controller.reset()
-                                    controller.dismiss(animated: true, completion: nil)
-                                    self.showAlert(title: "No Product ", message: "No such barcode is found")
-                                }
-                                return
-                            }
-                            
-                            
-                            var dictionary = ["title": title1,
-                                              "price": price1,
-                                              "rating": rating1,
-                                              "id": id1,
-                                              "mediaURL": imageUrl1
-                            ]
-                            
-                            
-                            print(dictionary)
-                            guard let n = price as? NSNumber else{
-                                // alert
-                                DispatchQueue.main.async{
-                                    controller.reset()
-                                    controller.dismiss(animated: true, completion: nil)
-                                    self.showAlert(title: "No Product ", message: "No such barcode is found")
-                                }
-                                return
-                            }
-                            let f = n.floatValue
-                            //print("Check: ",f,n,price)
-                            
-                            dictionary["price"] = f
-                            self.updateEntity(id: id1 as! Int64, with:f , with: rating1 as! String, dictionary: dictionary)
-                            
-                            // update here
-                            //TODO:- invoke the delegate method
-                            let product = "15610479"
-                            self.update(product: product)
-                            
-                            
-                            DispatchQueue.main.async{
-                                // done
-                                controller.reset()
-                                controller.dismiss(animated: true, completion: nil)
-                            }
-                            
-                            do {
-                                try CoreDataStack.sharedInstance.persistentContainer.viewContext.save()
-                            } catch let error {
-                                print(error)
-                                
-                            }
-                            
-                            
-                        }else{
-                            // json is empty
-                            
-                            
-                        }
-                        
-                        //                        print(json["items"]![0]["itemId"])
-                        
-                    }
-                } catch let error {
-                    print(error)
+                let json = JSON(data)
+              
+                
+                if let id = json["items"][0]["itemId"].int, let price = json["items"][0]["msrp"].float ?? json["items"][0]["salePrice"].float, let mediaURL = json["items"][0]["mediumImage"].string, let title = json["items"][0]["name"].string, let rating = json["items"][0]["customerRating"].string  {
+                    
+                    _ = self.updateEntity(id: Int64(id), withPrice: price, withRating: rating, withTitle: title, withMediaURL: mediaURL)
+                    
+                    self.update(product: "\(id)")
+                    
+                    
+                }else {
+                    //error parsing the json
+                    print("json parsing error")
+                    
                 }
+                
+                
+                
             case .Error(let message):
+                //network error
                 print(message)
             }
             
