@@ -13,7 +13,7 @@ protocol ScrollViewControllerDelegate{
     
 }
 
-class ScrollViewController: UIViewController {
+class ScrollViewController: UIViewController{
   
   // MARK: - Properties
   var scrollView: UIScrollView {
@@ -54,11 +54,22 @@ class ScrollViewController: UIViewController {
         //  setting screen here : [on Screen]
         //  vc0-----[vc1]-----vc2
         if let controller = vc {
-            addChildViewController(controller)  
+            addChildViewController(controller)
+            
+            if index == 0{
+                let controller = controller as! ChatViewController
+                controller.delegate = self
+            }
+            else if index == 2{
+                let controller = controller as! DiscoverViewController
+                    controller.delegate = self
+            }
             // sets starting points
             controller.view.frame = frame(for: index)
             scrollView.addSubview(controller.view)
             controller.didMove(toParentViewController: self)
+            
+            
         }
         
     }
@@ -120,9 +131,23 @@ extension ScrollViewController{
         }else{
             scrollView.setContentOffset(contentOffset, animated: animate)
         }
-        
-        
-        
+ 
     }
 }
+//MARK: - extension
 
+extension ScrollViewController:ChildMoveFromSuggestonVC{
+  
+    func moveToCamera() {
+        let contentOffset = CGPoint(x: pageSize.width * CGFloat(1), y: 0)
+            UIView.animate(withDuration: 0.2, delay: 0, options: [UIViewAnimationOptions.curveEaseIn], animations: {
+                self.scrollView.setContentOffset(contentOffset, animated: false)
+            }, completion: nil)
+            
+    }
+
+}
+
+extension ScrollViewController:ChildMoveFromHistoryVC{
+  
+}

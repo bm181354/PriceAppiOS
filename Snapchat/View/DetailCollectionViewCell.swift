@@ -5,6 +5,15 @@
 
 import UIKit
 
+enum rating:String{
+    case one = "Rating :★☆☆☆☆"
+    case two = "Rating :★★☆☆☆"
+    case three = "Rating :★★★☆☆"
+    case four = "Rating :★★★★☆"
+    case five = "Rating :★★★★★"
+}
+
+
 class DetailViewCell:UICollectionViewCell{
     
 
@@ -82,7 +91,7 @@ class DetailViewCell:UICollectionViewCell{
     
     let buyBtn:UIButton = {
         let bt = UIButton()
-        bt.titleLabel?.font = UIFont(name: "Sabatica", size: 12)
+        //bt.titleLabel?.font = UIFont(name: "Sabatica", size: 12)
         bt.setTitle("Price: $2.99", for: .normal)
         bt.backgroundColor = Color.getAccentColor()
         bt.translatesAutoresizingMaskIntoConstraints = false
@@ -203,7 +212,7 @@ class DetailViewCell:UICollectionViewCell{
     }
     
     
-    
+    // price as well
     func setItemCellWith(item: Item) {
         DispatchQueue.main.async {
             self.titleView.text = item.title

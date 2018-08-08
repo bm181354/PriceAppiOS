@@ -62,7 +62,7 @@ class SubDetailVC:UIViewController {
         lb.text = "Product name"
         lb.textColor = Color.getAccentColor()
         lb.numberOfLines = 0
-        lb.font = UIFont(name: "HelveticaNeue-Bold", size: 20)
+        lb.font = UIFont(name: "HelveticaNeue-Bold", size: 18)
         lb.translatesAutoresizingMaskIntoConstraints = false
        return lb
     }()
@@ -123,7 +123,7 @@ class SubDetailVC:UIViewController {
         // titleView
         titleView.topAnchor.constraint(equalTo: menuView.topAnchor, constant: 32).isActive = true
         titleView.leadingAnchor.constraint(equalTo: menuView.leadingAnchor, constant: 16).isActive = true
-        titleView.trailingAnchor.constraint(equalTo: menuView.trailingAnchor, constant: 16).isActive = true
+        titleView.trailingAnchor.constraint(equalTo: menuView.trailingAnchor, constant: -16).isActive = true
         titleView.bottomAnchor.constraint(equalTo: productView.topAnchor, constant: -16).isActive = true
 
         

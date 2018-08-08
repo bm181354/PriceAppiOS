@@ -2,11 +2,22 @@
 
 import UIKit
 
+protocol ChildMoveFromHistoryVC{
+    func moveToCamera()
+}
+
 class DiscoverViewController: UIViewController {
     
     
     var item = [Item]()
     fileprivate let context = CoreDataStack.sharedInstance.persistentContainer.viewContext
+    
+    var delegate:ChildMoveFromHistoryVC? = nil
+    
+    @IBOutlet weak var isEmptyLabel: UILabel!
+    @IBOutlet weak var mainBackground: UIView!
+    //TODO:- change this image
+    @IBOutlet weak var backgroundImage: UIImageView!
     
     private let refreshControl = UIRefreshControl()
   // MARK: - IBOutlets
@@ -21,6 +32,11 @@ class DiscoverViewController: UIViewController {
     }
     
    
+    @IBOutlet weak var btnScanned: UIButton!
+    @IBAction func btnScan(_ sender: Any) {
+      print("Direct to camera")
+        delegate?.moveToCamera()
+    }
     
 
   // MARK: - View Life Cycle
@@ -121,7 +137,19 @@ extension DiscoverViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return item.count
+        if (item.count == 0){
+            backgroundImage.isHidden = false
+            mainBackground.isHidden = false
+            isEmptyLabel.isHidden = false
+            btnScanned.isHidden = false
+            return item.count
+        }else{
+            btnScanned.isHidden = true
+            isEmptyLabel.isHidden = true
+            mainBackground.isHidden = true
+            backgroundImage.isHidden = true
+            return item.count
+        }
     }
   
     

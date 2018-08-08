@@ -2,22 +2,40 @@
 
 import UIKit
 
+
+protocol ChildMoveFromSuggestonVC{
+    func moveToCamera()
+}
+
 class ChatViewController: UIViewController {
     
+    var delegate:ChildMoveFromSuggestonVC? = nil
     var suggestionItem = [SuggestionItem]()
   
-  // MARK: - IBOutlets
+    @IBOutlet weak var isEmptyLabel: UILabel!
+    // MARK: - IBOutlets
 //  @IBOutlet var backgroundView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
     
-  // MARK: - Properties
+    @IBOutlet weak var mainBackgroundView: UIView!
+    //TODO: - change image to empty
+    @IBOutlet weak var backImage: UIImageView!
+    
+    @IBOutlet weak var btnScan: UIButton!
+    @IBAction func btnScanned(_ sender: Any) {
+        print("redirect to scan")
+        delegate?.moveToCamera()
+    }
+    // MARK: - Properties
   var controllerColor: UIColor = UIColor(red: 0.23, green: 0.66, blue: 0.96, alpha: 1.0)
   
   // MARK: - View Life Cycle
   override func viewDidLoad() {
     super.viewDidLoad()
+    mainBackgroundView.backgroundColor = UIColor(red: 216/255, green: 216/255, blue: 216/255, alpha: 1)
     collectionView.backgroundColor = UIColor(red: 216/255, green: 216/255, blue: 216/255, alpha: 1)
     suggestionItem = fetchEverything()
+    
     collectionView.reloadData()
     
   }
@@ -29,7 +47,23 @@ extension ChatViewController: ColoredView {}
 // MARK: - collectionViewDelegation
 extension ChatViewController: UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return suggestionItem.count
+        
+        if (suggestionItem.count == 0 ){
+            backImage.isHidden = false
+            mainBackgroundView.isHidden = false
+            btnScan.isHidden = false
+            isEmptyLabel.isHidden = false
+            backImage.backgroundColor = .red
+            return suggestionItem.count
+        }else{
+            // TODO:- do true to all
+            backImage.isHidden = false
+            btnScan.isHidden = false
+            mainBackgroundView.isHidden = false
+            isEmptyLabel.isHidden = false
+            print("Hidden")
+            return suggestionItem.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -40,10 +74,10 @@ extension ChatViewController: UICollectionViewDelegate, UICollectionViewDataSour
 //        print(suggestionItem[indexPath.row].title)
           cell.setItemCellWith(suggestionItem: suggestionItem[indexPath.row])
 //
-//        cell.contentView.layer.cornerRadius = 4.0
+          cell.layer.cornerRadius = 7.0
 //        cell.contentView.layer.borderWidth = 1.0
 //        cell.contentView.layer.borderColor = UIColor.clear.cgColor
-//        cell.contentView.layer.masksToBounds = false
+          cell.layer.masksToBounds = false
 //
 //        cell.layer.shadowColor = UIColor.gray.cgColor
 //        cell.layer.shadowOpacity = 1
