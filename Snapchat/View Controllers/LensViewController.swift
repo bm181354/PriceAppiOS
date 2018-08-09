@@ -26,35 +26,35 @@ class LensViewController:BarcodeScannerViewController {
         var code = "035000521019"
         code = "046500018428"
         
-        APIService.shared.fetchProduct(code: code) { (data) in
-            
-            switch data{
-            case .Success(let data):
-                let json = JSON(data)
-                print(json)
-                
-                if let id = json["items"][0]["itemId"].int, let price = json["items"][0]["msrp"].float ?? json["items"][0]["salePrice"].float, let mediaURL = json["items"][0]["mediumImage"].string, let title = json["items"][0]["name"].string, let rating = json["items"][0]["customerRating"].string  {
-                    
-                  self.updateEntity(id: Int64(id), withPrice: price, withRating: rating, withTitle: title, withMediaURL: mediaURL)
-                   print("hello")
-                    
-                    self.update(product: "15610479")
-                    
-                    //send the message to charviewController
-            
-                }else {
-                  //error
-                   print("json parsing error")
-                    
-                }
-                
-                
-                
-            case .Error(let message):
-                print(message)
-            }
-            
-        }
+//        APIService.shared.fetchProduct(code: code) { (data) in
+//
+//            switch data{
+//            case .Success(let data):
+//                let json = JSON(data)
+//                print(json)
+//
+//                if let id = json["items"][0]["itemId"].int, let price = json["items"][0]["msrp"].float ?? json["items"][0]["salePrice"].float, let mediaURL = json["items"][0]["mediumImage"].string, let title = json["items"][0]["name"].string, let rating = json["items"][0]["customerRating"].string  {
+//
+//                  self.updateEntity(id: Int64(id), withPrice: price, withRating: rating, withTitle: title, withMediaURL: mediaURL)
+//                   print("hello")
+//
+//                    self.update(product: "15610479")
+//
+//                    //send the message to charviewController
+//
+//                }else {
+//                  //error
+//                   print("json parsing error")
+//
+//                }
+//
+//
+//
+//            case .Error(let message):
+//                print(message)
+//            }
+//
+//        }
         
         
         
