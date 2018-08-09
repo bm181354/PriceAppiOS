@@ -58,10 +58,11 @@ extension ChatViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return suggestionItem.count
         }else{
             // TODO:- do true to all
-            backImage.isHidden = false
-            btnScan.isHidden = false
-            mainBackgroundView.isHidden = false
-            isEmptyLabel.isHidden = false
+            let flagTest = true
+            backImage.isHidden = flagTest
+            btnScan.isHidden = flagTest
+            mainBackgroundView.isHidden = flagTest
+            isEmptyLabel.isHidden = flagTest
             print("Hidden")
             return suggestionItem.count
         }
@@ -85,7 +86,7 @@ extension ChatViewController: UICollectionViewDelegate, UICollectionViewDataSour
 //        cell.layer.shadowOffset = CGSize(width: -4.0, height: 4.0)
 //        cell.layer.shadowRadius = 10
 //        cell.layer.masksToBounds = false
-//        cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
+//        cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius:      cell.contentView.layer.cornerRadius).cgPath
         
         return cell
         
