@@ -7,6 +7,7 @@ protocol ChildMoveFromSuggestonVC{
     func moveToCamera()
 }
 
+
 class ChatViewController: UIViewController {
     
     var delegate:ChildMoveFromSuggestonVC? = nil
