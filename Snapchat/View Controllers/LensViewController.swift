@@ -26,35 +26,7 @@ class LensViewController:BarcodeScannerViewController {
         var code = "035000521019"
         code = "046500018428"
         
-//        APIService.shared.fetchProduct(code: code) { (data) in
-//
-//            switch data{
-//            case .Success(let data):
-//                let json = JSON(data)
-//                print(json)
-//
-//                if let id = json["items"][0]["itemId"].int, let price = json["items"][0]["msrp"].float ?? json["items"][0]["salePrice"].float, let mediaURL = json["items"][0]["mediumImage"].string, let title = json["items"][0]["name"].string, let rating = json["items"][0]["customerRating"].string  {
-//
-//                  self.updateEntity(id: Int64(id), withPrice: price, withRating: rating, withTitle: title, withMediaURL: mediaURL)
-//                   print("hello")
-//
-//                    self.update(product: "15610479")
-//
-//                    //send the message to charviewController
-//
-//                }else {
-//                  //error
-//                   print("json parsing error")
-//
-//                }
-//
-//
-//
-//            case .Error(let message):
-//                print(message)
-//            }
-//
-//        }
+
         
         
         
@@ -90,7 +62,7 @@ extension LensViewController: BarcodeScannerCodeDelegate {
         
         
         
-       
+        print("1")
         doAPICalls(code: code, controller: controller)
         
         
@@ -103,6 +75,7 @@ extension LensViewController: BarcodeScannerCodeDelegate {
         
         print("Barcode Data: \(code)")
         print("Symbology Type: \(type)")
+        print("2")
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
             //controller.resetWithError()
@@ -157,26 +130,23 @@ extension LensViewController{
             switch data{
             case .Success(let data):
                 let json = JSON(data)
-              
-                
                 if let id = json["items"][0]["itemId"].int, let price = json["items"][0]["msrp"].float ?? json["items"][0]["salePrice"].float, let mediaURL = json["items"][0]["mediumImage"].string, let title = json["items"][0]["name"].string, let rating = json["items"][0]["customerRating"].string  {
                     
-                    _ = self.updateEntity(id: Int64(id), withPrice: price, withRating: rating, withTitle: title, withMediaURL: mediaURL)
+                    self.updateEntity(id: Int64(id), withPrice: price, withRating: rating, withTitle: title, withMediaURL: mediaURL)
                     
                     self.update(product: "\(id)")
-                    
+                    controller.reset()
                     
                 }else {
                     //error parsing the json
                     print("json parsing error")
+                    controller.reset()
                     
                 }
-                
-                
-                
+ 
             case .Error(let message):
-                //network error
                 print(message)
+                controller.reset()
             }
             
         }
@@ -187,6 +157,8 @@ extension LensViewController{
     
     
 }
+
+
 
 
 

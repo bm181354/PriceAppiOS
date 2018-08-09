@@ -173,12 +173,11 @@ extension DiscoverViewController{
 extension DiscoverViewController{
     
     func changeListener(){
-        
-        
+        print("Listening for changes......")
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(self.contextSave(_ :)),
-                                               name: NSNotification.Name.NSManagedObjectContextDidSave,
-                                               object: context)
+                                               name:NSNotification.Name.NSManagedObjectContextObjectsDidChange,
+                                               object: nil)
     }
     
     @objc func contextSave(_ notification: Notification) {

@@ -38,6 +38,7 @@ class ChatViewController: UIViewController {
     suggestionItem = fetchEverything()
     
     collectionView.reloadData()
+    changeListener()
     
   }
 }
@@ -54,7 +55,8 @@ extension ChatViewController: UICollectionViewDelegate, UICollectionViewDataSour
             mainBackgroundView.isHidden = false
             btnScan.isHidden = false
             isEmptyLabel.isHidden = false
-            backImage.backgroundColor = .red
+//            backImage.backgroundColor = .red
+            print("Shown")
             return suggestionItem.count
         }else{
             // TODO:- do true to all
@@ -122,5 +124,24 @@ extension ChatViewController: UICollectionViewDelegate, UICollectionViewDataSour
  
     
 
+}
+
+// MARK:- listen for change [Notification]
+extension ChatViewController{
+    
+    func changeListener(){
+        print("Listening for changes......")
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(self.contextSave(_ :)),
+                                               name: NSNotification.Name.NSManagedObjectContextObjectsDidChange,
+                                               object: nil)
+    }
+    
+    @objc func contextSave(_ notification: Notification) {
+        suggestionItem = fetchEverything()
+        print("Change2")
+        collectionView.reloadData()
+    }
+    
 }
 

@@ -17,7 +17,7 @@ extension ChatViewController{
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "SuggestionItem")
         
-        
+        print("fetchEverything::CHATVIEWCONTROLLER")
         do{
             let result = try context.fetch(fetchRequest)
             if (result.count)>0{
