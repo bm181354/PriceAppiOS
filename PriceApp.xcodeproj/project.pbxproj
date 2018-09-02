@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C1201CB211CFCA600932241 /* SubVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1201CA211CFCA600932241 /* SubVCExtension.swift */; };
 		0C1F1F3821089F4900EB0915 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1F1F3721089F4900EB0915 /* Font.swift */; };
 		0C1F1F4B2108CA7900EB0915 /* LabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1F1F4A2108CA7900EB0915 /* LabelExtension.swift */; };
 		0C1F1F4E210B680300EB0915 /* SuggestionCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1F1F4D210B680300EB0915 /* SuggestionCollectionCell.swift */; };
 		0C1F1F50210B885200EB0915 /* PopModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1F1F4F210B885200EB0915 /* PopModal.swift */; };
+		0C237804213B72D500EF6200 /* NewSubDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C237803213B72D500EF6200 /* NewSubDetailVC.swift */; };
 		0C2D842E210394F1005DB26D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D842D210394F1005DB26D /* APIService.swift */; };
 		0CBD9C0B2105403D003C6CD2 /* DetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBD9C0A2105403D003C6CD2 /* DetailCollectionViewCell.swift */; };
 		0CBD9C0F2106000F003C6CD2 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBD9C0E2106000F003C6CD2 /* Color.swift */; };
@@ -55,10 +57,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C1201CA211CFCA600932241 /* SubVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubVCExtension.swift; sourceTree = "<group>"; };
 		0C1F1F3721089F4900EB0915 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		0C1F1F4A2108CA7900EB0915 /* LabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelExtension.swift; sourceTree = "<group>"; };
 		0C1F1F4D210B680300EB0915 /* SuggestionCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionCollectionCell.swift; sourceTree = "<group>"; };
 		0C1F1F4F210B885200EB0915 /* PopModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopModal.swift; sourceTree = "<group>"; };
+		0C237803213B72D500EF6200 /* NewSubDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSubDetailVC.swift; sourceTree = "<group>"; };
 		0C2D842D210394F1005DB26D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		0CBD9C0A2105403D003C6CD2 /* DetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		0CBD9C0E2106000F003C6CD2 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -197,6 +201,7 @@
 				B64C9128209F32D100BB1DEC /* MainViewController.swift */,
 				0CBD9C1021063BAB003C6CD2 /* SubDetailVC.swift */,
 				0C1F1F4F210B885200EB0915 /* PopModal.swift */,
+				0C237803213B72D500EF6200 /* NewSubDetailVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 				EA72D3DF2107DC3700AC9764 /* DiscoverViewControllerExtension.swift */,
 				0C1F1F4A2108CA7900EB0915 /* LabelExtension.swift */,
 				EA6FB4C4210BED06009B426B /* ChatViewControllerExtension.swift */,
+				0C1201CA211CFCA600932241 /* SubVCExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -417,6 +423,7 @@
 				0C1F1F3821089F4900EB0915 /* Font.swift in Sources */,
 				B64C9137209F332200BB1DEC /* DiscoverViewController.swift in Sources */,
 				0CBD9C0B2105403D003C6CD2 /* DetailCollectionViewCell.swift in Sources */,
+				0C237804213B72D500EF6200 /* NewSubDetailVC.swift in Sources */,
 				EA6FB4BF210BDBE7009B426B /* SuggestionItem.xcdatamodeld in Sources */,
 				B64C9138209F332200BB1DEC /* LensViewController.swift in Sources */,
 				EA72D3E02107DC3700AC9764 /* DiscoverViewControllerExtension.swift in Sources */,
@@ -449,6 +456,7 @@
 				EA6FB4C5210BED06009B426B /* ChatViewControllerExtension.swift in Sources */,
 				B617FF93209FB3630031656A /* LensCircleCell.swift in Sources */,
 				EA79DCC421067199003BAEA5 /* Item+CoreDataProperties.swift in Sources */,
+				0C1201CB211CFCA600932241 /* SubVCExtension.swift in Sources */,
 				EA3EF25A210402BF008044BB /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

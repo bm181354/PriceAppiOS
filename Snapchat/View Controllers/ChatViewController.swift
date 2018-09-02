@@ -110,19 +110,26 @@ extension ChatViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Select ",indexPath)
+        
 //        let sb = storyboard?.instantiateViewController(withIdentifier: "Main")
 //        sb?.present(, animated: true, completion: nil)
         
-        let modalVC =  self.storyboard?.instantiateViewController(withIdentifier: "modalVCId") as! ModalVC
+//        let modalVC =  self.storyboard?.instantiateViewController(withIdentifier: "modalVCId") as! ModalVC
+//
+//        modalVC.suggestionItem = suggestionItem[indexPath.row]
+//        // assign values here
+//        self.present(modalVC, animated: true, completion: nil)
         
-        modalVC.suggestionItem = suggestionItem[indexPath.row]
-        // assign values here 
-        self.present(modalVC, animated: true, completion: nil)
+            let vc = NewSubDetailVC()
+            vc.modalPresentationStyle = .custom
+            vc.item = suggestionItem[indexPath.row]
+            present(vc, animated: true, completion: nil)
+        
+        
+        
         
     }
-    
- 
-    
+
 
 }
 

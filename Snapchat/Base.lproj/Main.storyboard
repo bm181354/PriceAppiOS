@@ -408,19 +408,19 @@
                                         <rect key="frame" x="0.0" y="0.0" width="336" height="75"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mat-K7-LOn">
-                                                <rect key="frame" x="8" y="0.0" width="320" height="75"/>
+                                                <rect key="frame" x="16" y="0.0" width="312" height="75"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="75" id="H5X-Yn-W0y"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.98508163039999996" green="1" blue="0.83830048540000002" alpha="0.88482064260000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.34901960780000002" green="0.3294117647" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="mat-K7-LOn" firstAttribute="top" secondItem="ScH-qq-pe8" secondAttribute="top" id="3Ps-aS-V5g"/>
-                                            <constraint firstItem="mat-K7-LOn" firstAttribute="leading" secondItem="ScH-qq-pe8" secondAttribute="leading" constant="8" id="QoL-mX-dK0"/>
+                                            <constraint firstItem="mat-K7-LOn" firstAttribute="leading" secondItem="ScH-qq-pe8" secondAttribute="leading" constant="16" id="QoL-mX-dK0"/>
                                             <constraint firstAttribute="bottom" secondItem="mat-K7-LOn" secondAttribute="bottom" id="nkp-Bh-BKC"/>
                                             <constraint firstAttribute="trailing" secondItem="mat-K7-LOn" secondAttribute="trailing" constant="8" id="xZE-bX-3sE"/>
                                         </constraints>
@@ -435,7 +435,7 @@
                                             <action selector="dismissView:" destination="p81-Qc-J95" eventType="touchUpInside" id="aYk-wZ-qQA"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rwdevcon-logo" translatesAutoresizingMaskIntoConstraints="NO" id="a3x-Yf-FjZ">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="together" translatesAutoresizingMaskIntoConstraints="NO" id="a3x-Yf-FjZ">
                                         <rect key="frame" x="0.0" y="83" width="336" height="207"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="207" id="yVe-zb-cEp"/>
@@ -675,9 +675,9 @@
         <image name="history" width="323" height="324"/>
         <image name="panda" width="608" height="447"/>
         <image name="panda-icon-2" width="686" height="729"/>
-        <image name="rwdevcon-logo" width="1104" height="1104"/>
         <image name="setting" width="474" height="476"/>
         <image name="settinghighlight" width="474" height="476"/>
         <image name="suggestion" width="340" height="340"/>
+        <image name="together" width="1475" height="1714"/>
     </resources>
 </document>

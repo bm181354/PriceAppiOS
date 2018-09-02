@@ -6,6 +6,7 @@
 import UIKit
 
 enum rating:String{
+    case zero = "Rating :☆☆☆☆☆"
     case one = "Rating :★☆☆☆☆"
     case two = "Rating :★★☆☆☆"
     case three = "Rating :★★★☆☆"
@@ -41,7 +42,7 @@ class DetailViewCell:UICollectionViewCell{
         let lb = UILabel()
         lb.numberOfLines = 0
         lb.font = UIFont(name: "Roboto Condensed Light", size: 8)
-        lb.text = "Sample text about category here"
+        lb.text = "Product from Walmart"
         lb.textColor = .gray
         lb.translatesAutoresizingMaskIntoConstraints = false
         return lb
@@ -219,6 +220,32 @@ class DetailViewCell:UICollectionViewCell{
             print("price: ",item.price)
             self.buyBtn.setTitle("Price: $\(item.price)", for: .normal)
             self.imageContent.loadImageUsingCacheWithURLString(item.mediaURL, placeHolder: UIImage(named: "placeholder"))
+            print(Int(Float(item.rating)!),(item.rating))
+            
+            let number = Int(Float(item.rating)!)
+            
+            
+            switch(number){
+                case 1:
+                    self.ratingView.setTitle(rating.one.rawValue, for: .normal)
+                    break
+                case 2:
+                    self.ratingView.setTitle(rating.two.rawValue, for: .normal)
+                    break
+                case 3:
+                    self.ratingView.setTitle(rating.three.rawValue, for: .normal)
+                    break
+                case 4:
+                    self.ratingView.setTitle(rating.four.rawValue, for: .normal)
+                    break
+                case 5:
+                    self.ratingView.setTitle(rating.five.rawValue, for: .normal)
+                    break
+                default:
+                    self.ratingView.setTitle(rating.zero.rawValue, for: .normal)
+                    break
+            }
+            
             
         }
     }

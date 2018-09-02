@@ -1,24 +1,22 @@
 //
-//  SubDetailVC.swift
+//  NewSubDetailVC.swift
 //  PriceApp
 //
-//  Created by Biken Maharjan on 7/23/18.
+//  Created by Biken Maharjan on 9/1/18.
 //  Copyright © 2018 RayWenderlich.com. All rights reserved.
 //
 
 import UIKit
-import MapKit
-import CoreData
 
-class SubDetailVC:UIViewController {
-
+class NewSubDetailVC:UIViewController{
+    
     var url:String?
-    var item:Item? = nil {
+    var item:SuggestionItem? = nil {
         didSet{
             if let item = item {
-               titleView.text = item.title
+                titleView.text = item.title
                 url = item.mediaURL
-               productView.loadImageUsingCacheWithURLString(item.mediaURL, placeHolder: UIImage(named: "placeholder"))
+                productView.loadImageUsingCacheWithURLString(item.mediaURL, placeHolder: UIImage(named: "placeholder"))
             }
         }
     }
@@ -28,7 +26,7 @@ class SubDetailVC:UIViewController {
         bdView.backgroundColor = UIColor.black.withAlphaComponent(0.5)
         return bdView
     }()
-   lazy var segmentedControl:UISegmentedControl = {
+    lazy var segmentedControl:UISegmentedControl = {
         let items = ["Purple", "Green", "Blue"]
         let seg = UISegmentedControl(items:items)
         //seg.widthForSegment(at: 2)
@@ -40,7 +38,7 @@ class SubDetailVC:UIViewController {
     }()
     
     let productView:UIImageView = {
-       let pv = UIImageView()
+        let pv = UIImageView()
         pv.backgroundColor = .white
         pv.image = UIImage(named: "rwdevcon-logo")
         pv.contentMode =  UIViewContentMode.scaleAspectFit
@@ -59,7 +57,7 @@ class SubDetailVC:UIViewController {
     }()
     
     let titleView:UILabel = {
-       let lb = UILabel()
+        let lb = UILabel()
         lb.text = "Product name"
         lb.textColor = Color.getAccentColor()
         lb.setContentHuggingPriority(
@@ -72,14 +70,14 @@ class SubDetailVC:UIViewController {
         lb.isUserInteractionEnabled = true
         lb.font = UIFont(name: "HelveticaNeue-Bold", size: 14)
         lb.translatesAutoresizingMaskIntoConstraints = false
-       return lb
+        return lb
     }()
     
     lazy var removeBtn:UIButton = {
-    
+        
         let btn = UIButton()
-        btn.backgroundColor = Color.negativeColor()
-        btn.setTitle("Remove", for: .normal)
+        btn.backgroundColor = Color.getAccentColor()
+        btn.setTitle("Link to Store", for: .normal)
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.layer.cornerRadius = 14
         return btn
@@ -92,7 +90,7 @@ class SubDetailVC:UIViewController {
     init() {
         super.init(nibName: nil, bundle: nil)
         modalPresentationStyle = .custom
-        transitioningDelegate = self
+        transitioningDelegate = self as! UIViewControllerTransitioningDelegate
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -110,8 +108,8 @@ class SubDetailVC:UIViewController {
         menuView.addSubview(removeBtn)
         menuView.addSubview(titleView)
         menuView.addSubview(productView)
-//        menuView.addSubview(_infoView)
-//        menuView.addSubview(segmentedControl)
+        //        menuView.addSubview(_infoView)
+        //        menuView.addSubview(segmentedControl)
         
         menuView.backgroundColor = .white//UIColor(red: 243/255, green: 245/255, blue: 247/255, alpha: 1)
         menuView.translatesAutoresizingMaskIntoConstraints = false
@@ -134,7 +132,7 @@ class SubDetailVC:UIViewController {
         titleView.leadingAnchor.constraint(equalTo: menuView.leadingAnchor, constant: 16).isActive = true
         titleView.trailingAnchor.constraint(equalTo: menuView.trailingAnchor, constant: -16).isActive = true
         titleView.bottomAnchor.constraint(equalTo: productView.topAnchor, constant: -16).isActive = true
-
+        
         
         // productView
         productView.topAnchor.constraint(equalTo: titleView.bottomAnchor, constant: 20).isActive = true
@@ -142,17 +140,17 @@ class SubDetailVC:UIViewController {
         productView.trailingAnchor.constraint(equalTo: menuView.trailingAnchor, constant: -14).isActive = true
         //productView.heightAnchor.constraint(equalToConstant: self.view.bounds.width/2).isActive = true
         productView.bottomAnchor.constraint(equalTo: removeBtn.topAnchor, constant: -32).isActive = true
-
-//        //_infoView
-//        _infoView.topAnchor.constraint(equalTo: productView.bottomAnchor, constant: 16).isActive = true
-//        _infoView.trailingAnchor.constraint(equalTo: menuView.trailingAnchor, constant: 8).isActive = true
-//        _infoView.leadingAnchor.constraint(equalTo: menuView.leadingAnchor, constant: 16).isActive = true
+        
+        //        //_infoView
+        //        _infoView.topAnchor.constraint(equalTo: productView.bottomAnchor, constant: 16).isActive = true
+        //        _infoView.trailingAnchor.constraint(equalTo: menuView.trailingAnchor, constant: 8).isActive = true
+        //        _infoView.leadingAnchor.constraint(equalTo: menuView.leadingAnchor, constant: 16).isActive = true
         
         //segmentedControl
-//        segmentedControl.topAnchor.constraint(equalTo: _infoView.bottomAnchor, constant: 8).isActive = true
-//        segmentedControl.trailingAnchor.constraint(equalTo: menuView.trailingAnchor, constant: -16).isActive = true
-//        segmentedControl.leadingAnchor.constraint(equalTo: menuView.leadingAnchor, constant: 16).isActive = true
-//        segmentedControl.bottomAnchor.constraint(equalTo: removeBtn.topAnchor, constant: -16).isActive = true
+        //        segmentedControl.topAnchor.constraint(equalTo: _infoView.bottomAnchor, constant: 8).isActive = true
+        //        segmentedControl.trailingAnchor.constraint(equalTo: menuView.trailingAnchor, constant: -16).isActive = true
+        //        segmentedControl.leadingAnchor.constraint(equalTo: menuView.leadingAnchor, constant: 16).isActive = true
+        //        segmentedControl.bottomAnchor.constraint(equalTo: removeBtn.topAnchor, constant: -16).isActive = true
         
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SubDetailVC.handleTap(_:)))
@@ -170,70 +168,75 @@ class SubDetailVC:UIViewController {
     @objc func handleTap(_ sender: UITapGestureRecognizer) {
         dismiss(animated: true, completion: nil)
     }
-
+    
     @objc func linkItemTap(_ sender: UITapGestureRecognizer) {
         print("clicked")
-//        print(item)
-//        if let link = url {
-//            UIApplication.shared.open(URL(string :link)!, options: [:], completionHandler: { (status) in
-//                print(status)
-//            })
-//        }else{
-//            
-//        }
-       
-    }
-
-    @objc func removeItemTap(_ sender: UITapGestureRecognizer) {
-        print("Remove")
+        //        print(item)
+        //        if let link = url {
+        //            UIApplication.shared.open(URL(string :link)!, options: [:], completionHandler: { (status) in
+        //                print(status)
+        //            })
+        //        }else{
+        //
+        //        }
         
-        // here
-        if let id = item?.id{
-            deleteAnItem(id: id)
-        }
-        dismiss(animated: true, completion: nil)
     }
+    
+    @objc func removeItemTap(_ sender: UITapGestureRecognizer) {
+        print("Intent")
+
+//        // here
+//        if let id = item?.id{
+//            deleteAnItem(id: id)
+//        }
+//        dismiss(animated: true, completion: nil)
+        
+    }
+    
 }
 
-extension SubDetailVC: UIViewControllerTransitioningDelegate, UIViewControllerAnimatedTransitioning {
+
+extension NewSubDetailVC:UIViewControllerTransitioningDelegate, UIViewControllerAnimatedTransitioning {
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return self
+    return self
     }
     
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return self
+    return self
     }
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 1
+    return 1
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
-        let containerView = transitionContext.containerView
-        let toViewController = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)
-        guard let toVC = toViewController else { return }
-        isPresenting = !isPresenting
-        
-        if isPresenting == true {
-            containerView.addSubview(toVC.view)
-            
-            menuView.frame.origin.y += menuHeight
-            backdropView.alpha = 0
-            
-            UIView.animate(withDuration: 0.4, delay: 0, options: [.curveEaseOut], animations: {
-                self.menuView.frame.origin.y -= self.menuHeight
-                self.backdropView.alpha = 1
-            }, completion: { (finished) in
-                transitionContext.completeTransition(true)
-            })
-        } else {
-            UIView.animate(withDuration: 0.4, delay: 0, options: [.curveEaseOut], animations: {
-                self.menuView.frame.origin.y += self.menuHeight
-                self.backdropView.alpha = 0
-            }, completion: { (finished) in
-                transitionContext.completeTransition(true)
-            })
-        }
+    let containerView = transitionContext.containerView
+    let toViewController = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)
+    guard let toVC = toViewController else { return }
+    isPresenting = !isPresenting
+    
+    if isPresenting == true {
+    containerView.addSubview(toVC.view)
+    
+    menuView.frame.origin.y += menuHeight
+    backdropView.alpha = 0
+    
+    UIView.animate(withDuration: 0.4, delay: 0, options: [.curveEaseOut], animations: {
+    self.menuView.frame.origin.y -= self.menuHeight
+    self.backdropView.alpha = 1
+    }, completion: { (finished) in
+    transitionContext.completeTransition(true)
+    })
+    } else {
+    UIView.animate(withDuration: 0.4, delay: 0, options: [.curveEaseOut], animations: {
+    self.menuView.frame.origin.y += self.menuHeight
+    self.backdropView.alpha = 0
+    }, completion: { (finished) in
+    transitionContext.completeTransition(true)
+    })
+    }
     }
     
+    
+  
 }

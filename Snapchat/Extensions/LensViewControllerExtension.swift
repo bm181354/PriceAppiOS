@@ -37,9 +37,6 @@ extension LensViewController{
                         print(title)
                         //                        self.deleteAllSuggestion()
                         _ = self.createSuggestionItemEntityFrom(title: title, id: id, price: price, url: mediaURL)
-                        
-                        
-                        
                     }
                     
                     do {
@@ -171,6 +168,7 @@ extension LensViewController{
         }
     }
     
+    /*
     //deletes item method
     func deleteAnItem(id:Int64){
         
@@ -197,12 +195,7 @@ extension LensViewController{
             // ...
         }
     }
-    
+    */
 
-    
-    
-    
-    
-    
     
 }

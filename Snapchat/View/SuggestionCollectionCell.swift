@@ -41,7 +41,7 @@ class SuggestionCollectionCell:UICollectionViewCell{
         imageView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 16).isActive = true
         imageView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -16).isActive = true
         imageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 8).isActive = true
-        imageView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -8).isActive = true
+        imageView.bottomAnchor.constraint(equalTo: buttonView.topAnchor, constant: -8).isActive = true
         
         // constraint
         buttonView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 0).isActive = true

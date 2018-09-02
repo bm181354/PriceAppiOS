@@ -22,17 +22,7 @@ class LensViewController:BarcodeScannerViewController {
         self.cameraViewController.barCodeFocusViewType = .animated
         self.cameraViewController.showsCameraButton = true
         self.headerViewController.titleLabel.text = nil
-        
-        var code = "035000521019"
-        code = "046500018428"
-        
-
-        
-        
-        
-        
-       
-
+     
         
     }
 
@@ -58,9 +48,6 @@ extension LensViewController: BarcodeScannerCodeDelegate {
         
         print("Barcode Data: \(code)")
         print("Symbology Type: \(type)")
-        
-        
-        
         
         print("1")
         doAPICalls(code: code, controller: controller)
