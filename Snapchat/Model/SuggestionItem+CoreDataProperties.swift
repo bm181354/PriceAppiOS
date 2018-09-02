@@ -20,5 +20,6 @@ extension SuggestionItem {
     @NSManaged public var title: String
     @NSManaged public var price: Float
     @NSManaged public var id: Int
+    @NSManaged public var shopURL: String
 
 }

@@ -123,6 +123,7 @@ extension ChatViewController: UICollectionViewDelegate, UICollectionViewDataSour
             let vc = NewSubDetailVC()
             vc.modalPresentationStyle = .custom
             vc.item = suggestionItem[indexPath.row]
+            print(suggestionItem[indexPath.row])
             present(vc, animated: true, completion: nil)
         
         

@@ -24,7 +24,7 @@ extension LensViewController{
                     self.deleteAllSuggestion()
                     for (index,subJson):(String, JSON) in jsonArray {
                         
-                        guard let title = subJson["name"].string ,let mediaURL = subJson["mediumImage"].string ,let price = subJson["msrp"].float ?? subJson["salePrice"].float , let id = subJson["itemId"].int else{
+                        guard let title = subJson["name"].string ,let mediaURL = subJson["mediumImage"].string ,let price = subJson["msrp"].float ?? subJson["salePrice"].float , let id = subJson["itemId"].int, let shopURL = subJson["productUrl"].string else{
                             // do some error handling here
                             
                             print("hello")
@@ -36,7 +36,7 @@ extension LensViewController{
                         
                         print(title)
                         //                        self.deleteAllSuggestion()
-                        _ = self.createSuggestionItemEntityFrom(title: title, id: id, price: price, url: mediaURL)
+                        _ = self.createSuggestionItemEntityFrom(title: title, id: id, price: price, url: mediaURL, shopURL : shopURL)
                     }
                     
                     do {
@@ -60,7 +60,7 @@ extension LensViewController{
         }
     }
     
-    func createItemEntityFrom(id:Int64, with price: Float, with rating:String, with title: String, with mediURL: String) -> NSManagedObject? {
+    func createItemEntityFrom(id:Int64, with price: Float, with rating:String, with title: String, with mediURL: String, with shopURL: String) -> NSManagedObject? {
         let context = CoreDataStack.sharedInstance.persistentContainer.viewContext
         
         let itemEntity = Item(context: context)
@@ -70,18 +70,19 @@ extension LensViewController{
             itemEntity.id = id
             itemEntity.rating = rating
             itemEntity.mediaURL = mediURL
+           itemEntity.shopURL = shopURL
         
         
         
             itemEntity.price = price
-            itemEntity.shopURL = "N/A"
+        
             
             return itemEntity
     
     }
     
     
-    func updateEntity(id:Int64, withPrice price: Float, withRating rating:String, withTitle title: String, withMediaURL mediaURL: String){
+    func updateEntity(id:Int64, withPrice price: Float, withRating rating:String, withTitle title: String, withMediaURL mediaURL: String, withShopURL shopURL:String ){
         let context = CoreDataStack.sharedInstance.persistentContainer.viewContext
         
          let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Item")
@@ -94,12 +95,14 @@ extension LensViewController{
 
                     resultData.setValue(price, forKey: "price")
                     resultData.setValue(rating, forKey: "rating")
+                    resultData.setValue(shopURL, forKey: "shopURL")
+                
                 
 
             }
             }else{
               // create new entity
-                _ =   self.createItemEntityFrom(id: id,with: price,with: rating,with: title,with: mediaURL)
+                _ =   self.createItemEntityFrom(id: id,with: price,with: rating,with: title,with: mediaURL, with: shopURL)
                 
             }
             
@@ -119,7 +122,7 @@ extension LensViewController{
     
     // for suggestionItem
     
-    func createSuggestionItemEntityFrom(title: String,id:Int, price: Float, url: String) -> NSManagedObject? {
+    func createSuggestionItemEntityFrom(title: String,id:Int, price: Float, url: String, shopURL: String) -> NSManagedObject? {
         let context = CoreDataStack.sharedInstance.persistentContainer2.viewContext
         
         let suggestonItemEntity = SuggestionItem(context: context)
@@ -132,6 +135,8 @@ extension LensViewController{
         suggestonItemEntity.mediaURL = url
         
         suggestonItemEntity.id = id
+        
+        suggestonItemEntity.shopURL = shopURL
         
         
         

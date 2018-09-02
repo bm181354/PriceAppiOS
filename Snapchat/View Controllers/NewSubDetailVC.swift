@@ -15,7 +15,7 @@ class NewSubDetailVC:UIViewController{
         didSet{
             if let item = item {
                 titleView.text = item.title
-                url = item.mediaURL
+                url = item.shopURL
                 productView.loadImageUsingCacheWithURLString(item.mediaURL, placeHolder: UIImage(named: "placeholder"))
             }
         }
@@ -183,14 +183,12 @@ class NewSubDetailVC:UIViewController{
     }
     
     @objc func removeItemTap(_ sender: UITapGestureRecognizer) {
-        print("Intent")
 
-//        // here
-//        if let id = item?.id{
-//            deleteAnItem(id: id)
-//        }
-//        dismiss(animated: true, completion: nil)
-        
+        if let urlString = url {
+            if let url = URL(string: urlString){
+                UIApplication.shared.open(url)                
+            }
+        }
     }
     
 }

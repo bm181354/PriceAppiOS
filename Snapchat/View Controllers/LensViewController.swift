@@ -117,14 +117,16 @@ extension LensViewController{
             switch data{
             case .Success(let data):
                 let json = JSON(data)
-                if let id = json["items"][0]["itemId"].int, let price = json["items"][0]["msrp"].float ?? json["items"][0]["salePrice"].float, let mediaURL = json["items"][0]["mediumImage"].string, let title = json["items"][0]["name"].string, let rating = json["items"][0]["customerRating"].string  {
+                print(json)
+                if let id = json["items"][0]["itemId"].int, let price = json["items"][0]["msrp"].float ?? json["items"][0]["salePrice"].float, let mediaURL = json["items"][0]["mediumImage"].string, let title = json["items"][0]["name"].string, let rating = json["items"][0]["customerRating"].string,let shopURL = json["items"][0]["productUrl"].string  {
                     
-                    self.updateEntity(id: Int64(id), withPrice: price, withRating: rating, withTitle: title, withMediaURL: mediaURL)
+                    self.updateEntity(id: Int64(id), withPrice: price, withRating: rating, withTitle: title, withMediaURL: mediaURL, withShopURL: shopURL)
                     
                     self.update(product: "\(id)")
                     controller.reset()
                     
                 }else {
+                    
                     //error parsing the json
                     print("json parsing error")
                     controller.reset()
